@@ -1,6 +1,7 @@
 import json
+from pathlib import Path
 
-from src.MovementData.State import State
+from covidpredictor.MovementData.State import State
 
 
 class MovementData:
@@ -8,7 +9,10 @@ class MovementData:
 
         self.states = {}
 
-        with open('../data/data.json', 'r') as file:
+        resources = Path("resources")
+        file_path = resources / "data.json"
+
+        with open(file_path) as file:
             data = file.read()
             raw = json.loads(data)
 
@@ -26,9 +30,6 @@ class MovementData:
                         "changecalc": entry['changecalc'],
                         'value': entry['value']
                     }
-
-        for value in self.states['Alabama'].categories['parks']:
-            print(value)
 
 
 if __name__ == '__main__':
