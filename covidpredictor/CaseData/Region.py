@@ -1,4 +1,9 @@
+from datetime import date
+
+
 class Region:
+    initial_date = date(2020, 1, 1).toordinal()
+
     def __init__(self, name):
         self.name = name
 
@@ -42,3 +47,8 @@ class Region:
                 total += self.cumulative[i]['Cases'] / self.cumulative[i - 1]['Cases']
 
         return total / 10
+
+    def parse_day(self, date_string):
+        split = [int(a) for a in date_string.split('-')]
+
+        return date(split[0], split[1], split[2]).toordinal() - self.initial_date
