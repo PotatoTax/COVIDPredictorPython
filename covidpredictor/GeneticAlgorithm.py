@@ -82,8 +82,6 @@ class Trainer:
     def rmsle(self, predicted):
         les = []
 
-        # return sqrt(mean_squared_log_error(self.test_case, predicted))
-
         for index in range(len(predicted)):
             les.append((log(predicted[index] + 1.0) - log(self.test_case[index] + 1.0)) ** 2)
 
