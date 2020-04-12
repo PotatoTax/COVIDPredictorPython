@@ -17,3 +17,14 @@ class Model:
             new_list_mob_constants.append(gauss(1, 0.001)*constant)
 
         return Model(new_list_mob_constants, new_c_immunity, new_mobility_lag)
+
+    def predict(self, current, mobility, infection_rate, population):
+        testing_factor = 1
+        mobility_factor = 0
+
+        for i in range(len(mobility)):
+            mobility_factor += self.mobility_constants[i] * mobility[i]
+
+        immunity_factor = 1 - self.immunity_constant * (current / population)
+
+        return int(current * infection_rate * mobility_factor * immunity_factor * testing_factor)

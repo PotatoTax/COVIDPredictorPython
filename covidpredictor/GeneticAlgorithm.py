@@ -1,29 +1,10 @@
 from tqdm import tqdm
 from numpy import *
-from datetime import date
+import multiprocessing
 
 from CaseData.CaseData import CaseData
 from Model import Model
 from MovementData.MovementData import MovementData
-
-
-def rsmle(predicted, actual):
-    les = []
-    for index in range(len(predicted)):
-        les.append(log(predicted[index] + 1) - log(actual[index] + 1))
-    return sqrt(sum(les)/len(les))
-
-
-def iterate(current, mobility_stats, infection_rate, population, model):
-    c_immunity = model.immunity_constant
-    list_mob_constants = model.mobility_constants
-    testing_factor = 1
-    mobility_factor = 0
-    for i in range(len(mobility_stats)):
-        mobility_factor += list_mob_constants[i]*mobility_stats[i]
-    immunity_factor = 1 - c_immunity * (current/population)
-
-    return int(current * infection_rate * mobility_factor * immunity_factor * testing_factor)
 
 
 class Trainer:
@@ -32,7 +13,23 @@ class Trainer:
 
         self.case_data = CaseData()
 
+        self.movement_data = MovementData()
+
         self.pool = []
+
+        self.test_case = []
+
+        self.generate_test_case()
+
+    def generate_test_case(self):
+        for state in self.case_data.get_country('US').regions:
+            if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
+                continue
+            region = self.case_data.get_country('US').regions[state]
+            week_pred = []
+            for i in range(7):
+                week_pred.append(region.cumulative[region.parse_day("2020-03-30") + i]['Cases'])
+            self.test_case.extend(week_pred)
 
     def generate_pool(self):
         self.pool = []
@@ -43,6 +40,12 @@ class Trainer:
             generated_lag = random.randint(5,15)
             model = Model(generated_mobility_constants, generated_immunity_constants, generated_lag)
             self.pool.append(model)
+
+    def rsmle(self, predicted):
+        les = []
+        for index in range(len(predicted)):
+            les.append(log(predicted[index] + 1.0) - log(self.test_case[index] + 1.0))
+        return sqrt(sum(les) / len(les))
 
     def next_generation(self, scores):
         # sort pool based on scores
@@ -59,32 +62,19 @@ class Trainer:
             self.pool.append(working_model.mutate())
 
     def evaluate(self, start_date):
-        # generate scores for each model
         predictions = []
+        scores = []
 
+        # generates a week of predicted values for each model
         for model in self.pool:
             model_predictions = []
             for state in self.case_data.get_country('US').regions:
-                print(state)
                 if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
                     continue
                 model_predictions.extend(self.predict('US', state, model, start_date))
             predictions.append(model_predictions)
 
-        results = []
-        for state in self.case_data.get_country('US').regions:
-            print(state)
-            if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
-                continue
-            region = self.case_data.get_country('US').regions[state]
-            week_pred = []
-            for i in range(7):
-                week_pred.append(region.cumulative[region.parse_day(start_date) + i]['Cases'])
-            results.extend(week_pred)
-
-        scores = []
-        for index in range(len(predictions)):
-            scores.append(rsmle(predictions[index], results))
+            scores.append(self.rsmle(model_predictions))
 
         return scores
 
@@ -95,7 +85,6 @@ class Trainer:
         for _ in tqdm(range(generations)):
             scores = self.evaluate("2020-03-30")
             self.next_generation(scores)
-            print(len(self.pool))
 
         final_scores = self.evaluate("2020-03-30")
         sorted_final_pool = [x for _, x in sorted(zip(final_scores, self.pool))]
@@ -108,19 +97,16 @@ class Trainer:
         infection_rate = country.regions[region].get_infection_rate()
         population = int(country.regions[region].population)
 
-        testing_factor = 1
 
-        one_week_prediction = []
-        prev = current
+        previous_cases = current
 
         int_date = country.regions[region].parse_day(start_date)
         lag = model.mobility_lag
 
-        movement_data = MovementData()
-
+        week_prediction = []
         for day in range(7):
             mobility_stats = []
-            for category in movement_data.states[region].categories.values():
+            for category in self.movement_data.states[region].categories.values():
                 movement_stat = []
                 for date in range(int_date + day - lag - 4, int_date + day - lag + 1):
                     try:
@@ -128,11 +114,11 @@ class Trainer:
                     except:
                         continue
                 mobility_stats.append(sum(movement_stat) / len(movement_stat))
-            new_day = iterate(prev, mobility_stats, infection_rate, population, model)
-            one_week_prediction.append(new_day)
-            prev = new_day
+            prediction = model.predict(previous_cases, mobility_stats, infection_rate, population)
+            week_prediction.append(prediction)
+            previous_cases = prediction
 
-        return one_week_prediction
+        return week_prediction
 
 
 if __name__ == '__main__':
@@ -140,5 +126,6 @@ if __name__ == '__main__':
 
     model = trainer.train(20)
 
-    print(trainer.predict('US', 'Minnesota', model))
+    print(trainer.predict('US', 'Minnesota', model, "2020-03-30"))
     print(model.mobility_constants, model.immunity_constant)
+    print(model.mobility_lag)
