@@ -1,9 +1,10 @@
 from tqdm import tqdm
 from numpy import *
+from datetime import date
 
 from CaseData.CaseData import CaseData
 from Model import Model
-from MovementData import MovementData
+from MovementData.MovementData import MovementData
 
 
 def rsmle(predicted, actual):
@@ -17,6 +18,7 @@ def iterate(current, mobility_stats, infection_rate, population, model):
     c_immunity = model.immunity_constant
     list_mob_constants = model.mobility_constants
     testing_factor = 1
+    mobility_factor = 0
     for i in range(len(mobility_stats)):
         mobility_factor += list_mob_constants[i]*mobility_stats[i]
     immunity_factor = 1 - c_immunity * (current/population)
@@ -38,7 +40,8 @@ class Trainer:
         for _ in range(self.pool_size):
             generated_mobility_constants = [random.random() for _ in range(6)]
             generated_immunity_constants = random.random()
-            model = Model(generated_mobility_constants, generated_immunity_constants)
+            generated_lag = random.randint(5,15)
+            model = Model(generated_mobility_constants, generated_immunity_constants, generated_lag)
             self.pool.append(model)
 
     def next_generation(self, scores):
@@ -62,11 +65,17 @@ class Trainer:
         for model in self.pool:
             model_predictions = []
             for state in self.case_data.get_country('US').regions:
+                print(state)
+                if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
+                    continue
                 model_predictions.extend(self.predict('US', state, model, start_date))
             predictions.append(model_predictions)
 
         results = []
         for state in self.case_data.get_country('US').regions:
+            print(state)
+            if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
+                continue
             region = self.case_data.get_country('US').regions[state]
             week_pred = []
             for i in range(7):
@@ -97,27 +106,28 @@ class Trainer:
         country = self.case_data.get_country(country_name)
         current = country.regions[region].get_current_cases()
         infection_rate = country.regions[region].get_infection_rate()
-        # no pop data for Guam & Virgin Islands
-        try:
-            population = int(country.regions[region].population)
-        except:
-            population = 100000
+        population = int(country.regions[region].population)
+
         testing_factor = 1
 
         one_week_prediction = []
         prev = current
+
+        int_date = country.regions[region].parse_day(start_date)
+        lag = model.mobility_lag
+
+        movement_data = MovementData()
+
         for day in range(7):
-
-            int_date = country.regions[region].parse_day(start_date) + day
-            lag = model.mobility_lag
             mobility_stats = []
-            for category in MovementData.states[region]:
+            for category in movement_data.states[region].categories.values():
                 movement_stat = []
-                date_dict = MovementData.states[region][category]
-                for date in range(int_date - lag - 4, int_date - lag + 1):
-                    movement_stat.append(date_dict[date])
+                for date in range(int_date + day - lag - 4, int_date + day - lag + 1):
+                    try:
+                        movement_stat.append(category[date]['value'])
+                    except:
+                        continue
                 mobility_stats.append(sum(movement_stat) / len(movement_stat))
-
             new_day = iterate(prev, mobility_stats, infection_rate, population, model)
             one_week_prediction.append(new_day)
             prev = new_day

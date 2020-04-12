@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from datetime import date
 
 from covidpredictor.MovementData.State import State
 
@@ -7,10 +8,10 @@ from covidpredictor.MovementData.State import State
 initial_date = date(2020, 1, 1).toordinal()
 
 
-def parse_day(self, date_string):
+def parse_day(date_string):
     split = [int(a) for a in date_string.split('-')]
 
-    return date(split[0], split[1], split[2]).toordinal() - self.initial_date
+    return date(split[0], split[1], split[2]).toordinal() - initial_date
 
 
 class MovementData:

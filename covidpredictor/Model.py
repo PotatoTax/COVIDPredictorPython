@@ -9,7 +9,9 @@ class Model:
 
     def mutate(self):
         new_c_immunity = gauss(1, 0.05)*self.immunity_constant
-        new_mobility_lag = self.mobility_lag + random.randint(-1, 1)
+        new_mobility_lag = self.mobility_lag + randint(-1, 1)
+        if new_mobility_lag < 7:
+            new_mobility_lag = 7
         new_list_mob_constants = []
         for constant in self.mobility_constants:
             new_list_mob_constants.append(gauss(1, 0.001)*constant)
