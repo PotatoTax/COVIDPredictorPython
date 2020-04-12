@@ -7,7 +7,7 @@ class Model:
         self.mobility_constants = list_mob_constants
         self.immunity_constant = c_immunity
         self.mobility_lag = mobility_lag
-        self.score = -10000
+        self.score = 10000
 
         self.immunity_variability = .05
         self.mobility_lag_variability = [-1, 1]
@@ -15,14 +15,14 @@ class Model:
 
     @classmethod
     def random(cls):
-        mobility_constants = [random.uniform(-.5, .5) for _ in range(6)]
-        immunity_constant = random.random()
+        mobility_constants = [random.uniform(-1, 1) for _ in range(6)]
+        immunity_constant = random.random() * 10
         lag = random.randint(5, 25)
 
         return Model(mobility_constants, immunity_constant, lag)
 
     def mutate(self):
-        new_c_immunity = random.gauss(1, self.immunity_variability)*self.immunity_constant
+        new_c_immunity = random.gauss(1, self.immunity_variability) * self.immunity_constant
         new_mobility_lag = self.mobility_lag + random.randint(self.mobility_lag_variability[0], self.mobility_lag_variability[1])
         if new_mobility_lag < 7:
             new_mobility_lag = 7

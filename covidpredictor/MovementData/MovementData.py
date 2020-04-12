@@ -1,4 +1,5 @@
 import json
+import math
 from pathlib import Path
 from datetime import date
 
@@ -38,8 +39,12 @@ class MovementData:
                         "page": entry['page'],
                         "change": entry['change'],
                         "changecalc": entry['changecalc'],
-                        'value': float(entry['value']) / 100
+                        'value': sig(float(entry['value']) / 100)
                     }
+
+
+def sig(x):
+    return .4 / (1 + math.e ** (-.33 * x)) + .8
 
 
 if __name__ == '__main__':

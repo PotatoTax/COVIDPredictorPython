@@ -1,5 +1,6 @@
+import math
+
 from tqdm import tqdm
-from numpy import *
 import multiprocessing
 
 from CaseData.CaseData import CaseData
@@ -27,35 +28,36 @@ class Trainer:
                 continue
             region = self.case_data.get_country('US').regions[state]
             day_one = region.parse_day("2020-03-30")
-            week_pred = [region.cumulative[day_one + i]['Cases'] for i in range(7)]
+            week_pred = [region.daily[day_one + i]['Cases'] for i in range(7)]
             self.test_case.extend(week_pred)
 
     def train(self, generations):
         self.pool.seed_pool()
 
-        for _ in tqdm(range(generations)):
+        for i in tqdm(range(generations)):
             self.threaded_evaluate()
-            self.pool.next_generation()
 
-        self.evaluate("2020-03-30")
+            if i < generations - 1:
+                self.pool.next_generation()
+
         self.pool.sort()
 
-        return self.pool.pool[0]
+        return self.pool.pool[:10]
 
     def threaded_evaluate(self):
         # a thread_count of 4 seems to be the most effective
         # higher values slow the program
-        thread_count = 1
+        thread_count = 4
 
-        if thread_count == 1:
-            # if there is only one thread, don't bother creating a process
-            self.thread_array(self.pool.pool)
-        else:
-            with multiprocessing.Pool(thread_count) as worker_pool:
-                worker_pool.map_async(self.thread, self.pool.pool)
+        with multiprocessing.Pool(thread_count) as worker_pool:
+            result = worker_pool.map(self.thread, self.pool.pool)
 
-                worker_pool.close()
-                worker_pool.join()
+            # waits for all the processes to finish and closes them
+            worker_pool.close()
+            worker_pool.join()
+
+            # replaces the pool with the new models
+            self.pool.pool = result
 
     def thread(self, model):
         predictions = []
@@ -65,24 +67,19 @@ class Trainer:
             predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
 
         model.score = self.rmsle(predictions)
-
-    def thread_array(self, models):
-        for model in models:
-            predictions = []
-            for state in self.case_data.get_country('US').regions:
-                if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
-                    continue
-                predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
-
-            model.score = self.rmsle(predictions)
+        return model
 
     def rmsle(self, predicted):
         les = []
 
-        for index in range(len(predicted)):
-            les.append((log(predicted[index] + 1.0) - log(self.test_case[index] + 1.0)) ** 2)
+        for predict, actual in zip(predicted, self.test_case):
+            if actual < 0: actual = 0
+            try:
+                les.append((math.log(predict + 1.0) - math.log(actual + 1.0)) ** 2)
+            except ValueError:
+                print(predict, actual)
 
-        return sqrt(sum(les) / len(les))
+        return math.sqrt(sum(les) / len(les))
 
     def evaluate(self, start_date):
         # generates a week of predicted values for each model
@@ -97,7 +94,7 @@ class Trainer:
 
     def predict(self, country_name, region, model, start_date):
         country = self.case_data.get_country(country_name)
-        current = country.regions[region].get_current_cases()
+        current = country.regions[region].get_daily_cases()
         infection_rate = country.regions[region].get_infection_rate()
         population = int(country.regions[region].population)
 
@@ -125,10 +122,12 @@ class Trainer:
 
 
 if __name__ == '__main__':
-    trainer = Trainer(1000)
+    trainer = Trainer(10000)
 
-    model = trainer.train(10)
+    top_models = trainer.train(1)
 
-    print(trainer.predict('US', 'Minnesota', model, "2020-03-30"))
-    print(model.mobility_constants, model.immunity_constant)
-    print(model.mobility_lag)
+    for model in top_models:
+        print(trainer.predict('US', 'Minnesota', model, "2020-03-30"), model.score)
+        print(model.mobility_constants, model.immunity_constant)
+        print(model.mobility_lag)
+        print()
