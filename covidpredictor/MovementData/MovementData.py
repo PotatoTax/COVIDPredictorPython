@@ -4,6 +4,15 @@ from pathlib import Path
 from covidpredictor.MovementData.State import State
 
 
+initial_date = date(2020, 1, 1).toordinal()
+
+
+def parse_day(self, date_string):
+    split = [int(a) for a in date_string.split('-')]
+
+    return date(split[0], split[1], split[2]).toordinal() - self.initial_date
+
+
 class MovementData:
     def __init__(self):
 
@@ -24,7 +33,7 @@ class MovementData:
                     if not entry['category'] in self.states[entry['county']].categories:
                         self.states[entry['county']].categories[entry['category']] = {}
 
-                    self.states[entry['county']].categories[entry['category']][entry['date']] = {
+                    self.states[entry['county']].categories[entry['category']][parse_day(entry['date'])] = {
                         "page": entry['page'],
                         "change": entry['change'],
                         "changecalc": entry['changecalc'],

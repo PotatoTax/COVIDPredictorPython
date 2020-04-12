@@ -3,6 +3,7 @@ from numpy import *
 
 from CaseData.CaseData import CaseData
 from Model import Model
+from MovementData import MovementData
 
 
 def rsmle(predicted, actual):
@@ -12,8 +13,10 @@ def rsmle(predicted, actual):
     return sqrt(sum(les)/len(les))
 
 
-def iterate(current, mobility_stats, infection_rate, population, testing_factor, list_mob_constants, c_immunity):
-    mobility_factor = 0
+def iterate(current, mobility_stats, infection_rate, population, model):
+    c_immunity = model.immunity_constant
+    list_mob_constants = model.mobility_constants
+    testing_factor = 1
     for i in range(len(mobility_stats)):
         mobility_factor += list_mob_constants[i]*mobility_stats[i]
     immunity_factor = 1 - c_immunity * (current/population)
@@ -33,7 +36,7 @@ class Trainer:
         self.pool = []
 
         for _ in range(self.pool_size):
-            generated_mobility_constants = [random.random() for _ in range(1)]
+            generated_mobility_constants = [random.random() for _ in range(6)]
             generated_immunity_constants = random.random()
             model = Model(generated_mobility_constants, generated_immunity_constants)
             self.pool.append(model)
@@ -59,7 +62,7 @@ class Trainer:
         for model in self.pool:
             model_predictions = []
             for state in self.case_data.get_country('US').regions:
-                model_predictions.extend(self.predict('US', state, model))
+                model_predictions.extend(self.predict('US', state, model, start_date))
             predictions.append(model_predictions)
 
         results = []
@@ -90,7 +93,7 @@ class Trainer:
 
         return sorted_final_pool[0]
 
-    def predict(self, country_name, region, model):
+    def predict(self, country_name, region, model, start_date):
         country = self.case_data.get_country(country_name)
         current = country.regions[region].get_current_cases()
         infection_rate = country.regions[region].get_infection_rate()
@@ -100,13 +103,22 @@ class Trainer:
         except:
             population = 100000
         testing_factor = 1
-        # mobility_stats = country.regions[region].mobility_stats
-        mobility_stats = [1]
 
         one_week_prediction = []
         prev = current
-        for _ in range(7):
-            new_day = iterate(prev, mobility_stats, infection_rate, population, testing_factor, model.mobility_constants, model.immunity_constant)
+        for day in range(7):
+
+            int_date = country.regions[region].parse_day(start_date) + day
+            lag = model.mobility_lag
+            mobility_stats = []
+            for category in MovementData.states[region]:
+                movement_stat = []
+                date_dict = MovementData.states[region][category]
+                for date in range(int_date - lag - 4, int_date - lag + 1):
+                    movement_stat.append(date_dict[date])
+                mobility_stats.append(sum(movement_stat) / len(movement_stat))
+
+            new_day = iterate(prev, mobility_stats, infection_rate, population, model)
             one_week_prediction.append(new_day)
             prev = new_day
 
