@@ -7,6 +7,8 @@ from CaseData.CaseData import CaseData
 from MovementData.MovementData import MovementData
 from Pool import Pool
 
+# TODO : Investigate Cython
+
 
 class Trainer:
     def __init__(self, pool_size):
