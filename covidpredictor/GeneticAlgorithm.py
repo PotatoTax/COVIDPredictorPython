@@ -57,24 +57,6 @@ class Trainer:
                 worker_pool.close()
                 worker_pool.join()
 
-            # # splits the pool into equal sized jobs
-            # job_size = len(self.pool.pool) // thread_count
-            #
-            # jobs = []
-            # for i in range(thread_count):
-            #     jobs.append(self.pool.pool[job_size * i: job_size * (i + 1)])
-            #
-            # threads = []
-            # for job in jobs:
-            #     thread = multiprocessing.Process(target=self.thread, args=(self.case_data, job,))
-            #     threads.append(thread)
-            #
-            # for t in threads:
-            #     t.start()
-            #
-            # for t in threads:
-            #     t.join()
-
     def thread(self, model):
         predictions = []
         for state in self.case_data.get_country('US').regions:
