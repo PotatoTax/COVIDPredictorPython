@@ -45,34 +45,49 @@ class Trainer:
     def threaded_evaluate(self):
         # a thread_count of 4 seems to be the most effective
         # higher values slow the program
-        thread_count = 4
+        thread_count = 1
 
         if thread_count == 1:
             # if there is only one thread, don't bother creating a process
-            self.thread(self.case_data, self.pool.pool)
+            self.thread_array(self.pool.pool)
         else:
-            # splits the pool into equal sized jobs
-            job_size = len(self.pool.pool) // thread_count
+            with multiprocessing.Pool(thread_count) as worker_pool:
+                worker_pool.map_async(self.thread, self.pool.pool)
 
-            jobs = []
-            for i in range(thread_count):
-                jobs.append(self.pool.pool[job_size * i: job_size * (i + 1)])
+                worker_pool.close()
+                worker_pool.join()
 
-            threads = []
-            for job in jobs:
-                thread = multiprocessing.Process(target=self.thread, args=(self.case_data, job,))
-                threads.append(thread)
+            # # splits the pool into equal sized jobs
+            # job_size = len(self.pool.pool) // thread_count
+            #
+            # jobs = []
+            # for i in range(thread_count):
+            #     jobs.append(self.pool.pool[job_size * i: job_size * (i + 1)])
+            #
+            # threads = []
+            # for job in jobs:
+            #     thread = multiprocessing.Process(target=self.thread, args=(self.case_data, job,))
+            #     threads.append(thread)
+            #
+            # for t in threads:
+            #     t.start()
+            #
+            # for t in threads:
+            #     t.join()
 
-            for t in threads:
-                t.start()
+    def thread(self, model):
+        predictions = []
+        for state in self.case_data.get_country('US').regions:
+            if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
+                continue
+            predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
 
-            for t in threads:
-                t.join()
+        model.score = self.rmsle(predictions)
 
-    def thread(self, case_data, models):
+    def thread_array(self, models):
         for model in models:
             predictions = []
-            for state in case_data.get_country('US').regions:
+            for state in self.case_data.get_country('US').regions:
                 if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
                     continue
                 predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
