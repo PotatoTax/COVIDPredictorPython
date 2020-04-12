@@ -3,8 +3,8 @@ from numpy import *
 import multiprocessing
 
 from CaseData.CaseData import CaseData
-from Model import Model
 from MovementData.MovementData import MovementData
+from Pool import Pool
 
 
 class Trainer:
@@ -15,7 +15,7 @@ class Trainer:
 
         self.movement_data = MovementData()
 
-        self.pool = []
+        self.pool = Pool(pool_size)
 
         self.test_case = []
 
@@ -26,77 +26,85 @@ class Trainer:
             if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
                 continue
             region = self.case_data.get_country('US').regions[state]
-            week_pred = []
-            for i in range(7):
-                week_pred.append(region.cumulative[region.parse_day("2020-03-30") + i]['Cases'])
+            day_one = region.parse_day("2020-03-30")
+            week_pred = [region.cumulative[day_one + i]['Cases'] for i in range(7)]
             self.test_case.extend(week_pred)
 
-    def generate_pool(self):
-        self.pool = []
+    def train(self, generations):
+        self.pool.seed_pool()
 
-        for _ in range(self.pool_size):
-            generated_mobility_constants = [random.random() for _ in range(6)]
-            generated_immunity_constants = random.random()
-            generated_lag = random.randint(5,15)
-            model = Model(generated_mobility_constants, generated_immunity_constants, generated_lag)
-            self.pool.append(model)
+        for _ in tqdm(range(generations)):
+            self.threaded_evaluate()
+            self.pool.next_generation()
 
-    def rsmle(self, predicted):
+        self.evaluate("2020-03-30")
+        self.pool.sort()
+
+        return self.pool.pool[0]
+
+    def threaded_evaluate(self):
+        # a thread_count of 4 seems to be the most effective
+        # higher values slow the program
+        thread_count = 4
+
+        if thread_count == 1:
+            # if there is only one thread, don't bother creating a process
+            self.thread(self.case_data, self.pool.pool)
+        else:
+            # splits the pool into equal sized jobs
+            job_size = len(self.pool.pool) // thread_count
+
+            jobs = []
+            for i in range(thread_count):
+                jobs.append(self.pool.pool[job_size * i: job_size * (i + 1)])
+
+            threads = []
+            for job in jobs:
+                thread = multiprocessing.Process(target=self.thread, args=(self.case_data, job,))
+                threads.append(thread)
+
+            for t in threads:
+                t.start()
+
+            for t in threads:
+                t.join()
+
+    def thread(self, case_data, models):
+        for model in models:
+            predictions = []
+            for state in case_data.get_country('US').regions:
+                if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
+                    continue
+                predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
+
+            model.score = self.rmsle(predictions)
+
+    def rmsle(self, predicted):
         les = []
+
+        # return sqrt(mean_squared_log_error(self.test_case, predicted))
+
         for index in range(len(predicted)):
-            les.append(log(predicted[index] + 1.0) - log(self.test_case[index] + 1.0))
+            les.append((log(predicted[index] + 1.0) - log(self.test_case[index] + 1.0)) ** 2)
+
         return sqrt(sum(les) / len(les))
 
-    def next_generation(self, scores):
-        # sort pool based on scores
-        self.pool = [x for _, x in sorted(zip(scores, self.pool))]
-        # TODO : fix population size variability
-        reproduce_pool = []
-        for index in range(len(self.pool)):
-            if random.randint(1, len(self.pool)) < index:
-                reproduce_pool.append(self.pool[index])
-
-        self.pool = []
-        for working_model in reproduce_pool:
-            self.pool.append(working_model)
-            self.pool.append(working_model.mutate())
-
     def evaluate(self, start_date):
-        predictions = []
-        scores = []
-
         # generates a week of predicted values for each model
-        for model in self.pool:
+        for model in self.pool.pool:
             model_predictions = []
             for state in self.case_data.get_country('US').regions:
                 if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
                     continue
                 model_predictions.extend(self.predict('US', state, model, start_date))
-            predictions.append(model_predictions)
 
-            scores.append(self.rsmle(model_predictions))
-
-        return scores
-
-    def train(self, generations):
-        self.generate_pool()
-
-        # TODO : Implement multiprocessing
-        for _ in tqdm(range(generations)):
-            scores = self.evaluate("2020-03-30")
-            self.next_generation(scores)
-
-        final_scores = self.evaluate("2020-03-30")
-        sorted_final_pool = [x for _, x in sorted(zip(final_scores, self.pool))]
-
-        return sorted_final_pool[0]
+            model.score = self.rmsle(model_predictions)
 
     def predict(self, country_name, region, model, start_date):
         country = self.case_data.get_country(country_name)
         current = country.regions[region].get_current_cases()
         infection_rate = country.regions[region].get_infection_rate()
         population = int(country.regions[region].population)
-
 
         previous_cases = current
 
@@ -124,7 +132,7 @@ class Trainer:
 if __name__ == '__main__':
     trainer = Trainer(1000)
 
-    model = trainer.train(20)
+    model = trainer.train(10)
 
     print(trainer.predict('US', 'Minnesota', model, "2020-03-30"))
     print(model.mobility_constants, model.immunity_constant)

@@ -38,7 +38,7 @@ class MovementData:
                         "page": entry['page'],
                         "change": entry['change'],
                         "changecalc": entry['changecalc'],
-                        'value': entry['value']
+                        'value': float(entry['value']) / 100
                     }
 
 
