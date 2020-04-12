@@ -23,6 +23,7 @@ class Trainer:
         self.generate_test_case()
 
     def generate_test_case(self):
+        # Gathers the case data for a week after the training data ends
         for state in self.case_data.get_country('US').regions:
             if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
                 continue
@@ -34,14 +35,15 @@ class Trainer:
     def train(self, generations):
         self.pool.seed_pool()
 
+        # evaluates and creates a new generation
         for i in tqdm(range(generations)):
             self.threaded_evaluate()
 
             if i < generations - 1:
                 self.pool.next_generation()
 
+        # Returns the top 10 models
         self.pool.sort()
-
         return self.pool.pool[:10]
 
     def threaded_evaluate(self):
@@ -70,14 +72,12 @@ class Trainer:
         return model
 
     def rmsle(self, predicted):
+        # Root mean square log error test
         les = []
 
         for predict, actual in zip(predicted, self.test_case):
             if actual < 0: actual = 0
-            try:
-                les.append((math.log(predict + 1.0) - math.log(actual + 1.0)) ** 2)
-            except ValueError:
-                print(predict, actual)
+            les.append((math.log(predict + 1.0) - math.log(actual + 1.0)) ** 2)
 
         return math.sqrt(sum(les) / len(les))
 
