@@ -3,15 +3,16 @@ import math
 from tqdm import tqdm
 import multiprocessing
 
+from CaseData import Region
 from CaseData.CaseData import CaseData
 from MovementData.MovementData import MovementData
 from Pool import Pool
 
-# TODO : Investigate Cython
-
 
 class Trainer:
-    def __init__(self, pool_size):
+    def __init__(self, pool_size, state=None):
+        self.state = state
+
         self.pool_size = pool_size
 
         self.case_data = CaseData()
@@ -26,13 +27,17 @@ class Trainer:
 
     def generate_test_case(self):
         # Gathers the case data for a week after the training data ends
-        for state in self.case_data.get_country('US').regions:
-            if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
-                continue
-            region = self.case_data.get_country('US').regions[state]
-            day_one = region.parse_day("2020-03-30")
-            week_pred = [region.daily[day_one + i]['Cases'] for i in range(7)]
-            self.test_case.extend(week_pred)
+        day_one = self.case_data.get_country("US").regions["Minnesota"].parse_day("2020-03-30")
+        if self.state is None:
+            for state in self.case_data.get_country('US').regions:
+                if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
+                    continue
+                region = self.case_data.get_country('US').regions[state]
+                week_pred = [region.daily[day_one + i]['Cases'] for i in range(7)]
+                self.test_case.extend(week_pred)
+        else:
+            region = self.case_data.get_country('US').regions[self.state]
+            self.test_case = [region.daily[day_one + i]['Cases'] for i in range(7)]
 
     def train(self, generations):
         self.pool.seed_pool()
@@ -65,11 +70,13 @@ class Trainer:
 
     def thread(self, model):
         predictions = []
-        for state in self.case_data.get_country('US').regions:
-            if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
-                continue
-            predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
-
+        if self.state is None:
+            for state in self.case_data.get_country('US').regions:
+                if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
+                    continue
+                predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
+        else:
+            predictions = self.predict('US', self.state, model, start_date="2020-03-30")
         model.score = self.rmsle(predictions)
         return model
 
@@ -87,16 +94,18 @@ class Trainer:
         # generates a week of predicted values for each model
         for model in self.pool.pool:
             model_predictions = []
-            for state in self.case_data.get_country('US').regions:
-                if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
-                    continue
-                model_predictions.extend(self.predict('US', state, model, start_date))
-
+            if self.state is None:
+                for state in self.case_data.get_country('US').regions:
+                    if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
+                        continue
+                    model_predictions.extend(self.predict('US', state, model, start_date))
+            else:
+                model_predictions = self.predict('US', self.state, model, start_date)
             model.score = self.rmsle(model_predictions)
 
     def predict(self, country_name, region, model, start_date):
         country = self.case_data.get_country(country_name)
-        current = country.regions[region].get_daily_cases()
+        current = country.regions[region].get_daily_cases("2020-03-30")
         infection_rate = country.regions[region].get_infection_rate()
         population = int(country.regions[region].population)
 
@@ -124,12 +133,20 @@ class Trainer:
 
 
 if __name__ == '__main__':
-    trainer = Trainer(10000)
 
-    top_models = trainer.train(1)
+    scores = []
+    for state in CaseData().get_country('US').regions.keys():
+        if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
+            continue
+        trainer = Trainer(10000, state)
 
-    for model in top_models:
-        print(trainer.predict('US', 'Minnesota', model, "2020-03-30"), model.score)
-        print(model.mobility_constants, model.immunity_constant)
-        print(model.mobility_lag)
-        print()
+        top_models = trainer.train(1)
+
+        for model in top_models[:1]:
+            print(state)
+            print(trainer.predict('US', state, model, "2020-03-30"), model.score)
+            scores.append(model.score)
+
+    print(sum(scores) / len(scores))
+
+    # Illinois, New Mexico, Oregon, Tennessee, Utah, New Hampshire, Missouri, Maine, Kentucky, Colorado

@@ -32,10 +32,14 @@ class Region:
 
         return self.cumulative[day]['Cases']
 
-    def get_daily_cases(self):
-        day = max(self.daily.keys())
+    def get_daily_cases(self, date=None):
+        if date is None:
+            day = max(self.daily.keys())
 
-        return self.daily[day]['Cases']
+            return self.daily[day]['Cases']
+        else:
+            int_date = self.parse_day(date)
+            return self.daily[int_date]['Cases']
 
     def get_infection_rate(self):
         start_date = -1

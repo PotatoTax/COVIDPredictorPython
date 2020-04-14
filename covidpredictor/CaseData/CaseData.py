@@ -42,3 +42,4 @@ class CaseData:
 
 if __name__ == '__main__':
     d = CaseData()
+    print(d.countries['US'].regions['New York'].get_infection_rate())
