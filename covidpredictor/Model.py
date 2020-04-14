@@ -17,7 +17,8 @@ class Model:
     def random(cls):
         mobility_constants = [random.uniform(-1, 1) for _ in range(6)]
         immunity_constant = random.random() * 10
-        lag = random.randint(5, 25)
+        #lag = random.randint(5, 25)
+        lag = 16
 
         return Model(mobility_constants, immunity_constant, lag)
 

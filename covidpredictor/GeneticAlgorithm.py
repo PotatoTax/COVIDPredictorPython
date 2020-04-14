@@ -2,6 +2,7 @@ import math
 
 from tqdm import tqdm
 import multiprocessing
+from datetime import date
 
 from CaseData import Region
 from CaseData.CaseData import CaseData
@@ -10,10 +11,12 @@ from Pool import Pool
 
 
 class Trainer:
-    def __init__(self, pool_size, state=None):
+    def __init__(self, pool_size, state=None, statistic='Cases'):
         self.state = state
 
         self.pool_size = pool_size
+
+        self.statistic = statistic
 
         self.case_data = CaseData()
 
@@ -27,17 +30,17 @@ class Trainer:
 
     def generate_test_case(self):
         # Gathers the case data for a week after the training data ends
-        day_one = self.case_data.get_country("US").regions["Minnesota"].parse_day("2020-03-30")
+        day_one = self.parse_day("2020-03-30")
         if self.state is None:
             for state in self.case_data.get_country('US').regions:
                 if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
                     continue
                 region = self.case_data.get_country('US').regions[state]
-                week_pred = [region.daily[day_one + i]['Cases'] for i in range(7)]
+                week_pred = [region.daily[day_one + i][self.statistic] for i in range(7)]
                 self.test_case.extend(week_pred)
         else:
             region = self.case_data.get_country('US').regions[self.state]
-            self.test_case = [region.daily[day_one + i]['Cases'] for i in range(7)]
+            self.test_case = [region.daily[day_one + i][self.statistic] for i in range(7)]
 
     def train(self, generations):
         self.pool.seed_pool()
@@ -77,16 +80,21 @@ class Trainer:
                 predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
         else:
             predictions = self.predict('US', self.state, model, start_date="2020-03-30")
-        model.score = self.rmsle(predictions)
+        model.score = self.rmsle(predictions, self.case_data.get_country('US').regions[self.state].cumulative[self.parse_day("2020-03-30")][self.statistic])
         return model
 
-    def rmsle(self, predicted):
+    def rmsle(self, predicted, baseline):
         # Root mean square log error test
         les = []
 
+        predicted_cumulative = baseline
+        actual_cumulative = baseline
+
         for predict, actual in zip(predicted, self.test_case):
             if actual < 0: actual = 0
-            les.append((math.log(predict + 1.0) - math.log(actual + 1.0)) ** 2)
+            predicted_cumulative += predict
+            actual_cumulative += actual
+            les.append((math.log(predicted_cumulative + 1.0) - math.log(actual_cumulative + 1.0)) ** 2)
 
         return math.sqrt(sum(les) / len(les))
 
@@ -101,17 +109,17 @@ class Trainer:
                     model_predictions.extend(self.predict('US', state, model, start_date))
             else:
                 model_predictions = self.predict('US', self.state, model, start_date)
-            model.score = self.rmsle(model_predictions)
+            cumulative_stat = self.case_data.get_country('US').regions[self.state].cumulative[self.parse_day("2020-03-30")][self.statistic]
+            model.score = self.rmsle(model_predictions, cumulative_stat)
+
 
     def predict(self, country_name, region, model, start_date):
         country = self.case_data.get_country(country_name)
-        current = country.regions[region].get_daily_cases("2020-03-30")
+        previous_cases = country.regions[region].daily[self.parse_day(start_date)][self.statistic]
         infection_rate = country.regions[region].get_infection_rate()
         population = int(country.regions[region].population)
 
-        previous_cases = current
-
-        int_date = country.regions[region].parse_day(start_date)
+        int_date = self.parse_day(start_date)
         lag = model.mobility_lag
 
         week_prediction = []
@@ -132,13 +140,35 @@ class Trainer:
         return week_prediction
 
 
+    def parse_day(self, date_string):
+        initial_date = date(2020, 1, 1).toordinal()
+
+        split = [int(a) for a in date_string.split('-')]
+
+        return date(split[0], split[1], split[2]).toordinal() - initial_date
+
 if __name__ == '__main__':
 
     scores = []
     for state in CaseData().get_country('US').regions.keys():
         if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
             continue
-        trainer = Trainer(10000, state)
+        trainer = Trainer(10000, state, 'Cases')
+
+        top_models = trainer.train(1)
+
+        for model in top_models[:1]:
+            print(state)
+            print(trainer.predict('US', state, model, "2020-03-30"), model.score)
+            scores.append(model.score)
+
+    print(sum(scores) / len(scores))
+
+    scores = []
+    for state in CaseData().get_country('US').regions.keys():
+        if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
+            continue
+        trainer = Trainer(10000, state, 'Fatalities')
 
         top_models = trainer.train(1)
 
