@@ -112,33 +112,40 @@ class Trainer:
             cumulative_stat = self.case_data.get_country('US').regions[self.state].cumulative[self.parse_day("2020-03-30")][self.statistic]
             model.score = self.rmsle(model_predictions, cumulative_stat)
 
-
     def predict(self, country_name, region, model, start_date):
         country = self.case_data.get_country(country_name)
         previous_cases = country.regions[region].daily[self.parse_day(start_date)][self.statistic]
         infection_rate = country.regions[region].get_infection_rate()
+        fatality_ratio = country.regions[region].get_fatality_ratio()
         population = int(country.regions[region].population)
 
         int_date = self.parse_day(start_date)
         lag = model.mobility_lag
 
         week_prediction = []
-        for day in range(7):
-            mobility_stats = []
-            for category in self.movement_data.states[region].categories.values():
-                movement_stat = []
-                for date in range(int_date + day - lag - 4, int_date + day - lag + 1):
-                    try:
-                        movement_stat.append(category[date]['value'])
-                    except:
-                        continue
-                mobility_stats.append(sum(movement_stat) / len(movement_stat))
-            prediction = model.predict(previous_cases, mobility_stats, infection_rate, population)
-            week_prediction.append(prediction)
-            previous_cases = prediction
+        if self.statistic == 'Cases':
+            for day in range(7):
+                mobility_stats = []
+                for category in self.movement_data.states[region].categories.values():
+                    movement_stat = []
+                    for date in range(int_date + day - lag - 4, int_date + day - lag + 1):
+                        try:
+                            movement_stat.append(category[date]['value'])
+                        except:
+                            continue
+                    mobility_stats.append(sum(movement_stat) / len(movement_stat))
+                prediction = model.predict(previous_cases, mobility_stats, infection_rate, population)
+                week_prediction.append(prediction)
+                previous_cases = prediction
+        else:
+            for day in range(7):
+                week_ago_cases = 0
+                for i in range(self.parse_day(start_date) - 8 + day, self.parse_day(start_date) - 5 + day):
+                    week_ago_cases += country.regions[region].daily[i]['Cases']
+                prediction = int(fatality_ratio * week_ago_cases / 3)
+                week_prediction.append(prediction)
 
         return week_prediction
-
 
     def parse_day(self, date_string):
         initial_date = date(2020, 1, 1).toordinal()
@@ -149,7 +156,7 @@ class Trainer:
 
 if __name__ == '__main__':
 
-    scores = []
+    '''scores = []
     for state in CaseData().get_country('US').regions.keys():
         if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
             continue
@@ -162,7 +169,7 @@ if __name__ == '__main__':
             print(trainer.predict('US', state, model, "2020-03-30"), model.score)
             scores.append(model.score)
 
-    print(sum(scores) / len(scores))
+    print(sum(scores) / len(scores))'''
 
     scores = []
     for state in CaseData().get_country('US').regions.keys():
@@ -174,6 +181,7 @@ if __name__ == '__main__':
 
         for model in top_models[:1]:
             print(state)
+            print("Fatality ratio to cases 7 days prior:", CaseData().get_country('US').regions[state].get_fatality_ratio())
             print(trainer.predict('US', state, model, "2020-03-30"), model.score)
             scores.append(model.score)
 
