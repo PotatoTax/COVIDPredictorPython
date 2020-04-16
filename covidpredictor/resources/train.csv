@@ -82,6 +82,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 81,,Afghanistan,2020-04-11,555.0,18.0
 82,,Afghanistan,2020-04-12,607.0,18.0
 83,,Afghanistan,2020-04-13,665.0,21.0
+84,,Afghanistan,2020-04-14,714.0,23.0
 115,,Albania,2020-01-22,0.0,0.0
 116,,Albania,2020-01-23,0.0,0.0
 117,,Albania,2020-01-24,0.0,0.0
@@ -165,6 +166,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 195,,Albania,2020-04-11,433.0,23.0
 196,,Albania,2020-04-12,446.0,23.0
 197,,Albania,2020-04-13,467.0,23.0
+198,,Albania,2020-04-14,475.0,24.0
 229,,Algeria,2020-01-22,0.0,0.0
 230,,Algeria,2020-01-23,0.0,0.0
 231,,Algeria,2020-01-24,0.0,0.0
@@ -248,6 +250,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 309,,Algeria,2020-04-11,1825.0,275.0
 310,,Algeria,2020-04-12,1914.0,293.0
 311,,Algeria,2020-04-13,1983.0,313.0
+312,,Algeria,2020-04-14,2070.0,326.0
 343,,Andorra,2020-01-22,0.0,0.0
 344,,Andorra,2020-01-23,0.0,0.0
 345,,Andorra,2020-01-24,0.0,0.0
@@ -331,6 +334,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 423,,Andorra,2020-04-11,601.0,26.0
 424,,Andorra,2020-04-12,638.0,29.0
 425,,Andorra,2020-04-13,646.0,29.0
+426,,Andorra,2020-04-14,659.0,31.0
 457,,Angola,2020-01-22,0.0,0.0
 458,,Angola,2020-01-23,0.0,0.0
 459,,Angola,2020-01-24,0.0,0.0
@@ -414,6 +418,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 537,,Angola,2020-04-11,19.0,2.0
 538,,Angola,2020-04-12,19.0,2.0
 539,,Angola,2020-04-13,19.0,2.0
+540,,Angola,2020-04-14,19.0,2.0
 571,,Antigua and Barbuda,2020-01-22,0.0,0.0
 572,,Antigua and Barbuda,2020-01-23,0.0,0.0
 573,,Antigua and Barbuda,2020-01-24,0.0,0.0
@@ -497,6 +502,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 651,,Antigua and Barbuda,2020-04-11,21.0,2.0
 652,,Antigua and Barbuda,2020-04-12,21.0,2.0
 653,,Antigua and Barbuda,2020-04-13,23.0,2.0
+654,,Antigua and Barbuda,2020-04-14,23.0,2.0
 685,,Argentina,2020-01-22,0.0,0.0
 686,,Argentina,2020-01-23,0.0,0.0
 687,,Argentina,2020-01-24,0.0,0.0
@@ -580,6 +586,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 765,,Argentina,2020-04-11,1975.0,83.0
 766,,Argentina,2020-04-12,2142.0,90.0
 767,,Argentina,2020-04-13,2208.0,97.0
+768,,Argentina,2020-04-14,2277.0,102.0
 799,,Armenia,2020-01-22,0.0,0.0
 800,,Armenia,2020-01-23,0.0,0.0
 801,,Armenia,2020-01-24,0.0,0.0
@@ -663,6 +670,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 879,,Armenia,2020-04-11,967.0,13.0
 880,,Armenia,2020-04-12,1013.0,13.0
 881,,Armenia,2020-04-13,1039.0,14.0
+882,,Armenia,2020-04-14,1067.0,16.0
 913,Australian Capital Territory,Australia,2020-01-22,0.0,0.0
 914,Australian Capital Territory,Australia,2020-01-23,0.0,0.0
 915,Australian Capital Territory,Australia,2020-01-24,0.0,0.0
@@ -746,6 +754,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 993,Australian Capital Territory,Australia,2020-04-11,103.0,2.0
 994,Australian Capital Territory,Australia,2020-04-12,103.0,2.0
 995,Australian Capital Territory,Australia,2020-04-13,102.0,2.0
+996,Australian Capital Territory,Australia,2020-04-14,103.0,2.0
 1027,New South Wales,Australia,2020-01-22,0.0,0.0
 1028,New South Wales,Australia,2020-01-23,0.0,0.0
 1029,New South Wales,Australia,2020-01-24,0.0,0.0
@@ -829,6 +838,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1107,New South Wales,Australia,2020-04-11,2857.0,23.0
 1108,New South Wales,Australia,2020-04-12,2857.0,24.0
 1109,New South Wales,Australia,2020-04-13,2863.0,25.0
+1110,New South Wales,Australia,2020-04-14,2870.0,25.0
 1141,Northern Territory,Australia,2020-01-22,0.0,0.0
 1142,Northern Territory,Australia,2020-01-23,0.0,0.0
 1143,Northern Territory,Australia,2020-01-24,0.0,0.0
@@ -912,6 +922,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1221,Northern Territory,Australia,2020-04-11,28.0,0.0
 1222,Northern Territory,Australia,2020-04-12,28.0,0.0
 1223,Northern Territory,Australia,2020-04-13,28.0,0.0
+1224,Northern Territory,Australia,2020-04-14,28.0,0.0
 1255,Queensland,Australia,2020-01-22,0.0,0.0
 1256,Queensland,Australia,2020-01-23,0.0,0.0
 1257,Queensland,Australia,2020-01-24,0.0,0.0
@@ -995,6 +1006,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1335,Queensland,Australia,2020-04-11,974.0,5.0
 1336,Queensland,Australia,2020-04-12,983.0,5.0
 1337,Queensland,Australia,2020-04-13,987.0,5.0
+1338,Queensland,Australia,2020-04-14,998.0,5.0
 1369,South Australia,Australia,2020-01-22,0.0,0.0
 1370,South Australia,Australia,2020-01-23,0.0,0.0
 1371,South Australia,Australia,2020-01-24,0.0,0.0
@@ -1078,6 +1090,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1449,South Australia,Australia,2020-04-11,429.0,3.0
 1450,South Australia,Australia,2020-04-12,429.0,4.0
 1451,South Australia,Australia,2020-04-13,429.0,4.0
+1452,South Australia,Australia,2020-04-14,433.0,4.0
 1483,Tasmania,Australia,2020-01-22,0.0,0.0
 1484,Tasmania,Australia,2020-01-23,0.0,0.0
 1485,Tasmania,Australia,2020-01-24,0.0,0.0
@@ -1161,6 +1174,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1563,Tasmania,Australia,2020-04-11,133.0,4.0
 1564,Tasmania,Australia,2020-04-12,133.0,5.0
 1565,Tasmania,Australia,2020-04-13,144.0,5.0
+1566,Tasmania,Australia,2020-04-14,165.0,6.0
 1597,Victoria,Australia,2020-01-22,0.0,0.0
 1598,Victoria,Australia,2020-01-23,0.0,0.0
 1599,Victoria,Australia,2020-01-24,0.0,0.0
@@ -1244,6 +1258,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1677,Victoria,Australia,2020-04-11,1265.0,14.0
 1678,Victoria,Australia,2020-04-12,1268.0,14.0
 1679,Victoria,Australia,2020-04-13,1281.0,14.0
+1680,Victoria,Australia,2020-04-14,1291.0,14.0
 1711,Western Australia,Australia,2020-01-22,0.0,0.0
 1712,Western Australia,Australia,2020-01-23,0.0,0.0
 1713,Western Australia,Australia,2020-01-24,0.0,0.0
@@ -1327,6 +1342,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1791,Western Australia,Australia,2020-04-11,514.0,6.0
 1792,Western Australia,Australia,2020-04-12,514.0,6.0
 1793,Western Australia,Australia,2020-04-13,517.0,6.0
+1794,Western Australia,Australia,2020-04-14,527.0,6.0
 1825,,Austria,2020-01-22,0.0,0.0
 1826,,Austria,2020-01-23,0.0,0.0
 1827,,Austria,2020-01-24,0.0,0.0
@@ -1410,6 +1426,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 1905,,Austria,2020-04-11,13806.0,337.0
 1906,,Austria,2020-04-12,13945.0,350.0
 1907,,Austria,2020-04-13,14041.0,368.0
+1908,,Austria,2020-04-14,14226.0,384.0
 1939,,Azerbaijan,2020-01-22,0.0,0.0
 1940,,Azerbaijan,2020-01-23,0.0,0.0
 1941,,Azerbaijan,2020-01-24,0.0,0.0
@@ -1493,6 +1510,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2019,,Azerbaijan,2020-04-11,1058.0,11.0
 2020,,Azerbaijan,2020-04-12,1098.0,11.0
 2021,,Azerbaijan,2020-04-13,1148.0,12.0
+2022,,Azerbaijan,2020-04-14,1197.0,13.0
 2053,,Bahamas,2020-01-22,0.0,0.0
 2054,,Bahamas,2020-01-23,0.0,0.0
 2055,,Bahamas,2020-01-24,0.0,0.0
@@ -1576,6 +1594,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2133,,Bahamas,2020-04-11,46.0,8.0
 2134,,Bahamas,2020-04-12,46.0,8.0
 2135,,Bahamas,2020-04-13,47.0,8.0
+2136,,Bahamas,2020-04-14,49.0,8.0
 2167,,Bahrain,2020-01-22,0.0,0.0
 2168,,Bahrain,2020-01-23,0.0,0.0
 2169,,Bahrain,2020-01-24,0.0,0.0
@@ -1659,6 +1678,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2247,,Bahrain,2020-04-11,1040.0,6.0
 2248,,Bahrain,2020-04-12,1136.0,6.0
 2249,,Bahrain,2020-04-13,1361.0,6.0
+2250,,Bahrain,2020-04-14,1528.0,7.0
 2281,,Bangladesh,2020-01-22,0.0,0.0
 2282,,Bangladesh,2020-01-23,0.0,0.0
 2283,,Bangladesh,2020-01-24,0.0,0.0
@@ -1742,6 +1762,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2361,,Bangladesh,2020-04-11,482.0,30.0
 2362,,Bangladesh,2020-04-12,621.0,34.0
 2363,,Bangladesh,2020-04-13,803.0,39.0
+2364,,Bangladesh,2020-04-14,1012.0,46.0
 2395,,Barbados,2020-01-22,0.0,0.0
 2396,,Barbados,2020-01-23,0.0,0.0
 2397,,Barbados,2020-01-24,0.0,0.0
@@ -1825,6 +1846,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2475,,Barbados,2020-04-11,68.0,4.0
 2476,,Barbados,2020-04-12,71.0,4.0
 2477,,Barbados,2020-04-13,72.0,4.0
+2478,,Barbados,2020-04-14,72.0,4.0
 2509,,Belarus,2020-01-22,0.0,0.0
 2510,,Belarus,2020-01-23,0.0,0.0
 2511,,Belarus,2020-01-24,0.0,0.0
@@ -1908,6 +1930,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2589,,Belarus,2020-04-11,2226.0,23.0
 2590,,Belarus,2020-04-12,2578.0,26.0
 2591,,Belarus,2020-04-13,2919.0,29.0
+2592,,Belarus,2020-04-14,3281.0,33.0
 2623,,Belgium,2020-01-22,0.0,0.0
 2624,,Belgium,2020-01-23,0.0,0.0
 2625,,Belgium,2020-01-24,0.0,0.0
@@ -1991,6 +2014,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2703,,Belgium,2020-04-11,28018.0,3346.0
 2704,,Belgium,2020-04-12,29647.0,3600.0
 2705,,Belgium,2020-04-13,30589.0,3903.0
+2706,,Belgium,2020-04-14,31119.0,4157.0
 2737,,Belize,2020-01-22,0.0,0.0
 2738,,Belize,2020-01-23,0.0,0.0
 2739,,Belize,2020-01-24,0.0,0.0
@@ -2074,6 +2098,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2817,,Belize,2020-04-11,13.0,2.0
 2818,,Belize,2020-04-12,14.0,2.0
 2819,,Belize,2020-04-13,18.0,2.0
+2820,,Belize,2020-04-14,18.0,2.0
 2851,,Benin,2020-01-22,0.0,0.0
 2852,,Benin,2020-01-23,0.0,0.0
 2853,,Benin,2020-01-24,0.0,0.0
@@ -2157,6 +2182,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 2931,,Benin,2020-04-11,35.0,1.0
 2932,,Benin,2020-04-12,35.0,1.0
 2933,,Benin,2020-04-13,35.0,1.0
+2934,,Benin,2020-04-14,35.0,1.0
 2965,,Bhutan,2020-01-22,0.0,0.0
 2966,,Bhutan,2020-01-23,0.0,0.0
 2967,,Bhutan,2020-01-24,0.0,0.0
@@ -2240,6 +2266,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3045,,Bhutan,2020-04-11,5.0,0.0
 3046,,Bhutan,2020-04-12,5.0,0.0
 3047,,Bhutan,2020-04-13,5.0,0.0
+3048,,Bhutan,2020-04-14,5.0,0.0
 3079,,Bolivia,2020-01-22,0.0,0.0
 3080,,Bolivia,2020-01-23,0.0,0.0
 3081,,Bolivia,2020-01-24,0.0,0.0
@@ -2323,6 +2350,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3159,,Bolivia,2020-04-11,275.0,20.0
 3160,,Bolivia,2020-04-12,300.0,24.0
 3161,,Bolivia,2020-04-13,330.0,27.0
+3162,,Bolivia,2020-04-14,354.0,28.0
 3193,,Bosnia and Herzegovina,2020-01-22,0.0,0.0
 3194,,Bosnia and Herzegovina,2020-01-23,0.0,0.0
 3195,,Bosnia and Herzegovina,2020-01-24,0.0,0.0
@@ -2406,6 +2434,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3273,,Bosnia and Herzegovina,2020-04-11,946.0,37.0
 3274,,Bosnia and Herzegovina,2020-04-12,1009.0,39.0
 3275,,Bosnia and Herzegovina,2020-04-13,1037.0,39.0
+3276,,Bosnia and Herzegovina,2020-04-14,1083.0,40.0
 3307,,Botswana,2020-01-22,0.0,0.0
 3308,,Botswana,2020-01-23,0.0,0.0
 3309,,Botswana,2020-01-24,0.0,0.0
@@ -2489,6 +2518,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3387,,Botswana,2020-04-11,13.0,1.0
 3388,,Botswana,2020-04-12,13.0,1.0
 3389,,Botswana,2020-04-13,13.0,1.0
+3390,,Botswana,2020-04-14,13.0,1.0
 3421,,Brazil,2020-01-22,0.0,0.0
 3422,,Brazil,2020-01-23,0.0,0.0
 3423,,Brazil,2020-01-24,0.0,0.0
@@ -2572,6 +2602,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3501,,Brazil,2020-04-11,20727.0,1124.0
 3502,,Brazil,2020-04-12,22192.0,1223.0
 3503,,Brazil,2020-04-13,23430.0,1328.0
+3504,,Brazil,2020-04-14,25262.0,1532.0
 3535,,Brunei,2020-01-22,0.0,0.0
 3536,,Brunei,2020-01-23,0.0,0.0
 3537,,Brunei,2020-01-24,0.0,0.0
@@ -2655,6 +2686,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3615,,Brunei,2020-04-11,136.0,1.0
 3616,,Brunei,2020-04-12,136.0,1.0
 3617,,Brunei,2020-04-13,136.0,1.0
+3618,,Brunei,2020-04-14,136.0,1.0
 3649,,Bulgaria,2020-01-22,0.0,0.0
 3650,,Bulgaria,2020-01-23,0.0,0.0
 3651,,Bulgaria,2020-01-24,0.0,0.0
@@ -2738,6 +2770,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3729,,Bulgaria,2020-04-11,661.0,28.0
 3730,,Bulgaria,2020-04-12,675.0,29.0
 3731,,Bulgaria,2020-04-13,685.0,32.0
+3732,,Bulgaria,2020-04-14,713.0,35.0
 3763,,Burkina Faso,2020-01-22,0.0,0.0
 3764,,Burkina Faso,2020-01-23,0.0,0.0
 3765,,Burkina Faso,2020-01-24,0.0,0.0
@@ -2821,6 +2854,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3843,,Burkina Faso,2020-04-11,484.0,27.0
 3844,,Burkina Faso,2020-04-12,497.0,27.0
 3845,,Burkina Faso,2020-04-13,497.0,27.0
+3846,,Burkina Faso,2020-04-14,528.0,30.0
 3877,,Burma,2020-01-22,0.0,0.0
 3878,,Burma,2020-01-23,0.0,0.0
 3879,,Burma,2020-01-24,0.0,0.0
@@ -2904,6 +2938,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 3957,,Burma,2020-04-11,38.0,3.0
 3958,,Burma,2020-04-12,41.0,4.0
 3959,,Burma,2020-04-13,62.0,4.0
+3960,,Burma,2020-04-14,63.0,4.0
 3991,,Burundi,2020-01-22,0.0,0.0
 3992,,Burundi,2020-01-23,0.0,0.0
 3993,,Burundi,2020-01-24,0.0,0.0
@@ -2987,6 +3022,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4071,,Burundi,2020-04-11,5.0,0.0
 4072,,Burundi,2020-04-12,5.0,0.0
 4073,,Burundi,2020-04-13,5.0,1.0
+4074,,Burundi,2020-04-14,5.0,1.0
 4105,,Cabo Verde,2020-01-22,0.0,0.0
 4106,,Cabo Verde,2020-01-23,0.0,0.0
 4107,,Cabo Verde,2020-01-24,0.0,0.0
@@ -3070,6 +3106,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4185,,Cabo Verde,2020-04-11,8.0,1.0
 4186,,Cabo Verde,2020-04-12,8.0,1.0
 4187,,Cabo Verde,2020-04-13,10.0,1.0
+4188,,Cabo Verde,2020-04-14,11.0,1.0
 4219,,Cambodia,2020-01-22,0.0,0.0
 4220,,Cambodia,2020-01-23,0.0,0.0
 4221,,Cambodia,2020-01-24,0.0,0.0
@@ -3153,6 +3190,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4299,,Cambodia,2020-04-11,120.0,0.0
 4300,,Cambodia,2020-04-12,122.0,0.0
 4301,,Cambodia,2020-04-13,122.0,0.0
+4302,,Cambodia,2020-04-14,122.0,0.0
 4333,,Cameroon,2020-01-22,0.0,0.0
 4334,,Cameroon,2020-01-23,0.0,0.0
 4335,,Cameroon,2020-01-24,0.0,0.0
@@ -3236,6 +3274,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4413,,Cameroon,2020-04-11,820.0,12.0
 4414,,Cameroon,2020-04-12,820.0,12.0
 4415,,Cameroon,2020-04-13,820.0,12.0
+4416,,Cameroon,2020-04-14,848.0,14.0
 4447,Alberta,Canada,2020-01-22,0.0,0.0
 4448,Alberta,Canada,2020-01-23,0.0,0.0
 4449,Alberta,Canada,2020-01-24,0.0,0.0
@@ -3319,6 +3358,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4527,Alberta,Canada,2020-04-11,1567.0,40.0
 4528,Alberta,Canada,2020-04-12,1567.0,40.0
 4529,Alberta,Canada,2020-04-13,1732.0,46.0
+4530,Alberta,Canada,2020-04-14,1870.0,48.0
 4561,British Columbia,Canada,2020-01-22,0.0,0.0
 4562,British Columbia,Canada,2020-01-23,0.0,0.0
 4563,British Columbia,Canada,2020-01-24,0.0,0.0
@@ -3402,6 +3442,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4641,British Columbia,Canada,2020-04-11,1445.0,58.0
 4642,British Columbia,Canada,2020-04-12,1445.0,58.0
 4643,British Columbia,Canada,2020-04-13,1490.0,69.0
+4644,British Columbia,Canada,2020-04-14,1490.0,69.0
 4675,Manitoba,Canada,2020-01-22,0.0,0.0
 4676,Manitoba,Canada,2020-01-23,0.0,0.0
 4677,Manitoba,Canada,2020-01-24,0.0,0.0
@@ -3485,6 +3526,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4755,Manitoba,Canada,2020-04-11,243.0,4.0
 4756,Manitoba,Canada,2020-04-12,242.0,4.0
 4757,Manitoba,Canada,2020-04-13,246.0,4.0
+4758,Manitoba,Canada,2020-04-14,246.0,4.0
 4789,New Brunswick,Canada,2020-01-22,0.0,0.0
 4790,New Brunswick,Canada,2020-01-23,0.0,0.0
 4791,New Brunswick,Canada,2020-01-24,0.0,0.0
@@ -3568,6 +3610,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4869,New Brunswick,Canada,2020-04-11,112.0,0.0
 4870,New Brunswick,Canada,2020-04-12,114.0,0.0
 4871,New Brunswick,Canada,2020-04-13,116.0,0.0
+4872,New Brunswick,Canada,2020-04-14,116.0,0.0
 4903,Newfoundland and Labrador,Canada,2020-01-22,0.0,0.0
 4904,Newfoundland and Labrador,Canada,2020-01-23,0.0,0.0
 4905,Newfoundland and Labrador,Canada,2020-01-24,0.0,0.0
@@ -3651,6 +3694,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 4983,Newfoundland and Labrador,Canada,2020-04-11,241.0,3.0
 4984,Newfoundland and Labrador,Canada,2020-04-12,242.0,3.0
 4985,Newfoundland and Labrador,Canada,2020-04-13,244.0,3.0
+4986,Newfoundland and Labrador,Canada,2020-04-14,244.0,3.0
 5017,Northwest Territories,Canada,2020-01-22,0.0,0.0
 5018,Northwest Territories,Canada,2020-01-23,0.0,0.0
 5019,Northwest Territories,Canada,2020-01-24,0.0,0.0
@@ -3734,6 +3778,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5097,Northwest Territories,Canada,2020-04-11,5.0,0.0
 5098,Northwest Territories,Canada,2020-04-12,5.0,0.0
 5099,Northwest Territories,Canada,2020-04-13,5.0,0.0
+5100,Northwest Territories,Canada,2020-04-14,5.0,0.0
 5131,Nova Scotia,Canada,2020-01-22,0.0,0.0
 5132,Nova Scotia,Canada,2020-01-23,0.0,0.0
 5133,Nova Scotia,Canada,2020-01-24,0.0,0.0
@@ -3817,6 +3862,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5211,Nova Scotia,Canada,2020-04-11,428.0,2.0
 5212,Nova Scotia,Canada,2020-04-12,445.0,2.0
 5213,Nova Scotia,Canada,2020-04-13,474.0,3.0
+5214,Nova Scotia,Canada,2020-04-14,517.0,3.0
 5245,Ontario,Canada,2020-01-22,0.0,0.0
 5246,Ontario,Canada,2020-01-23,0.0,0.0
 5247,Ontario,Canada,2020-01-24,0.0,0.0
@@ -3900,6 +3946,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5325,Ontario,Canada,2020-04-11,6648.0,253.0
 5326,Ontario,Canada,2020-04-12,7049.0,274.0
 5327,Ontario,Canada,2020-04-13,7470.0,291.0
+5328,Ontario,Canada,2020-04-14,7953.0,334.0
 5359,Prince Edward Island,Canada,2020-01-22,0.0,0.0
 5360,Prince Edward Island,Canada,2020-01-23,0.0,0.0
 5361,Prince Edward Island,Canada,2020-01-24,0.0,0.0
@@ -3983,6 +4030,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5439,Prince Edward Island,Canada,2020-04-11,25.0,0.0
 5440,Prince Edward Island,Canada,2020-04-12,25.0,0.0
 5441,Prince Edward Island,Canada,2020-04-13,25.0,0.0
+5442,Prince Edward Island,Canada,2020-04-14,25.0,0.0
 5473,Quebec,Canada,2020-01-22,0.0,0.0
 5474,Quebec,Canada,2020-01-23,0.0,0.0
 5475,Quebec,Canada,2020-01-24,0.0,0.0
@@ -4066,6 +4114,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5553,Quebec,Canada,2020-04-11,12292.0,289.0
 5554,Quebec,Canada,2020-04-12,12846.0,328.0
 5555,Quebec,Canada,2020-04-13,13557.0,360.0
+5556,Quebec,Canada,2020-04-14,14248.0,435.0
 5587,Saskatchewan,Canada,2020-01-22,0.0,0.0
 5588,Saskatchewan,Canada,2020-01-23,0.0,0.0
 5589,Saskatchewan,Canada,2020-01-24,0.0,0.0
@@ -4149,6 +4198,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5667,Saskatchewan,Canada,2020-04-11,289.0,4.0
 5668,Saskatchewan,Canada,2020-04-12,298.0,4.0
 5669,Saskatchewan,Canada,2020-04-13,300.0,4.0
+5670,Saskatchewan,Canada,2020-04-14,300.0,4.0
 5701,Yukon,Canada,2020-01-22,0.0,0.0
 5702,Yukon,Canada,2020-01-23,0.0,0.0
 5703,Yukon,Canada,2020-01-24,0.0,0.0
@@ -4232,6 +4282,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5781,Yukon,Canada,2020-04-11,8.0,0.0
 5782,Yukon,Canada,2020-04-12,8.0,0.0
 5783,Yukon,Canada,2020-04-13,8.0,0.0
+5784,Yukon,Canada,2020-04-14,8.0,0.0
 5815,,Central African Republic,2020-01-22,0.0,0.0
 5816,,Central African Republic,2020-01-23,0.0,0.0
 5817,,Central African Republic,2020-01-24,0.0,0.0
@@ -4315,6 +4366,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 5895,,Central African Republic,2020-04-11,8.0,0.0
 5896,,Central African Republic,2020-04-12,8.0,0.0
 5897,,Central African Republic,2020-04-13,11.0,0.0
+5898,,Central African Republic,2020-04-14,11.0,0.0
 5929,,Chad,2020-01-22,0.0,0.0
 5930,,Chad,2020-01-23,0.0,0.0
 5931,,Chad,2020-01-24,0.0,0.0
@@ -4398,6 +4450,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6009,,Chad,2020-04-11,11.0,0.0
 6010,,Chad,2020-04-12,18.0,0.0
 6011,,Chad,2020-04-13,23.0,0.0
+6012,,Chad,2020-04-14,23.0,0.0
 6043,,Chile,2020-01-22,0.0,0.0
 6044,,Chile,2020-01-23,0.0,0.0
 6045,,Chile,2020-01-24,0.0,0.0
@@ -4481,6 +4534,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6123,,Chile,2020-04-11,6927.0,73.0
 6124,,Chile,2020-04-12,7213.0,80.0
 6125,,Chile,2020-04-13,7525.0,82.0
+6126,,Chile,2020-04-14,7917.0,92.0
 6157,Anhui,China,2020-01-22,1.0,0.0
 6158,Anhui,China,2020-01-23,9.0,0.0
 6159,Anhui,China,2020-01-24,15.0,0.0
@@ -4564,6 +4618,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6237,Anhui,China,2020-04-11,991.0,6.0
 6238,Anhui,China,2020-04-12,991.0,6.0
 6239,Anhui,China,2020-04-13,991.0,6.0
+6240,Anhui,China,2020-04-14,991.0,6.0
 6271,Beijing,China,2020-01-22,14.0,0.0
 6272,Beijing,China,2020-01-23,22.0,0.0
 6273,Beijing,China,2020-01-24,36.0,0.0
@@ -4647,6 +4702,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6351,Beijing,China,2020-04-11,589.0,8.0
 6352,Beijing,China,2020-04-12,589.0,8.0
 6353,Beijing,China,2020-04-13,589.0,8.0
+6354,Beijing,China,2020-04-14,589.0,8.0
 6385,Chongqing,China,2020-01-22,6.0,0.0
 6386,Chongqing,China,2020-01-23,9.0,0.0
 6387,Chongqing,China,2020-01-24,27.0,0.0
@@ -4730,6 +4786,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6465,Chongqing,China,2020-04-11,579.0,6.0
 6466,Chongqing,China,2020-04-12,579.0,6.0
 6467,Chongqing,China,2020-04-13,579.0,6.0
+6468,Chongqing,China,2020-04-14,579.0,6.0
 6499,Fujian,China,2020-01-22,1.0,0.0
 6500,Fujian,China,2020-01-23,5.0,0.0
 6501,Fujian,China,2020-01-24,10.0,0.0
@@ -4813,6 +4870,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6579,Fujian,China,2020-04-11,351.0,1.0
 6580,Fujian,China,2020-04-12,352.0,1.0
 6581,Fujian,China,2020-04-13,352.0,1.0
+6582,Fujian,China,2020-04-14,353.0,1.0
 6613,Gansu,China,2020-01-22,0.0,0.0
 6614,Gansu,China,2020-01-23,2.0,0.0
 6615,Gansu,China,2020-01-24,2.0,0.0
@@ -4896,6 +4954,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6693,Gansu,China,2020-04-11,139.0,2.0
 6694,Gansu,China,2020-04-12,139.0,2.0
 6695,Gansu,China,2020-04-13,139.0,2.0
+6696,Gansu,China,2020-04-14,139.0,2.0
 6727,Guangdong,China,2020-01-22,26.0,0.0
 6728,Guangdong,China,2020-01-23,32.0,0.0
 6729,Guangdong,China,2020-01-24,53.0,0.0
@@ -4979,6 +5038,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6807,Guangdong,China,2020-04-11,1548.0,8.0
 6808,Guangdong,China,2020-04-12,1552.0,8.0
 6809,Guangdong,China,2020-04-13,1555.0,8.0
+6810,Guangdong,China,2020-04-14,1564.0,8.0
 6841,Guangxi,China,2020-01-22,2.0,0.0
 6842,Guangxi,China,2020-01-23,5.0,0.0
 6843,Guangxi,China,2020-01-24,23.0,0.0
@@ -5062,6 +5122,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 6921,Guangxi,China,2020-04-11,254.0,2.0
 6922,Guangxi,China,2020-04-12,254.0,2.0
 6923,Guangxi,China,2020-04-13,254.0,2.0
+6924,Guangxi,China,2020-04-14,254.0,2.0
 6955,Guizhou,China,2020-01-22,1.0,0.0
 6956,Guizhou,China,2020-01-23,3.0,0.0
 6957,Guizhou,China,2020-01-24,3.0,0.0
@@ -5145,6 +5206,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7035,Guizhou,China,2020-04-11,146.0,2.0
 7036,Guizhou,China,2020-04-12,146.0,2.0
 7037,Guizhou,China,2020-04-13,146.0,2.0
+7038,Guizhou,China,2020-04-14,146.0,2.0
 7069,Hainan,China,2020-01-22,4.0,0.0
 7070,Hainan,China,2020-01-23,5.0,0.0
 7071,Hainan,China,2020-01-24,8.0,0.0
@@ -5228,6 +5290,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7149,Hainan,China,2020-04-11,168.0,6.0
 7150,Hainan,China,2020-04-12,168.0,6.0
 7151,Hainan,China,2020-04-13,168.0,6.0
+7152,Hainan,China,2020-04-14,168.0,6.0
 7183,Hebei,China,2020-01-22,1.0,0.0
 7184,Hebei,China,2020-01-23,1.0,1.0
 7185,Hebei,China,2020-01-24,2.0,1.0
@@ -5311,6 +5374,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7263,Hebei,China,2020-04-11,327.0,6.0
 7264,Hebei,China,2020-04-12,327.0,6.0
 7265,Hebei,China,2020-04-13,327.0,6.0
+7266,Hebei,China,2020-04-14,327.0,6.0
 7297,Heilongjiang,China,2020-01-22,0.0,0.0
 7298,Heilongjiang,China,2020-01-23,2.0,0.0
 7299,Heilongjiang,China,2020-01-24,4.0,1.0
@@ -5394,6 +5458,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7377,Heilongjiang,China,2020-04-11,661.0,13.0
 7378,Heilongjiang,China,2020-04-12,684.0,13.0
 7379,Heilongjiang,China,2020-04-13,740.0,13.0
+7380,Heilongjiang,China,2020-04-14,819.0,13.0
 7411,Henan,China,2020-01-22,5.0,0.0
 7412,Henan,China,2020-01-23,5.0,0.0
 7413,Henan,China,2020-01-24,9.0,0.0
@@ -5477,6 +5542,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7491,Henan,China,2020-04-11,1276.0,22.0
 7492,Henan,China,2020-04-12,1276.0,22.0
 7493,Henan,China,2020-04-13,1276.0,22.0
+7494,Henan,China,2020-04-14,1276.0,22.0
 7525,Hong Kong,China,2020-01-22,0.0,0.0
 7526,Hong Kong,China,2020-01-23,2.0,0.0
 7527,Hong Kong,China,2020-01-24,2.0,0.0
@@ -5560,6 +5626,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7605,Hong Kong,China,2020-04-11,1000.0,4.0
 7606,Hong Kong,China,2020-04-12,1004.0,4.0
 7607,Hong Kong,China,2020-04-13,1009.0,4.0
+7608,Hong Kong,China,2020-04-14,1012.0,4.0
 7639,Hubei,China,2020-01-22,444.0,17.0
 7640,Hubei,China,2020-01-23,444.0,17.0
 7641,Hubei,China,2020-01-24,549.0,24.0
@@ -5643,6 +5710,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7719,Hubei,China,2020-04-11,67803.0,3219.0
 7720,Hubei,China,2020-04-12,67803.0,3219.0
 7721,Hubei,China,2020-04-13,67803.0,3221.0
+7722,Hubei,China,2020-04-14,67803.0,3221.0
 7753,Hunan,China,2020-01-22,4.0,0.0
 7754,Hunan,China,2020-01-23,9.0,0.0
 7755,Hunan,China,2020-01-24,24.0,0.0
@@ -5726,6 +5794,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7833,Hunan,China,2020-04-11,1019.0,4.0
 7834,Hunan,China,2020-04-12,1019.0,4.0
 7835,Hunan,China,2020-04-13,1019.0,4.0
+7836,Hunan,China,2020-04-14,1019.0,4.0
 7867,Inner Mongolia,China,2020-01-22,0.0,0.0
 7868,Inner Mongolia,China,2020-01-23,0.0,0.0
 7869,Inner Mongolia,China,2020-01-24,1.0,0.0
@@ -5809,6 +5878,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 7947,Inner Mongolia,China,2020-04-11,155.0,1.0
 7948,Inner Mongolia,China,2020-04-12,189.0,1.0
 7949,Inner Mongolia,China,2020-04-13,190.0,1.0
+7950,Inner Mongolia,China,2020-04-14,190.0,1.0
 7981,Jiangsu,China,2020-01-22,1.0,0.0
 7982,Jiangsu,China,2020-01-23,5.0,0.0
 7983,Jiangsu,China,2020-01-24,9.0,0.0
@@ -5892,6 +5962,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8061,Jiangsu,China,2020-04-11,652.0,0.0
 8062,Jiangsu,China,2020-04-12,653.0,0.0
 8063,Jiangsu,China,2020-04-13,653.0,0.0
+8064,Jiangsu,China,2020-04-14,653.0,0.0
 8095,Jiangxi,China,2020-01-22,2.0,0.0
 8096,Jiangxi,China,2020-01-23,7.0,0.0
 8097,Jiangxi,China,2020-01-24,18.0,0.0
@@ -5975,6 +6046,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8175,Jiangxi,China,2020-04-11,937.0,1.0
 8176,Jiangxi,China,2020-04-12,937.0,1.0
 8177,Jiangxi,China,2020-04-13,937.0,1.0
+8178,Jiangxi,China,2020-04-14,937.0,1.0
 8209,Jilin,China,2020-01-22,0.0,0.0
 8210,Jilin,China,2020-01-23,1.0,0.0
 8211,Jilin,China,2020-01-24,3.0,0.0
@@ -6058,6 +6130,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8289,Jilin,China,2020-04-11,98.0,1.0
 8290,Jilin,China,2020-04-12,99.0,1.0
 8291,Jilin,China,2020-04-13,100.0,1.0
+8292,Jilin,China,2020-04-14,100.0,1.0
 8323,Liaoning,China,2020-01-22,2.0,0.0
 8324,Liaoning,China,2020-01-23,3.0,0.0
 8325,Liaoning,China,2020-01-24,4.0,0.0
@@ -6141,6 +6214,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8403,Liaoning,China,2020-04-11,145.0,2.0
 8404,Liaoning,China,2020-04-12,145.0,2.0
 8405,Liaoning,China,2020-04-13,145.0,2.0
+8406,Liaoning,China,2020-04-14,145.0,2.0
 8437,Macau,China,2020-01-22,1.0,0.0
 8438,Macau,China,2020-01-23,2.0,0.0
 8439,Macau,China,2020-01-24,2.0,0.0
@@ -6224,6 +6298,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8517,Macau,China,2020-04-11,45.0,0.0
 8518,Macau,China,2020-04-12,45.0,0.0
 8519,Macau,China,2020-04-13,45.0,0.0
+8520,Macau,China,2020-04-14,45.0,0.0
 8551,Ningxia,China,2020-01-22,1.0,0.0
 8552,Ningxia,China,2020-01-23,1.0,0.0
 8553,Ningxia,China,2020-01-24,2.0,0.0
@@ -6307,6 +6382,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8631,Ningxia,China,2020-04-11,75.0,0.0
 8632,Ningxia,China,2020-04-12,75.0,0.0
 8633,Ningxia,China,2020-04-13,75.0,0.0
+8634,Ningxia,China,2020-04-14,75.0,0.0
 8665,Qinghai,China,2020-01-22,0.0,0.0
 8666,Qinghai,China,2020-01-23,0.0,0.0
 8667,Qinghai,China,2020-01-24,0.0,0.0
@@ -6390,6 +6466,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8745,Qinghai,China,2020-04-11,18.0,0.0
 8746,Qinghai,China,2020-04-12,18.0,0.0
 8747,Qinghai,China,2020-04-13,18.0,0.0
+8748,Qinghai,China,2020-04-14,18.0,0.0
 8779,Shaanxi,China,2020-01-22,0.0,0.0
 8780,Shaanxi,China,2020-01-23,3.0,0.0
 8781,Shaanxi,China,2020-01-24,5.0,0.0
@@ -6473,6 +6550,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8859,Shaanxi,China,2020-04-11,256.0,3.0
 8860,Shaanxi,China,2020-04-12,256.0,3.0
 8861,Shaanxi,China,2020-04-13,256.0,3.0
+8862,Shaanxi,China,2020-04-14,256.0,3.0
 8893,Shandong,China,2020-01-22,2.0,0.0
 8894,Shandong,China,2020-01-23,6.0,0.0
 8895,Shandong,China,2020-01-24,15.0,0.0
@@ -6556,6 +6634,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 8973,Shandong,China,2020-04-11,784.0,7.0
 8974,Shandong,China,2020-04-12,784.0,7.0
 8975,Shandong,China,2020-04-13,784.0,7.0
+8976,Shandong,China,2020-04-14,784.0,7.0
 9007,Shanghai,China,2020-01-22,9.0,0.0
 9008,Shanghai,China,2020-01-23,16.0,0.0
 9009,Shanghai,China,2020-01-24,20.0,0.0
@@ -6639,6 +6718,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9087,Shanghai,China,2020-04-11,555.0,7.0
 9088,Shanghai,China,2020-04-12,607.0,7.0
 9089,Shanghai,China,2020-04-13,618.0,7.0
+9090,Shanghai,China,2020-04-14,618.0,7.0
 9121,Shanxi,China,2020-01-22,1.0,0.0
 9122,Shanxi,China,2020-01-23,1.0,0.0
 9123,Shanxi,China,2020-01-24,1.0,0.0
@@ -6722,6 +6802,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9201,Shanxi,China,2020-04-11,172.0,0.0
 9202,Shanxi,China,2020-04-12,172.0,0.0
 9203,Shanxi,China,2020-04-13,173.0,0.0
+9204,Shanxi,China,2020-04-14,173.0,0.0
 9235,Sichuan,China,2020-01-22,5.0,0.0
 9236,Sichuan,China,2020-01-23,8.0,0.0
 9237,Sichuan,China,2020-01-24,15.0,0.0
@@ -6805,6 +6886,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9315,Sichuan,China,2020-04-11,560.0,3.0
 9316,Sichuan,China,2020-04-12,560.0,3.0
 9317,Sichuan,China,2020-04-13,560.0,3.0
+9318,Sichuan,China,2020-04-14,560.0,3.0
 9349,Tianjin,China,2020-01-22,4.0,0.0
 9350,Tianjin,China,2020-01-23,4.0,0.0
 9351,Tianjin,China,2020-01-24,8.0,0.0
@@ -6888,6 +6970,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9429,Tianjin,China,2020-04-11,183.0,3.0
 9430,Tianjin,China,2020-04-12,183.0,3.0
 9431,Tianjin,China,2020-04-13,184.0,3.0
+9432,Tianjin,China,2020-04-14,185.0,3.0
 9463,Tibet,China,2020-01-22,0.0,0.0
 9464,Tibet,China,2020-01-23,0.0,0.0
 9465,Tibet,China,2020-01-24,0.0,0.0
@@ -6971,6 +7054,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9543,Tibet,China,2020-04-11,1.0,0.0
 9544,Tibet,China,2020-04-12,1.0,0.0
 9545,Tibet,China,2020-04-13,1.0,0.0
+9546,Tibet,China,2020-04-14,1.0,0.0
 9577,Xinjiang,China,2020-01-22,0.0,0.0
 9578,Xinjiang,China,2020-01-23,2.0,0.0
 9579,Xinjiang,China,2020-01-24,2.0,0.0
@@ -7054,6 +7138,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9657,Xinjiang,China,2020-04-11,76.0,3.0
 9658,Xinjiang,China,2020-04-12,76.0,3.0
 9659,Xinjiang,China,2020-04-13,76.0,3.0
+9660,Xinjiang,China,2020-04-14,76.0,3.0
 9691,Yunnan,China,2020-01-22,1.0,0.0
 9692,Yunnan,China,2020-01-23,2.0,0.0
 9693,Yunnan,China,2020-01-24,5.0,0.0
@@ -7137,6 +7222,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9771,Yunnan,China,2020-04-11,184.0,2.0
 9772,Yunnan,China,2020-04-12,184.0,2.0
 9773,Yunnan,China,2020-04-13,184.0,2.0
+9774,Yunnan,China,2020-04-14,184.0,2.0
 9805,Zhejiang,China,2020-01-22,10.0,0.0
 9806,Zhejiang,China,2020-01-23,27.0,0.0
 9807,Zhejiang,China,2020-01-24,43.0,0.0
@@ -7220,6 +7306,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9885,Zhejiang,China,2020-04-11,1267.0,1.0
 9886,Zhejiang,China,2020-04-12,1267.0,1.0
 9887,Zhejiang,China,2020-04-13,1267.0,1.0
+9888,Zhejiang,China,2020-04-14,1267.0,1.0
 9919,,Colombia,2020-01-22,0.0,0.0
 9920,,Colombia,2020-01-23,0.0,0.0
 9921,,Colombia,2020-01-24,0.0,0.0
@@ -7303,6 +7390,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 9999,,Colombia,2020-04-11,2709.0,100.0
 10000,,Colombia,2020-04-12,2776.0,109.0
 10001,,Colombia,2020-04-13,2852.0,112.0
+10002,,Colombia,2020-04-14,2979.0,127.0
 10033,,Congo (Brazzaville),2020-01-22,0.0,0.0
 10034,,Congo (Brazzaville),2020-01-23,0.0,0.0
 10035,,Congo (Brazzaville),2020-01-24,0.0,0.0
@@ -7386,6 +7474,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10113,,Congo (Brazzaville),2020-04-11,60.0,5.0
 10114,,Congo (Brazzaville),2020-04-12,60.0,5.0
 10115,,Congo (Brazzaville),2020-04-13,60.0,5.0
+10116,,Congo (Brazzaville),2020-04-14,60.0,5.0
 10147,,Congo (Kinshasa),2020-01-22,0.0,0.0
 10148,,Congo (Kinshasa),2020-01-23,0.0,0.0
 10149,,Congo (Kinshasa),2020-01-24,0.0,0.0
@@ -7469,6 +7558,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10227,,Congo (Kinshasa),2020-04-11,223.0,20.0
 10228,,Congo (Kinshasa),2020-04-12,234.0,20.0
 10229,,Congo (Kinshasa),2020-04-13,235.0,20.0
+10230,,Congo (Kinshasa),2020-04-14,241.0,20.0
 10261,,Costa Rica,2020-01-22,0.0,0.0
 10262,,Costa Rica,2020-01-23,0.0,0.0
 10263,,Costa Rica,2020-01-24,0.0,0.0
@@ -7552,6 +7642,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10341,,Costa Rica,2020-04-11,577.0,3.0
 10342,,Costa Rica,2020-04-12,595.0,3.0
 10343,,Costa Rica,2020-04-13,612.0,3.0
+10344,,Costa Rica,2020-04-14,618.0,3.0
 10375,,Cote d'Ivoire,2020-01-22,0.0,0.0
 10376,,Cote d'Ivoire,2020-01-23,0.0,0.0
 10377,,Cote d'Ivoire,2020-01-24,0.0,0.0
@@ -7635,6 +7726,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10455,,Cote d'Ivoire,2020-04-11,533.0,4.0
 10456,,Cote d'Ivoire,2020-04-12,574.0,5.0
 10457,,Cote d'Ivoire,2020-04-13,626.0,6.0
+10458,,Cote d'Ivoire,2020-04-14,638.0,6.0
 10489,,Croatia,2020-01-22,0.0,0.0
 10490,,Croatia,2020-01-23,0.0,0.0
 10491,,Croatia,2020-01-24,0.0,0.0
@@ -7718,6 +7810,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10569,,Croatia,2020-04-11,1534.0,21.0
 10570,,Croatia,2020-04-12,1600.0,23.0
 10571,,Croatia,2020-04-13,1650.0,25.0
+10572,,Croatia,2020-04-14,1704.0,31.0
 10603,,Cuba,2020-01-22,0.0,0.0
 10604,,Cuba,2020-01-23,0.0,0.0
 10605,,Cuba,2020-01-24,0.0,0.0
@@ -7801,6 +7894,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10683,,Cuba,2020-04-11,620.0,16.0
 10684,,Cuba,2020-04-12,669.0,18.0
 10685,,Cuba,2020-04-13,726.0,21.0
+10686,,Cuba,2020-04-14,766.0,21.0
 10717,,Cyprus,2020-01-22,0.0,0.0
 10718,,Cyprus,2020-01-23,0.0,0.0
 10719,,Cyprus,2020-01-24,0.0,0.0
@@ -7884,6 +7978,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10797,,Cyprus,2020-04-11,616.0,10.0
 10798,,Cyprus,2020-04-12,633.0,11.0
 10799,,Cyprus,2020-04-13,662.0,12.0
+10800,,Cyprus,2020-04-14,695.0,12.0
 10831,,Czechia,2020-01-22,0.0,0.0
 10832,,Czechia,2020-01-23,0.0,0.0
 10833,,Czechia,2020-01-24,0.0,0.0
@@ -7967,6 +8062,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 10911,,Czechia,2020-04-11,5831.0,129.0
 10912,,Czechia,2020-04-12,5991.0,138.0
 10913,,Czechia,2020-04-13,6059.0,143.0
+10914,,Czechia,2020-04-14,6111.0,161.0
 10945,Faroe Islands,Denmark,2020-01-22,0.0,0.0
 10946,Faroe Islands,Denmark,2020-01-23,0.0,0.0
 10947,Faroe Islands,Denmark,2020-01-24,0.0,0.0
@@ -8050,6 +8146,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11025,Faroe Islands,Denmark,2020-04-11,184.0,0.0
 11026,Faroe Islands,Denmark,2020-04-12,184.0,0.0
 11027,Faroe Islands,Denmark,2020-04-13,184.0,0.0
+11028,Faroe Islands,Denmark,2020-04-14,184.0,0.0
 11059,Greenland,Denmark,2020-01-22,0.0,0.0
 11060,Greenland,Denmark,2020-01-23,0.0,0.0
 11061,Greenland,Denmark,2020-01-24,0.0,0.0
@@ -8133,6 +8230,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11139,Greenland,Denmark,2020-04-11,11.0,0.0
 11140,Greenland,Denmark,2020-04-12,11.0,0.0
 11141,Greenland,Denmark,2020-04-13,11.0,0.0
+11142,Greenland,Denmark,2020-04-14,11.0,0.0
 11173,,Denmark,2020-01-22,0.0,0.0
 11174,,Denmark,2020-01-23,0.0,0.0
 11175,,Denmark,2020-01-24,0.0,0.0
@@ -8216,6 +8314,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11253,,Denmark,2020-04-11,5996.0,260.0
 11254,,Denmark,2020-04-12,6174.0,273.0
 11255,,Denmark,2020-04-13,6318.0,285.0
+11256,,Denmark,2020-04-14,6511.0,299.0
 11287,,Diamond Princess,2020-01-22,0.0,0.0
 11288,,Diamond Princess,2020-01-23,0.0,0.0
 11289,,Diamond Princess,2020-01-24,0.0,0.0
@@ -8299,6 +8398,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11367,,Diamond Princess,2020-04-11,712.0,11.0
 11368,,Diamond Princess,2020-04-12,712.0,11.0
 11369,,Diamond Princess,2020-04-13,712.0,11.0
+11370,,Diamond Princess,2020-04-14,712.0,12.0
 11401,,Djibouti,2020-01-22,0.0,0.0
 11402,,Djibouti,2020-01-23,0.0,0.0
 11403,,Djibouti,2020-01-24,0.0,0.0
@@ -8382,6 +8482,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11481,,Djibouti,2020-04-11,187.0,2.0
 11482,,Djibouti,2020-04-12,214.0,2.0
 11483,,Djibouti,2020-04-13,298.0,2.0
+11484,,Djibouti,2020-04-14,363.0,2.0
 11515,,Dominica,2020-01-22,0.0,0.0
 11516,,Dominica,2020-01-23,0.0,0.0
 11517,,Dominica,2020-01-24,0.0,0.0
@@ -8465,6 +8566,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11595,,Dominica,2020-04-11,16.0,0.0
 11596,,Dominica,2020-04-12,16.0,0.0
 11597,,Dominica,2020-04-13,16.0,0.0
+11598,,Dominica,2020-04-14,16.0,0.0
 11629,,Dominican Republic,2020-01-22,0.0,0.0
 11630,,Dominican Republic,2020-01-23,0.0,0.0
 11631,,Dominican Republic,2020-01-24,0.0,0.0
@@ -8548,6 +8650,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11709,,Dominican Republic,2020-04-11,2759.0,135.0
 11710,,Dominican Republic,2020-04-12,2967.0,173.0
 11711,,Dominican Republic,2020-04-13,3167.0,177.0
+11712,,Dominican Republic,2020-04-14,3286.0,183.0
 11743,,Ecuador,2020-01-22,0.0,0.0
 11744,,Ecuador,2020-01-23,0.0,0.0
 11745,,Ecuador,2020-01-24,0.0,0.0
@@ -8631,6 +8734,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11823,,Ecuador,2020-04-11,7257.0,315.0
 11824,,Ecuador,2020-04-12,7466.0,333.0
 11825,,Ecuador,2020-04-13,7529.0,355.0
+11826,,Ecuador,2020-04-14,7603.0,369.0
 11857,,Egypt,2020-01-22,0.0,0.0
 11858,,Egypt,2020-01-23,0.0,0.0
 11859,,Egypt,2020-01-24,0.0,0.0
@@ -8714,6 +8818,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 11937,,Egypt,2020-04-11,1939.0,146.0
 11938,,Egypt,2020-04-12,2065.0,159.0
 11939,,Egypt,2020-04-13,2190.0,164.0
+11940,,Egypt,2020-04-14,2350.0,178.0
 11971,,El Salvador,2020-01-22,0.0,0.0
 11972,,El Salvador,2020-01-23,0.0,0.0
 11973,,El Salvador,2020-01-24,0.0,0.0
@@ -8797,6 +8902,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12051,,El Salvador,2020-04-11,118.0,6.0
 12052,,El Salvador,2020-04-12,125.0,6.0
 12053,,El Salvador,2020-04-13,137.0,6.0
+12054,,El Salvador,2020-04-14,149.0,6.0
 12085,,Equatorial Guinea,2020-01-22,0.0,0.0
 12086,,Equatorial Guinea,2020-01-23,0.0,0.0
 12087,,Equatorial Guinea,2020-01-24,0.0,0.0
@@ -8880,6 +8986,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12165,,Equatorial Guinea,2020-04-11,18.0,0.0
 12166,,Equatorial Guinea,2020-04-12,21.0,0.0
 12167,,Equatorial Guinea,2020-04-13,21.0,0.0
+12168,,Equatorial Guinea,2020-04-14,41.0,0.0
 12199,,Eritrea,2020-01-22,0.0,0.0
 12200,,Eritrea,2020-01-23,0.0,0.0
 12201,,Eritrea,2020-01-24,0.0,0.0
@@ -8963,6 +9070,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12279,,Eritrea,2020-04-11,34.0,0.0
 12280,,Eritrea,2020-04-12,34.0,0.0
 12281,,Eritrea,2020-04-13,34.0,0.0
+12282,,Eritrea,2020-04-14,34.0,0.0
 12313,,Estonia,2020-01-22,0.0,0.0
 12314,,Estonia,2020-01-23,0.0,0.0
 12315,,Estonia,2020-01-24,0.0,0.0
@@ -9046,6 +9154,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12393,,Estonia,2020-04-11,1304.0,24.0
 12394,,Estonia,2020-04-12,1309.0,25.0
 12395,,Estonia,2020-04-13,1332.0,28.0
+12396,,Estonia,2020-04-14,1373.0,31.0
 12427,,Eswatini,2020-01-22,0.0,0.0
 12428,,Eswatini,2020-01-23,0.0,0.0
 12429,,Eswatini,2020-01-24,0.0,0.0
@@ -9129,6 +9238,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12507,,Eswatini,2020-04-11,12.0,0.0
 12508,,Eswatini,2020-04-12,14.0,0.0
 12509,,Eswatini,2020-04-13,15.0,0.0
+12510,,Eswatini,2020-04-14,15.0,0.0
 12541,,Ethiopia,2020-01-22,0.0,0.0
 12542,,Ethiopia,2020-01-23,0.0,0.0
 12543,,Ethiopia,2020-01-24,0.0,0.0
@@ -9212,6 +9322,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12621,,Ethiopia,2020-04-11,69.0,3.0
 12622,,Ethiopia,2020-04-12,71.0,3.0
 12623,,Ethiopia,2020-04-13,74.0,3.0
+12624,,Ethiopia,2020-04-14,82.0,3.0
 12655,,Fiji,2020-01-22,0.0,0.0
 12656,,Fiji,2020-01-23,0.0,0.0
 12657,,Fiji,2020-01-24,0.0,0.0
@@ -9295,6 +9406,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12735,,Fiji,2020-04-11,16.0,0.0
 12736,,Fiji,2020-04-12,16.0,0.0
 12737,,Fiji,2020-04-13,16.0,0.0
+12738,,Fiji,2020-04-14,16.0,0.0
 12769,,Finland,2020-01-22,0.0,0.0
 12770,,Finland,2020-01-23,0.0,0.0
 12771,,Finland,2020-01-24,0.0,0.0
@@ -9378,6 +9490,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12849,,Finland,2020-04-11,2905.0,49.0
 12850,,Finland,2020-04-12,2974.0,56.0
 12851,,Finland,2020-04-13,3064.0,59.0
+12852,,Finland,2020-04-14,3161.0,64.0
 12883,French Guiana,France,2020-01-22,0.0,0.0
 12884,French Guiana,France,2020-01-23,0.0,0.0
 12885,French Guiana,France,2020-01-24,0.0,0.0
@@ -9461,6 +9574,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 12963,French Guiana,France,2020-04-11,83.0,0.0
 12964,French Guiana,France,2020-04-12,86.0,0.0
 12965,French Guiana,France,2020-04-13,86.0,0.0
+12966,French Guiana,France,2020-04-14,86.0,0.0
 12997,French Polynesia,France,2020-01-22,0.0,0.0
 12998,French Polynesia,France,2020-01-23,0.0,0.0
 12999,French Polynesia,France,2020-01-24,0.0,0.0
@@ -9544,6 +9658,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13077,French Polynesia,France,2020-04-11,51.0,0.0
 13078,French Polynesia,France,2020-04-12,53.0,0.0
 13079,French Polynesia,France,2020-04-13,55.0,0.0
+13080,French Polynesia,France,2020-04-14,55.0,0.0
 13111,Guadeloupe,France,2020-01-22,0.0,0.0
 13112,Guadeloupe,France,2020-01-23,0.0,0.0
 13113,Guadeloupe,France,2020-01-24,0.0,0.0
@@ -9627,6 +9742,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13191,Guadeloupe,France,2020-04-11,143.0,8.0
 13192,Guadeloupe,France,2020-04-12,143.0,8.0
 13193,Guadeloupe,France,2020-04-13,143.0,8.0
+13194,Guadeloupe,France,2020-04-14,145.0,8.0
 13225,Martinique,France,2020-01-22,0.0,0.0
 13226,Martinique,France,2020-01-23,0.0,0.0
 13227,Martinique,France,2020-01-24,0.0,0.0
@@ -9710,6 +9826,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13305,Martinique,France,2020-04-11,155.0,6.0
 13306,Martinique,France,2020-04-12,155.0,6.0
 13307,Martinique,France,2020-04-13,157.0,6.0
+13308,Martinique,France,2020-04-14,157.0,6.0
 13339,Mayotte,France,2020-01-22,0.0,0.0
 13340,Mayotte,France,2020-01-23,0.0,0.0
 13341,Mayotte,France,2020-01-24,0.0,0.0
@@ -9793,6 +9910,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13419,Mayotte,France,2020-04-11,196.0,3.0
 13420,Mayotte,France,2020-04-12,196.0,3.0
 13421,Mayotte,France,2020-04-13,207.0,3.0
+13422,Mayotte,France,2020-04-14,217.0,3.0
 13453,New Caledonia,France,2020-01-22,0.0,0.0
 13454,New Caledonia,France,2020-01-23,0.0,0.0
 13455,New Caledonia,France,2020-01-24,0.0,0.0
@@ -9876,6 +9994,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13533,New Caledonia,France,2020-04-11,18.0,0.0
 13534,New Caledonia,France,2020-04-12,18.0,0.0
 13535,New Caledonia,France,2020-04-13,18.0,0.0
+13536,New Caledonia,France,2020-04-14,18.0,0.0
 13567,Reunion,France,2020-01-22,0.0,0.0
 13568,Reunion,France,2020-01-23,0.0,0.0
 13569,Reunion,France,2020-01-24,0.0,0.0
@@ -9959,6 +10078,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13647,Reunion,France,2020-04-11,388.0,0.0
 13648,Reunion,France,2020-04-12,389.0,0.0
 13649,Reunion,France,2020-04-13,391.0,0.0
+13650,Reunion,France,2020-04-14,391.0,0.0
 13681,Saint Barthelemy,France,2020-01-22,0.0,0.0
 13682,Saint Barthelemy,France,2020-01-23,0.0,0.0
 13683,Saint Barthelemy,France,2020-01-24,0.0,0.0
@@ -10042,6 +10162,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13761,Saint Barthelemy,France,2020-04-11,6.0,0.0
 13762,Saint Barthelemy,France,2020-04-12,6.0,0.0
 13763,Saint Barthelemy,France,2020-04-13,6.0,0.0
+13764,Saint Barthelemy,France,2020-04-14,6.0,0.0
 13795,Saint Pierre and Miquelon,France,2020-01-22,0.0,0.0
 13796,Saint Pierre and Miquelon,France,2020-01-23,0.0,0.0
 13797,Saint Pierre and Miquelon,France,2020-01-24,0.0,0.0
@@ -10125,6 +10246,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13875,Saint Pierre and Miquelon,France,2020-04-11,1.0,0.0
 13876,Saint Pierre and Miquelon,France,2020-04-12,1.0,0.0
 13877,Saint Pierre and Miquelon,France,2020-04-13,1.0,0.0
+13878,Saint Pierre and Miquelon,France,2020-04-14,1.0,0.0
 13909,St Martin,France,2020-01-22,0.0,0.0
 13910,St Martin,France,2020-01-23,0.0,0.0
 13911,St Martin,France,2020-01-24,0.0,0.0
@@ -10208,6 +10330,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 13989,St Martin,France,2020-04-11,32.0,2.0
 13990,St Martin,France,2020-04-12,32.0,2.0
 13991,St Martin,France,2020-04-13,32.0,2.0
+13992,St Martin,France,2020-04-14,32.0,2.0
 14023,,France,2020-01-22,0.0,0.0
 14024,,France,2020-01-23,0.0,0.0
 14025,,France,2020-01-24,2.0,0.0
@@ -10291,6 +10414,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14103,,France,2020-04-11,129654.0,13832.0
 14104,,France,2020-04-12,132591.0,14393.0
 14105,,France,2020-04-13,136779.0,14967.0
+14106,,France,2020-04-14,130253.0,15729.0
 14137,,Gabon,2020-01-22,0.0,0.0
 14138,,Gabon,2020-01-23,0.0,0.0
 14139,,Gabon,2020-01-24,0.0,0.0
@@ -10374,6 +10498,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14217,,Gabon,2020-04-11,46.0,1.0
 14218,,Gabon,2020-04-12,49.0,1.0
 14219,,Gabon,2020-04-13,57.0,1.0
+14220,,Gabon,2020-04-14,57.0,1.0
 14251,,Gambia,2020-01-22,0.0,0.0
 14252,,Gambia,2020-01-23,0.0,0.0
 14253,,Gambia,2020-01-24,0.0,0.0
@@ -10457,6 +10582,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14331,,Gambia,2020-04-11,9.0,1.0
 14332,,Gambia,2020-04-12,9.0,1.0
 14333,,Gambia,2020-04-13,9.0,1.0
+14334,,Gambia,2020-04-14,9.0,1.0
 14365,,Georgia,2020-01-22,0.0,0.0
 14366,,Georgia,2020-01-23,0.0,0.0
 14367,,Georgia,2020-01-24,0.0,0.0
@@ -10540,6 +10666,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14445,,Georgia,2020-04-11,242.0,3.0
 14446,,Georgia,2020-04-12,257.0,3.0
 14447,,Georgia,2020-04-13,272.0,3.0
+14448,,Georgia,2020-04-14,300.0,3.0
 14479,,Germany,2020-01-22,0.0,0.0
 14480,,Germany,2020-01-23,0.0,0.0
 14481,,Germany,2020-01-24,0.0,0.0
@@ -10623,6 +10750,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14559,,Germany,2020-04-11,124908.0,2736.0
 14560,,Germany,2020-04-12,127854.0,3022.0
 14561,,Germany,2020-04-13,130072.0,3194.0
+14562,,Germany,2020-04-14,131359.0,3294.0
 14593,,Ghana,2020-01-22,0.0,0.0
 14594,,Ghana,2020-01-23,0.0,0.0
 14595,,Ghana,2020-01-24,0.0,0.0
@@ -10706,6 +10834,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14673,,Ghana,2020-04-11,408.0,8.0
 14674,,Ghana,2020-04-12,566.0,8.0
 14675,,Ghana,2020-04-13,566.0,8.0
+14676,,Ghana,2020-04-14,636.0,8.0
 14707,,Greece,2020-01-22,0.0,0.0
 14708,,Greece,2020-01-23,0.0,0.0
 14709,,Greece,2020-01-24,0.0,0.0
@@ -10789,6 +10918,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14787,,Greece,2020-04-11,2081.0,93.0
 14788,,Greece,2020-04-12,2114.0,98.0
 14789,,Greece,2020-04-13,2145.0,99.0
+14790,,Greece,2020-04-14,2170.0,101.0
 14821,,Grenada,2020-01-22,0.0,0.0
 14822,,Grenada,2020-01-23,0.0,0.0
 14823,,Grenada,2020-01-24,0.0,0.0
@@ -10872,6 +11002,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 14901,,Grenada,2020-04-11,14.0,0.0
 14902,,Grenada,2020-04-12,14.0,0.0
 14903,,Grenada,2020-04-13,14.0,0.0
+14904,,Grenada,2020-04-14,14.0,0.0
 14935,,Guatemala,2020-01-22,0.0,0.0
 14936,,Guatemala,2020-01-23,0.0,0.0
 14937,,Guatemala,2020-01-24,0.0,0.0
@@ -10955,6 +11086,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15015,,Guatemala,2020-04-11,137.0,3.0
 15016,,Guatemala,2020-04-12,155.0,5.0
 15017,,Guatemala,2020-04-13,156.0,5.0
+15018,,Guatemala,2020-04-14,167.0,5.0
 15049,,Guinea,2020-01-22,0.0,0.0
 15050,,Guinea,2020-01-23,0.0,0.0
 15051,,Guinea,2020-01-24,0.0,0.0
@@ -11038,6 +11170,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15129,,Guinea,2020-04-11,250.0,0.0
 15130,,Guinea,2020-04-12,250.0,0.0
 15131,,Guinea,2020-04-13,319.0,0.0
+15132,,Guinea,2020-04-14,363.0,0.0
 15163,,Guinea-Bissau,2020-01-22,0.0,0.0
 15164,,Guinea-Bissau,2020-01-23,0.0,0.0
 15165,,Guinea-Bissau,2020-01-24,0.0,0.0
@@ -11121,6 +11254,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15243,,Guinea-Bissau,2020-04-11,38.0,0.0
 15244,,Guinea-Bissau,2020-04-12,38.0,0.0
 15245,,Guinea-Bissau,2020-04-13,38.0,0.0
+15246,,Guinea-Bissau,2020-04-14,38.0,0.0
 15277,,Guyana,2020-01-22,0.0,0.0
 15278,,Guyana,2020-01-23,0.0,0.0
 15279,,Guyana,2020-01-24,0.0,0.0
@@ -11204,6 +11338,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15357,,Guyana,2020-04-11,45.0,6.0
 15358,,Guyana,2020-04-12,45.0,6.0
 15359,,Guyana,2020-04-13,45.0,6.0
+15360,,Guyana,2020-04-14,47.0,6.0
 15391,,Haiti,2020-01-22,0.0,0.0
 15392,,Haiti,2020-01-23,0.0,0.0
 15393,,Haiti,2020-01-24,0.0,0.0
@@ -11287,6 +11422,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15471,,Haiti,2020-04-11,33.0,2.0
 15472,,Haiti,2020-04-12,33.0,3.0
 15473,,Haiti,2020-04-13,40.0,3.0
+15474,,Haiti,2020-04-14,40.0,3.0
 15505,,Holy See,2020-01-22,0.0,0.0
 15506,,Holy See,2020-01-23,0.0,0.0
 15507,,Holy See,2020-01-24,0.0,0.0
@@ -11370,6 +11506,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15585,,Holy See,2020-04-11,8.0,0.0
 15586,,Holy See,2020-04-12,8.0,0.0
 15587,,Holy See,2020-04-13,8.0,0.0
+15588,,Holy See,2020-04-14,8.0,0.0
 15619,,Honduras,2020-01-22,0.0,0.0
 15620,,Honduras,2020-01-23,0.0,0.0
 15621,,Honduras,2020-01-24,0.0,0.0
@@ -11453,6 +11590,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15699,,Honduras,2020-04-11,392.0,24.0
 15700,,Honduras,2020-04-12,393.0,25.0
 15701,,Honduras,2020-04-13,397.0,25.0
+15702,,Honduras,2020-04-14,407.0,26.0
 15733,,Hungary,2020-01-22,0.0,0.0
 15734,,Hungary,2020-01-23,0.0,0.0
 15735,,Hungary,2020-01-24,0.0,0.0
@@ -11536,6 +11674,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15813,,Hungary,2020-04-11,1310.0,85.0
 15814,,Hungary,2020-04-12,1410.0,99.0
 15815,,Hungary,2020-04-13,1458.0,109.0
+15816,,Hungary,2020-04-14,1512.0,122.0
 15847,,Iceland,2020-01-22,0.0,0.0
 15848,,Iceland,2020-01-23,0.0,0.0
 15849,,Iceland,2020-01-24,0.0,0.0
@@ -11619,6 +11758,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 15927,,Iceland,2020-04-11,1689.0,8.0
 15928,,Iceland,2020-04-12,1701.0,8.0
 15929,,Iceland,2020-04-13,1711.0,8.0
+15930,,Iceland,2020-04-14,1720.0,8.0
 15961,,India,2020-01-22,0.0,0.0
 15962,,India,2020-01-23,0.0,0.0
 15963,,India,2020-01-24,0.0,0.0
@@ -11702,6 +11842,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16041,,India,2020-04-11,8446.0,288.0
 16042,,India,2020-04-12,9205.0,331.0
 16043,,India,2020-04-13,10453.0,358.0
+16044,,India,2020-04-14,11487.0,393.0
 16075,,Indonesia,2020-01-22,0.0,0.0
 16076,,Indonesia,2020-01-23,0.0,0.0
 16077,,Indonesia,2020-01-24,0.0,0.0
@@ -11785,6 +11926,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16155,,Indonesia,2020-04-11,3842.0,327.0
 16156,,Indonesia,2020-04-12,4241.0,373.0
 16157,,Indonesia,2020-04-13,4557.0,399.0
+16158,,Indonesia,2020-04-14,4839.0,459.0
 16189,,Iran,2020-01-22,0.0,0.0
 16190,,Iran,2020-01-23,0.0,0.0
 16191,,Iran,2020-01-24,0.0,0.0
@@ -11868,6 +12010,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16269,,Iran,2020-04-11,70029.0,4357.0
 16270,,Iran,2020-04-12,71686.0,4474.0
 16271,,Iran,2020-04-13,73303.0,4585.0
+16272,,Iran,2020-04-14,74877.0,4683.0
 16303,,Iraq,2020-01-22,0.0,0.0
 16304,,Iraq,2020-01-23,0.0,0.0
 16305,,Iraq,2020-01-24,0.0,0.0
@@ -11951,6 +12094,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16383,,Iraq,2020-04-11,1318.0,72.0
 16384,,Iraq,2020-04-12,1352.0,76.0
 16385,,Iraq,2020-04-13,1378.0,78.0
+16386,,Iraq,2020-04-14,1400.0,78.0
 16417,,Ireland,2020-01-22,0.0,0.0
 16418,,Ireland,2020-01-23,0.0,0.0
 16419,,Ireland,2020-01-24,0.0,0.0
@@ -12034,6 +12178,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16497,,Ireland,2020-04-11,8928.0,320.0
 16498,,Ireland,2020-04-12,9655.0,334.0
 16499,,Ireland,2020-04-13,10647.0,365.0
+16500,,Ireland,2020-04-14,11479.0,406.0
 16531,,Israel,2020-01-22,0.0,0.0
 16532,,Israel,2020-01-23,0.0,0.0
 16533,,Israel,2020-01-24,0.0,0.0
@@ -12117,6 +12262,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16611,,Israel,2020-04-11,10743.0,101.0
 16612,,Israel,2020-04-12,11145.0,103.0
 16613,,Israel,2020-04-13,11586.0,116.0
+16614,,Israel,2020-04-14,12046.0,123.0
 16645,,Italy,2020-01-22,0.0,0.0
 16646,,Italy,2020-01-23,0.0,0.0
 16647,,Italy,2020-01-24,0.0,0.0
@@ -12200,6 +12346,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16725,,Italy,2020-04-11,152271.0,19468.0
 16726,,Italy,2020-04-12,156363.0,19899.0
 16727,,Italy,2020-04-13,159516.0,20465.0
+16728,,Italy,2020-04-14,162488.0,21067.0
 16759,,Jamaica,2020-01-22,0.0,0.0
 16760,,Jamaica,2020-01-23,0.0,0.0
 16761,,Jamaica,2020-01-24,0.0,0.0
@@ -12283,6 +12430,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16839,,Jamaica,2020-04-11,65.0,4.0
 16840,,Jamaica,2020-04-12,69.0,4.0
 16841,,Jamaica,2020-04-13,73.0,4.0
+16842,,Jamaica,2020-04-14,73.0,4.0
 16873,,Japan,2020-01-22,2.0,0.0
 16874,,Japan,2020-01-23,2.0,0.0
 16875,,Japan,2020-01-24,2.0,0.0
@@ -12366,6 +12514,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 16953,,Japan,2020-04-11,6005.0,99.0
 16954,,Japan,2020-04-12,6748.0,108.0
 16955,,Japan,2020-04-13,7370.0,123.0
+16956,,Japan,2020-04-14,7645.0,143.0
 16987,,Jordan,2020-01-22,0.0,0.0
 16988,,Jordan,2020-01-23,0.0,0.0
 16989,,Jordan,2020-01-24,0.0,0.0
@@ -12449,6 +12598,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17067,,Jordan,2020-04-11,381.0,7.0
 17068,,Jordan,2020-04-12,389.0,7.0
 17069,,Jordan,2020-04-13,391.0,7.0
+17070,,Jordan,2020-04-14,397.0,7.0
 17101,,Kazakhstan,2020-01-22,0.0,0.0
 17102,,Kazakhstan,2020-01-23,0.0,0.0
 17103,,Kazakhstan,2020-01-24,0.0,0.0
@@ -12532,6 +12682,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17181,,Kazakhstan,2020-04-11,865.0,10.0
 17182,,Kazakhstan,2020-04-12,951.0,10.0
 17183,,Kazakhstan,2020-04-13,1091.0,12.0
+17184,,Kazakhstan,2020-04-14,1232.0,14.0
 17215,,Kenya,2020-01-22,0.0,0.0
 17216,,Kenya,2020-01-23,0.0,0.0
 17217,,Kenya,2020-01-24,0.0,0.0
@@ -12615,6 +12766,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17295,,Kenya,2020-04-11,191.0,7.0
 17296,,Kenya,2020-04-12,197.0,8.0
 17297,,Kenya,2020-04-13,208.0,9.0
+17298,,Kenya,2020-04-14,216.0,9.0
 17329,,"Korea, South",2020-01-22,1.0,0.0
 17330,,"Korea, South",2020-01-23,1.0,0.0
 17331,,"Korea, South",2020-01-24,2.0,0.0
@@ -12698,6 +12850,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17409,,"Korea, South",2020-04-11,10480.0,211.0
 17410,,"Korea, South",2020-04-12,10512.0,214.0
 17411,,"Korea, South",2020-04-13,10537.0,217.0
+17412,,"Korea, South",2020-04-14,10564.0,222.0
 17443,,Kosovo,2020-01-22,0.0,0.0
 17444,,Kosovo,2020-01-23,0.0,0.0
 17445,,Kosovo,2020-01-24,0.0,0.0
@@ -12781,6 +12934,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17523,,Kosovo,2020-04-11,283.0,7.0
 17524,,Kosovo,2020-04-12,283.0,7.0
 17525,,Kosovo,2020-04-13,283.0,7.0
+17526,,Kosovo,2020-04-14,387.0,8.0
 17557,,Kuwait,2020-01-22,0.0,0.0
 17558,,Kuwait,2020-01-23,0.0,0.0
 17559,,Kuwait,2020-01-24,0.0,0.0
@@ -12864,6 +13018,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17637,,Kuwait,2020-04-11,1154.0,1.0
 17638,,Kuwait,2020-04-12,1234.0,1.0
 17639,,Kuwait,2020-04-13,1300.0,2.0
+17640,,Kuwait,2020-04-14,1355.0,3.0
 17671,,Kyrgyzstan,2020-01-22,0.0,0.0
 17672,,Kyrgyzstan,2020-01-23,0.0,0.0
 17673,,Kyrgyzstan,2020-01-24,0.0,0.0
@@ -12947,6 +13102,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17751,,Kyrgyzstan,2020-04-11,339.0,5.0
 17752,,Kyrgyzstan,2020-04-12,377.0,5.0
 17753,,Kyrgyzstan,2020-04-13,419.0,5.0
+17754,,Kyrgyzstan,2020-04-14,430.0,5.0
 17785,,Laos,2020-01-22,0.0,0.0
 17786,,Laos,2020-01-23,0.0,0.0
 17787,,Laos,2020-01-24,0.0,0.0
@@ -13030,6 +13186,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17865,,Laos,2020-04-11,18.0,0.0
 17866,,Laos,2020-04-12,19.0,0.0
 17867,,Laos,2020-04-13,19.0,0.0
+17868,,Laos,2020-04-14,19.0,0.0
 17899,,Latvia,2020-01-22,0.0,0.0
 17900,,Latvia,2020-01-23,0.0,0.0
 17901,,Latvia,2020-01-24,0.0,0.0
@@ -13113,6 +13270,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 17979,,Latvia,2020-04-11,630.0,3.0
 17980,,Latvia,2020-04-12,651.0,5.0
 17981,,Latvia,2020-04-13,655.0,5.0
+17982,,Latvia,2020-04-14,657.0,5.0
 18013,,Lebanon,2020-01-22,0.0,0.0
 18014,,Lebanon,2020-01-23,0.0,0.0
 18015,,Lebanon,2020-01-24,0.0,0.0
@@ -13196,6 +13354,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18093,,Lebanon,2020-04-11,619.0,20.0
 18094,,Lebanon,2020-04-12,630.0,20.0
 18095,,Lebanon,2020-04-13,632.0,20.0
+18096,,Lebanon,2020-04-14,641.0,21.0
 18127,,Liberia,2020-01-22,0.0,0.0
 18128,,Liberia,2020-01-23,0.0,0.0
 18129,,Liberia,2020-01-24,0.0,0.0
@@ -13279,6 +13438,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18207,,Liberia,2020-04-11,48.0,5.0
 18208,,Liberia,2020-04-12,50.0,5.0
 18209,,Liberia,2020-04-13,59.0,6.0
+18210,,Liberia,2020-04-14,59.0,6.0
 18241,,Libya,2020-01-22,0.0,0.0
 18242,,Libya,2020-01-23,0.0,0.0
 18243,,Libya,2020-01-24,0.0,0.0
@@ -13362,6 +13522,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18321,,Libya,2020-04-11,24.0,1.0
 18322,,Libya,2020-04-12,25.0,1.0
 18323,,Libya,2020-04-13,26.0,1.0
+18324,,Libya,2020-04-14,35.0,1.0
 18355,,Liechtenstein,2020-01-22,0.0,0.0
 18356,,Liechtenstein,2020-01-23,0.0,0.0
 18357,,Liechtenstein,2020-01-24,0.0,0.0
@@ -13445,6 +13606,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18435,,Liechtenstein,2020-04-11,79.0,1.0
 18436,,Liechtenstein,2020-04-12,79.0,1.0
 18437,,Liechtenstein,2020-04-13,79.0,1.0
+18438,,Liechtenstein,2020-04-14,79.0,1.0
 18469,,Lithuania,2020-01-22,0.0,0.0
 18470,,Lithuania,2020-01-23,0.0,0.0
 18471,,Lithuania,2020-01-24,0.0,0.0
@@ -13528,6 +13690,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18549,,Lithuania,2020-04-11,1026.0,23.0
 18550,,Lithuania,2020-04-12,1053.0,23.0
 18551,,Lithuania,2020-04-13,1062.0,24.0
+18552,,Lithuania,2020-04-14,1070.0,29.0
 18583,,Luxembourg,2020-01-22,0.0,0.0
 18584,,Luxembourg,2020-01-23,0.0,0.0
 18585,,Luxembourg,2020-01-24,0.0,0.0
@@ -13611,6 +13774,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18663,,Luxembourg,2020-04-11,3270.0,62.0
 18664,,Luxembourg,2020-04-12,3281.0,66.0
 18665,,Luxembourg,2020-04-13,3292.0,69.0
+18666,,Luxembourg,2020-04-14,3307.0,67.0
 18697,,MS Zaandam,2020-01-22,0.0,0.0
 18698,,MS Zaandam,2020-01-23,0.0,0.0
 18699,,MS Zaandam,2020-01-24,0.0,0.0
@@ -13694,6 +13858,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18777,,MS Zaandam,2020-04-11,9.0,2.0
 18778,,MS Zaandam,2020-04-12,9.0,2.0
 18779,,MS Zaandam,2020-04-13,9.0,2.0
+18780,,MS Zaandam,2020-04-14,9.0,2.0
 18811,,Madagascar,2020-01-22,0.0,0.0
 18812,,Madagascar,2020-01-23,0.0,0.0
 18813,,Madagascar,2020-01-24,0.0,0.0
@@ -13777,6 +13942,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 18891,,Madagascar,2020-04-11,102.0,0.0
 18892,,Madagascar,2020-04-12,106.0,0.0
 18893,,Madagascar,2020-04-13,106.0,0.0
+18894,,Madagascar,2020-04-14,108.0,0.0
 18925,,Malawi,2020-01-22,0.0,0.0
 18926,,Malawi,2020-01-23,0.0,0.0
 18927,,Malawi,2020-01-24,0.0,0.0
@@ -13860,6 +14026,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19005,,Malawi,2020-04-11,12.0,2.0
 19006,,Malawi,2020-04-12,13.0,2.0
 19007,,Malawi,2020-04-13,16.0,2.0
+19008,,Malawi,2020-04-14,16.0,2.0
 19039,,Malaysia,2020-01-22,0.0,0.0
 19040,,Malaysia,2020-01-23,0.0,0.0
 19041,,Malaysia,2020-01-24,0.0,0.0
@@ -13943,6 +14110,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19119,,Malaysia,2020-04-11,4530.0,73.0
 19120,,Malaysia,2020-04-12,4683.0,76.0
 19121,,Malaysia,2020-04-13,4817.0,77.0
+19122,,Malaysia,2020-04-14,4987.0,82.0
 19153,,Maldives,2020-01-22,0.0,0.0
 19154,,Maldives,2020-01-23,0.0,0.0
 19155,,Maldives,2020-01-24,0.0,0.0
@@ -14026,6 +14194,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19233,,Maldives,2020-04-11,19.0,0.0
 19234,,Maldives,2020-04-12,20.0,0.0
 19235,,Maldives,2020-04-13,20.0,0.0
+19236,,Maldives,2020-04-14,20.0,0.0
 19267,,Mali,2020-01-22,0.0,0.0
 19268,,Mali,2020-01-23,0.0,0.0
 19269,,Mali,2020-01-24,0.0,0.0
@@ -14109,6 +14278,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19347,,Mali,2020-04-11,87.0,7.0
 19348,,Mali,2020-04-12,105.0,9.0
 19349,,Mali,2020-04-13,123.0,10.0
+19350,,Mali,2020-04-14,144.0,13.0
 19381,,Malta,2020-01-22,0.0,0.0
 19382,,Malta,2020-01-23,0.0,0.0
 19383,,Malta,2020-01-24,0.0,0.0
@@ -14192,6 +14362,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19461,,Malta,2020-04-11,370.0,3.0
 19462,,Malta,2020-04-12,378.0,3.0
 19463,,Malta,2020-04-13,384.0,3.0
+19464,,Malta,2020-04-14,393.0,3.0
 19495,,Mauritania,2020-01-22,0.0,0.0
 19496,,Mauritania,2020-01-23,0.0,0.0
 19497,,Mauritania,2020-01-24,0.0,0.0
@@ -14275,6 +14446,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19575,,Mauritania,2020-04-11,7.0,1.0
 19576,,Mauritania,2020-04-12,7.0,1.0
 19577,,Mauritania,2020-04-13,7.0,1.0
+19578,,Mauritania,2020-04-14,7.0,1.0
 19609,,Mauritius,2020-01-22,0.0,0.0
 19610,,Mauritius,2020-01-23,0.0,0.0
 19611,,Mauritius,2020-01-24,0.0,0.0
@@ -14358,6 +14530,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19689,,Mauritius,2020-04-11,319.0,9.0
 19690,,Mauritius,2020-04-12,324.0,9.0
 19691,,Mauritius,2020-04-13,324.0,9.0
+19692,,Mauritius,2020-04-14,324.0,9.0
 19723,,Mexico,2020-01-22,0.0,0.0
 19724,,Mexico,2020-01-23,0.0,0.0
 19725,,Mexico,2020-01-24,0.0,0.0
@@ -14441,6 +14614,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19803,,Mexico,2020-04-11,3844.0,233.0
 19804,,Mexico,2020-04-12,4219.0,273.0
 19805,,Mexico,2020-04-13,4661.0,296.0
+19806,,Mexico,2020-04-14,5014.0,332.0
 19837,,Moldova,2020-01-22,0.0,0.0
 19838,,Moldova,2020-01-23,0.0,0.0
 19839,,Moldova,2020-01-24,0.0,0.0
@@ -14524,6 +14698,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 19917,,Moldova,2020-04-11,1560.0,30.0
 19918,,Moldova,2020-04-12,1662.0,31.0
 19919,,Moldova,2020-04-13,1712.0,35.0
+19920,,Moldova,2020-04-14,1934.0,40.0
 19951,,Monaco,2020-01-22,0.0,0.0
 19952,,Monaco,2020-01-23,0.0,0.0
 19953,,Monaco,2020-01-24,0.0,0.0
@@ -14607,6 +14782,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20031,,Monaco,2020-04-11,92.0,1.0
 20032,,Monaco,2020-04-12,93.0,1.0
 20033,,Monaco,2020-04-13,93.0,1.0
+20034,,Monaco,2020-04-14,93.0,1.0
 20065,,Mongolia,2020-01-22,0.0,0.0
 20066,,Mongolia,2020-01-23,0.0,0.0
 20067,,Mongolia,2020-01-24,0.0,0.0
@@ -14690,6 +14866,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20145,,Mongolia,2020-04-11,16.0,0.0
 20146,,Mongolia,2020-04-12,16.0,0.0
 20147,,Mongolia,2020-04-13,17.0,0.0
+20148,,Mongolia,2020-04-14,30.0,0.0
 20179,,Montenegro,2020-01-22,0.0,0.0
 20180,,Montenegro,2020-01-23,0.0,0.0
 20181,,Montenegro,2020-01-24,0.0,0.0
@@ -14773,6 +14950,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20259,,Montenegro,2020-04-11,263.0,2.0
 20260,,Montenegro,2020-04-12,272.0,3.0
 20261,,Montenegro,2020-04-13,274.0,3.0
+20262,,Montenegro,2020-04-14,283.0,4.0
 20293,,Morocco,2020-01-22,0.0,0.0
 20294,,Morocco,2020-01-23,0.0,0.0
 20295,,Morocco,2020-01-24,0.0,0.0
@@ -14856,6 +15034,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20373,,Morocco,2020-04-11,1545.0,111.0
 20374,,Morocco,2020-04-12,1661.0,118.0
 20375,,Morocco,2020-04-13,1763.0,126.0
+20376,,Morocco,2020-04-14,1888.0,126.0
 20407,,Mozambique,2020-01-22,0.0,0.0
 20408,,Mozambique,2020-01-23,0.0,0.0
 20409,,Mozambique,2020-01-24,0.0,0.0
@@ -14939,6 +15118,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20487,,Mozambique,2020-04-11,20.0,0.0
 20488,,Mozambique,2020-04-12,21.0,0.0
 20489,,Mozambique,2020-04-13,21.0,0.0
+20490,,Mozambique,2020-04-14,28.0,0.0
 20521,,Namibia,2020-01-22,0.0,0.0
 20522,,Namibia,2020-01-23,0.0,0.0
 20523,,Namibia,2020-01-24,0.0,0.0
@@ -15022,6 +15202,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20601,,Namibia,2020-04-11,16.0,0.0
 20602,,Namibia,2020-04-12,16.0,0.0
 20603,,Namibia,2020-04-13,16.0,0.0
+20604,,Namibia,2020-04-14,16.0,0.0
 20635,,Nepal,2020-01-22,0.0,0.0
 20636,,Nepal,2020-01-23,0.0,0.0
 20637,,Nepal,2020-01-24,0.0,0.0
@@ -15105,6 +15286,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20715,,Nepal,2020-04-11,9.0,0.0
 20716,,Nepal,2020-04-12,12.0,0.0
 20717,,Nepal,2020-04-13,14.0,0.0
+20718,,Nepal,2020-04-14,16.0,0.0
 20749,Aruba,Netherlands,2020-01-22,0.0,0.0
 20750,Aruba,Netherlands,2020-01-23,0.0,0.0
 20751,Aruba,Netherlands,2020-01-24,0.0,0.0
@@ -15188,6 +15370,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20829,Aruba,Netherlands,2020-04-11,92.0,0.0
 20830,Aruba,Netherlands,2020-04-12,92.0,0.0
 20831,Aruba,Netherlands,2020-04-13,92.0,0.0
+20832,Aruba,Netherlands,2020-04-14,92.0,0.0
 20863,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-01-22,0.0,0.0
 20864,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-01-23,0.0,0.0
 20865,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-01-24,0.0,0.0
@@ -15271,6 +15454,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 20943,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-04-11,2.0,0.0
 20944,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-04-12,3.0,0.0
 20945,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-04-13,3.0,0.0
+20946,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-04-14,3.0,0.0
 20977,Curacao,Netherlands,2020-01-22,0.0,0.0
 20978,Curacao,Netherlands,2020-01-23,0.0,0.0
 20979,Curacao,Netherlands,2020-01-24,0.0,0.0
@@ -15354,6 +15538,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21057,Curacao,Netherlands,2020-04-11,14.0,1.0
 21058,Curacao,Netherlands,2020-04-12,14.0,1.0
 21059,Curacao,Netherlands,2020-04-13,14.0,1.0
+21060,Curacao,Netherlands,2020-04-14,14.0,1.0
 21091,Sint Maarten,Netherlands,2020-01-22,0.0,0.0
 21092,Sint Maarten,Netherlands,2020-01-23,0.0,0.0
 21093,Sint Maarten,Netherlands,2020-01-24,0.0,0.0
@@ -15437,6 +15622,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21171,Sint Maarten,Netherlands,2020-04-11,50.0,9.0
 21172,Sint Maarten,Netherlands,2020-04-12,50.0,9.0
 21173,Sint Maarten,Netherlands,2020-04-13,50.0,9.0
+21174,Sint Maarten,Netherlands,2020-04-14,52.0,9.0
 21205,,Netherlands,2020-01-22,0.0,0.0
 21206,,Netherlands,2020-01-23,0.0,0.0
 21207,,Netherlands,2020-01-24,0.0,0.0
@@ -15520,6 +15706,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21285,,Netherlands,2020-04-11,24413.0,2643.0
 21286,,Netherlands,2020-04-12,25587.0,2737.0
 21287,,Netherlands,2020-04-13,26551.0,2823.0
+21288,,Netherlands,2020-04-14,27419.0,2945.0
 21319,,New Zealand,2020-01-22,0.0,0.0
 21320,,New Zealand,2020-01-23,0.0,0.0
 21321,,New Zealand,2020-01-24,0.0,0.0
@@ -15603,6 +15790,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21399,,New Zealand,2020-04-11,1312.0,4.0
 21400,,New Zealand,2020-04-12,1330.0,4.0
 21401,,New Zealand,2020-04-13,1349.0,5.0
+21402,,New Zealand,2020-04-14,1366.0,9.0
 21433,,Nicaragua,2020-01-22,0.0,0.0
 21434,,Nicaragua,2020-01-23,0.0,0.0
 21435,,Nicaragua,2020-01-24,0.0,0.0
@@ -15686,6 +15874,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21513,,Nicaragua,2020-04-11,8.0,1.0
 21514,,Nicaragua,2020-04-12,9.0,1.0
 21515,,Nicaragua,2020-04-13,9.0,1.0
+21516,,Nicaragua,2020-04-14,9.0,1.0
 21547,,Niger,2020-01-22,0.0,0.0
 21548,,Niger,2020-01-23,0.0,0.0
 21549,,Niger,2020-01-24,0.0,0.0
@@ -15769,6 +15958,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21627,,Niger,2020-04-11,491.0,11.0
 21628,,Niger,2020-04-12,529.0,12.0
 21629,,Niger,2020-04-13,529.0,12.0
+21630,,Niger,2020-04-14,570.0,14.0
 21661,,Nigeria,2020-01-22,0.0,0.0
 21662,,Nigeria,2020-01-23,0.0,0.0
 21663,,Nigeria,2020-01-24,0.0,0.0
@@ -15852,6 +16042,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21741,,Nigeria,2020-04-11,318.0,10.0
 21742,,Nigeria,2020-04-12,323.0,10.0
 21743,,Nigeria,2020-04-13,343.0,10.0
+21744,,Nigeria,2020-04-14,373.0,11.0
 21775,,North Macedonia,2020-01-22,0.0,0.0
 21776,,North Macedonia,2020-01-23,0.0,0.0
 21777,,North Macedonia,2020-01-24,0.0,0.0
@@ -15935,6 +16126,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21855,,North Macedonia,2020-04-11,760.0,34.0
 21856,,North Macedonia,2020-04-12,828.0,34.0
 21857,,North Macedonia,2020-04-13,854.0,38.0
+21858,,North Macedonia,2020-04-14,908.0,44.0
 21889,,Norway,2020-01-22,0.0,0.0
 21890,,Norway,2020-01-23,0.0,0.0
 21891,,Norway,2020-01-24,0.0,0.0
@@ -16018,6 +16210,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 21969,,Norway,2020-04-11,6409.0,119.0
 21970,,Norway,2020-04-12,6525.0,128.0
 21971,,Norway,2020-04-13,6603.0,134.0
+21972,,Norway,2020-04-14,6623.0,139.0
 22003,,Oman,2020-01-22,0.0,0.0
 22004,,Oman,2020-01-23,0.0,0.0
 22005,,Oman,2020-01-24,0.0,0.0
@@ -16101,6 +16294,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22083,,Oman,2020-04-11,546.0,3.0
 22084,,Oman,2020-04-12,599.0,4.0
 22085,,Oman,2020-04-13,727.0,4.0
+22086,,Oman,2020-04-14,813.0,4.0
 22117,,Pakistan,2020-01-22,0.0,0.0
 22118,,Pakistan,2020-01-23,0.0,0.0
 22119,,Pakistan,2020-01-24,0.0,0.0
@@ -16184,6 +16378,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22197,,Pakistan,2020-04-11,5011.0,86.0
 22198,,Pakistan,2020-04-12,5230.0,91.0
 22199,,Pakistan,2020-04-13,5496.0,93.0
+22200,,Pakistan,2020-04-14,5837.0,96.0
 22231,,Panama,2020-01-22,0.0,0.0
 22232,,Panama,2020-01-23,0.0,0.0
 22233,,Panama,2020-01-24,0.0,0.0
@@ -16267,6 +16462,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22311,,Panama,2020-04-11,2974.0,74.0
 22312,,Panama,2020-04-12,3234.0,79.0
 22313,,Panama,2020-04-13,3400.0,87.0
+22314,,Panama,2020-04-14,3472.0,94.0
 22345,,Papua New Guinea,2020-01-22,0.0,0.0
 22346,,Papua New Guinea,2020-01-23,0.0,0.0
 22347,,Papua New Guinea,2020-01-24,0.0,0.0
@@ -16350,6 +16546,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22425,,Papua New Guinea,2020-04-11,2.0,0.0
 22426,,Papua New Guinea,2020-04-12,2.0,0.0
 22427,,Papua New Guinea,2020-04-13,2.0,0.0
+22428,,Papua New Guinea,2020-04-14,2.0,0.0
 22459,,Paraguay,2020-01-22,0.0,0.0
 22460,,Paraguay,2020-01-23,0.0,0.0
 22461,,Paraguay,2020-01-24,0.0,0.0
@@ -16433,6 +16630,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22539,,Paraguay,2020-04-11,133.0,6.0
 22540,,Paraguay,2020-04-12,134.0,6.0
 22541,,Paraguay,2020-04-13,147.0,6.0
+22542,,Paraguay,2020-04-14,159.0,7.0
 22573,,Peru,2020-01-22,0.0,0.0
 22574,,Peru,2020-01-23,0.0,0.0
 22575,,Peru,2020-01-24,0.0,0.0
@@ -16516,6 +16714,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22653,,Peru,2020-04-11,6848.0,181.0
 22654,,Peru,2020-04-12,7519.0,193.0
 22655,,Peru,2020-04-13,9784.0,216.0
+22656,,Peru,2020-04-14,10303.0,230.0
 22687,,Philippines,2020-01-22,0.0,0.0
 22688,,Philippines,2020-01-23,0.0,0.0
 22689,,Philippines,2020-01-24,0.0,0.0
@@ -16599,6 +16798,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22767,,Philippines,2020-04-11,4428.0,247.0
 22768,,Philippines,2020-04-12,4648.0,297.0
 22769,,Philippines,2020-04-13,4932.0,315.0
+22770,,Philippines,2020-04-14,5223.0,335.0
 22801,,Poland,2020-01-22,0.0,0.0
 22802,,Poland,2020-01-23,0.0,0.0
 22803,,Poland,2020-01-24,0.0,0.0
@@ -16682,6 +16882,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22881,,Poland,2020-04-11,6356.0,208.0
 22882,,Poland,2020-04-12,6674.0,232.0
 22883,,Poland,2020-04-13,6934.0,245.0
+22884,,Poland,2020-04-14,7202.0,263.0
 22915,,Portugal,2020-01-22,0.0,0.0
 22916,,Portugal,2020-01-23,0.0,0.0
 22917,,Portugal,2020-01-24,0.0,0.0
@@ -16765,6 +16966,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 22995,,Portugal,2020-04-11,15987.0,470.0
 22996,,Portugal,2020-04-12,16585.0,504.0
 22997,,Portugal,2020-04-13,16934.0,535.0
+22998,,Portugal,2020-04-14,17448.0,567.0
 23029,,Qatar,2020-01-22,0.0,0.0
 23030,,Qatar,2020-01-23,0.0,0.0
 23031,,Qatar,2020-01-24,0.0,0.0
@@ -16848,6 +17050,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23109,,Qatar,2020-04-11,2728.0,6.0
 23110,,Qatar,2020-04-12,2979.0,7.0
 23111,,Qatar,2020-04-13,3231.0,7.0
+23112,,Qatar,2020-04-14,3428.0,7.0
 23143,,Romania,2020-01-22,0.0,0.0
 23144,,Romania,2020-01-23,0.0,0.0
 23145,,Romania,2020-01-24,0.0,0.0
@@ -16931,6 +17134,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23223,,Romania,2020-04-11,5990.0,291.0
 23224,,Romania,2020-04-12,6300.0,316.0
 23225,,Romania,2020-04-13,6633.0,331.0
+23226,,Romania,2020-04-14,6879.0,351.0
 23257,,Russia,2020-01-22,0.0,0.0
 23258,,Russia,2020-01-23,0.0,0.0
 23259,,Russia,2020-01-24,0.0,0.0
@@ -17014,6 +17218,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23337,,Russia,2020-04-11,13584.0,106.0
 23338,,Russia,2020-04-12,15770.0,130.0
 23339,,Russia,2020-04-13,18328.0,148.0
+23340,,Russia,2020-04-14,21102.0,170.0
 23371,,Rwanda,2020-01-22,0.0,0.0
 23372,,Rwanda,2020-01-23,0.0,0.0
 23373,,Rwanda,2020-01-24,0.0,0.0
@@ -17097,6 +17302,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23451,,Rwanda,2020-04-11,120.0,0.0
 23452,,Rwanda,2020-04-12,126.0,0.0
 23453,,Rwanda,2020-04-13,127.0,0.0
+23454,,Rwanda,2020-04-14,134.0,0.0
 23485,,Saint Kitts and Nevis,2020-01-22,0.0,0.0
 23486,,Saint Kitts and Nevis,2020-01-23,0.0,0.0
 23487,,Saint Kitts and Nevis,2020-01-24,0.0,0.0
@@ -17180,6 +17386,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23565,,Saint Kitts and Nevis,2020-04-11,12.0,0.0
 23566,,Saint Kitts and Nevis,2020-04-12,12.0,0.0
 23567,,Saint Kitts and Nevis,2020-04-13,12.0,0.0
+23568,,Saint Kitts and Nevis,2020-04-14,14.0,0.0
 23599,,Saint Lucia,2020-01-22,0.0,0.0
 23600,,Saint Lucia,2020-01-23,0.0,0.0
 23601,,Saint Lucia,2020-01-24,0.0,0.0
@@ -17263,6 +17470,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23679,,Saint Lucia,2020-04-11,15.0,0.0
 23680,,Saint Lucia,2020-04-12,15.0,0.0
 23681,,Saint Lucia,2020-04-13,15.0,0.0
+23682,,Saint Lucia,2020-04-14,15.0,0.0
 23713,,Saint Vincent and the Grenadines,2020-01-22,0.0,0.0
 23714,,Saint Vincent and the Grenadines,2020-01-23,0.0,0.0
 23715,,Saint Vincent and the Grenadines,2020-01-24,0.0,0.0
@@ -17346,6 +17554,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23793,,Saint Vincent and the Grenadines,2020-04-11,12.0,0.0
 23794,,Saint Vincent and the Grenadines,2020-04-12,12.0,0.0
 23795,,Saint Vincent and the Grenadines,2020-04-13,12.0,0.0
+23796,,Saint Vincent and the Grenadines,2020-04-14,12.0,0.0
 23827,,San Marino,2020-01-22,0.0,0.0
 23828,,San Marino,2020-01-23,0.0,0.0
 23829,,San Marino,2020-01-24,0.0,0.0
@@ -17429,6 +17638,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 23907,,San Marino,2020-04-11,356.0,35.0
 23908,,San Marino,2020-04-12,356.0,35.0
 23909,,San Marino,2020-04-13,356.0,35.0
+23910,,San Marino,2020-04-14,371.0,36.0
 23941,,Sao Tome and Principe,2020-01-22,0.0,0.0
 23942,,Sao Tome and Principe,2020-01-23,0.0,0.0
 23943,,Sao Tome and Principe,2020-01-24,0.0,0.0
@@ -17512,6 +17722,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24021,,Sao Tome and Principe,2020-04-11,4.0,0.0
 24022,,Sao Tome and Principe,2020-04-12,4.0,0.0
 24023,,Sao Tome and Principe,2020-04-13,4.0,0.0
+24024,,Sao Tome and Principe,2020-04-14,4.0,0.0
 24055,,Saudi Arabia,2020-01-22,0.0,0.0
 24056,,Saudi Arabia,2020-01-23,0.0,0.0
 24057,,Saudi Arabia,2020-01-24,0.0,0.0
@@ -17595,6 +17806,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24135,,Saudi Arabia,2020-04-11,4033.0,52.0
 24136,,Saudi Arabia,2020-04-12,4462.0,59.0
 24137,,Saudi Arabia,2020-04-13,4934.0,65.0
+24138,,Saudi Arabia,2020-04-14,5369.0,73.0
 24169,,Senegal,2020-01-22,0.0,0.0
 24170,,Senegal,2020-01-23,0.0,0.0
 24171,,Senegal,2020-01-24,0.0,0.0
@@ -17678,6 +17890,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24249,,Senegal,2020-04-11,278.0,2.0
 24250,,Senegal,2020-04-12,280.0,2.0
 24251,,Senegal,2020-04-13,291.0,2.0
+24252,,Senegal,2020-04-14,299.0,2.0
 24283,,Serbia,2020-01-22,0.0,0.0
 24284,,Serbia,2020-01-23,0.0,0.0
 24285,,Serbia,2020-01-24,0.0,0.0
@@ -17761,6 +17974,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24363,,Serbia,2020-04-11,3380.0,74.0
 24364,,Serbia,2020-04-12,3630.0,80.0
 24365,,Serbia,2020-04-13,4054.0,85.0
+24366,,Serbia,2020-04-14,4465.0,94.0
 24397,,Seychelles,2020-01-22,0.0,0.0
 24398,,Seychelles,2020-01-23,0.0,0.0
 24399,,Seychelles,2020-01-24,0.0,0.0
@@ -17844,6 +18058,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24477,,Seychelles,2020-04-11,11.0,0.0
 24478,,Seychelles,2020-04-12,11.0,0.0
 24479,,Seychelles,2020-04-13,11.0,0.0
+24480,,Seychelles,2020-04-14,11.0,0.0
 24511,,Sierra Leone,2020-01-22,0.0,0.0
 24512,,Sierra Leone,2020-01-23,0.0,0.0
 24513,,Sierra Leone,2020-01-24,0.0,0.0
@@ -17927,6 +18142,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24591,,Sierra Leone,2020-04-11,8.0,0.0
 24592,,Sierra Leone,2020-04-12,10.0,0.0
 24593,,Sierra Leone,2020-04-13,10.0,0.0
+24594,,Sierra Leone,2020-04-14,11.0,0.0
 24625,,Singapore,2020-01-22,0.0,0.0
 24626,,Singapore,2020-01-23,1.0,0.0
 24627,,Singapore,2020-01-24,3.0,0.0
@@ -18010,6 +18226,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24705,,Singapore,2020-04-11,2299.0,8.0
 24706,,Singapore,2020-04-12,2532.0,8.0
 24707,,Singapore,2020-04-13,2918.0,9.0
+24708,,Singapore,2020-04-14,3252.0,10.0
 24739,,Slovakia,2020-01-22,0.0,0.0
 24740,,Slovakia,2020-01-23,0.0,0.0
 24741,,Slovakia,2020-01-24,0.0,0.0
@@ -18093,6 +18310,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24819,,Slovakia,2020-04-11,728.0,2.0
 24820,,Slovakia,2020-04-12,742.0,2.0
 24821,,Slovakia,2020-04-13,769.0,2.0
+24822,,Slovakia,2020-04-14,835.0,2.0
 24853,,Slovenia,2020-01-22,0.0,0.0
 24854,,Slovenia,2020-01-23,0.0,0.0
 24855,,Slovenia,2020-01-24,0.0,0.0
@@ -18176,6 +18394,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 24933,,Slovenia,2020-04-11,1188.0,50.0
 24934,,Slovenia,2020-04-12,1205.0,53.0
 24935,,Slovenia,2020-04-13,1212.0,55.0
+24936,,Slovenia,2020-04-14,1220.0,56.0
 24967,,Somalia,2020-01-22,0.0,0.0
 24968,,Somalia,2020-01-23,0.0,0.0
 24969,,Somalia,2020-01-24,0.0,0.0
@@ -18259,6 +18478,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25047,,Somalia,2020-04-11,21.0,1.0
 25048,,Somalia,2020-04-12,25.0,1.0
 25049,,Somalia,2020-04-13,60.0,2.0
+25050,,Somalia,2020-04-14,60.0,2.0
 25081,,South Africa,2020-01-22,0.0,0.0
 25082,,South Africa,2020-01-23,0.0,0.0
 25083,,South Africa,2020-01-24,0.0,0.0
@@ -18342,6 +18562,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25161,,South Africa,2020-04-11,2028.0,25.0
 25162,,South Africa,2020-04-12,2173.0,25.0
 25163,,South Africa,2020-04-13,2272.0,27.0
+25164,,South Africa,2020-04-14,2415.0,27.0
 25195,,South Sudan,2020-01-22,0.0,0.0
 25196,,South Sudan,2020-01-23,0.0,0.0
 25197,,South Sudan,2020-01-24,0.0,0.0
@@ -18425,6 +18646,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25275,,South Sudan,2020-04-11,4.0,0.0
 25276,,South Sudan,2020-04-12,4.0,0.0
 25277,,South Sudan,2020-04-13,4.0,0.0
+25278,,South Sudan,2020-04-14,4.0,0.0
 25309,,Spain,2020-01-22,0.0,0.0
 25310,,Spain,2020-01-23,0.0,0.0
 25311,,Spain,2020-01-24,0.0,0.0
@@ -18508,6 +18730,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25389,,Spain,2020-04-11,163027.0,16606.0
 25390,,Spain,2020-04-12,166831.0,17209.0
 25391,,Spain,2020-04-13,170099.0,17756.0
+25392,,Spain,2020-04-14,172541.0,18056.0
 25423,,Sri Lanka,2020-01-22,0.0,0.0
 25424,,Sri Lanka,2020-01-23,0.0,0.0
 25425,,Sri Lanka,2020-01-24,0.0,0.0
@@ -18591,6 +18814,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25503,,Sri Lanka,2020-04-11,198.0,7.0
 25504,,Sri Lanka,2020-04-12,210.0,7.0
 25505,,Sri Lanka,2020-04-13,217.0,7.0
+25506,,Sri Lanka,2020-04-14,233.0,7.0
 25537,,Sudan,2020-01-22,0.0,0.0
 25538,,Sudan,2020-01-23,0.0,0.0
 25539,,Sudan,2020-01-24,0.0,0.0
@@ -18674,6 +18898,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25617,,Sudan,2020-04-11,19.0,2.0
 25618,,Sudan,2020-04-12,19.0,2.0
 25619,,Sudan,2020-04-13,29.0,4.0
+25620,,Sudan,2020-04-14,32.0,5.0
 25651,,Suriname,2020-01-22,0.0,0.0
 25652,,Suriname,2020-01-23,0.0,0.0
 25653,,Suriname,2020-01-24,0.0,0.0
@@ -18757,6 +18982,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25731,,Suriname,2020-04-11,10.0,1.0
 25732,,Suriname,2020-04-12,10.0,1.0
 25733,,Suriname,2020-04-13,10.0,1.0
+25734,,Suriname,2020-04-14,10.0,1.0
 25765,,Sweden,2020-01-22,0.0,0.0
 25766,,Sweden,2020-01-23,0.0,0.0
 25767,,Sweden,2020-01-24,0.0,0.0
@@ -18840,6 +19066,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25845,,Sweden,2020-04-11,10151.0,887.0
 25846,,Sweden,2020-04-12,10483.0,899.0
 25847,,Sweden,2020-04-13,10948.0,919.0
+25848,,Sweden,2020-04-14,11445.0,1033.0
 25879,,Switzerland,2020-01-22,0.0,0.0
 25880,,Switzerland,2020-01-23,0.0,0.0
 25881,,Switzerland,2020-01-24,0.0,0.0
@@ -18923,6 +19150,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 25959,,Switzerland,2020-04-11,25107.0,1036.0
 25960,,Switzerland,2020-04-12,25415.0,1106.0
 25961,,Switzerland,2020-04-13,25688.0,1138.0
+25962,,Switzerland,2020-04-14,25936.0,1174.0
 25993,,Syria,2020-01-22,0.0,0.0
 25994,,Syria,2020-01-23,0.0,0.0
 25995,,Syria,2020-01-24,0.0,0.0
@@ -19006,6 +19234,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26073,,Syria,2020-04-11,25.0,2.0
 26074,,Syria,2020-04-12,25.0,2.0
 26075,,Syria,2020-04-13,25.0,2.0
+26076,,Syria,2020-04-14,29.0,2.0
 26107,,Taiwan*,2020-01-22,1.0,0.0
 26108,,Taiwan*,2020-01-23,1.0,0.0
 26109,,Taiwan*,2020-01-24,3.0,0.0
@@ -19089,6 +19318,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26187,,Taiwan*,2020-04-11,385.0,6.0
 26188,,Taiwan*,2020-04-12,388.0,6.0
 26189,,Taiwan*,2020-04-13,393.0,6.0
+26190,,Taiwan*,2020-04-14,393.0,6.0
 26221,,Tanzania,2020-01-22,0.0,0.0
 26222,,Tanzania,2020-01-23,0.0,0.0
 26223,,Tanzania,2020-01-24,0.0,0.0
@@ -19172,6 +19402,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26301,,Tanzania,2020-04-11,32.0,3.0
 26302,,Tanzania,2020-04-12,32.0,3.0
 26303,,Tanzania,2020-04-13,49.0,3.0
+26304,,Tanzania,2020-04-14,53.0,3.0
 26335,,Thailand,2020-01-22,2.0,0.0
 26336,,Thailand,2020-01-23,3.0,0.0
 26337,,Thailand,2020-01-24,5.0,0.0
@@ -19255,6 +19486,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26415,,Thailand,2020-04-11,2518.0,35.0
 26416,,Thailand,2020-04-12,2551.0,38.0
 26417,,Thailand,2020-04-13,2579.0,40.0
+26418,,Thailand,2020-04-14,2613.0,41.0
 26449,,Timor-Leste,2020-01-22,0.0,0.0
 26450,,Timor-Leste,2020-01-23,0.0,0.0
 26451,,Timor-Leste,2020-01-24,0.0,0.0
@@ -19338,6 +19570,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26529,,Timor-Leste,2020-04-11,2.0,0.0
 26530,,Timor-Leste,2020-04-12,2.0,0.0
 26531,,Timor-Leste,2020-04-13,4.0,0.0
+26532,,Timor-Leste,2020-04-14,6.0,0.0
 26563,,Togo,2020-01-22,0.0,0.0
 26564,,Togo,2020-01-23,0.0,0.0
 26565,,Togo,2020-01-24,0.0,0.0
@@ -19421,6 +19654,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26643,,Togo,2020-04-11,76.0,3.0
 26644,,Togo,2020-04-12,76.0,3.0
 26645,,Togo,2020-04-13,77.0,3.0
+26646,,Togo,2020-04-14,77.0,3.0
 26677,,Trinidad and Tobago,2020-01-22,0.0,0.0
 26678,,Trinidad and Tobago,2020-01-23,0.0,0.0
 26679,,Trinidad and Tobago,2020-01-24,0.0,0.0
@@ -19504,6 +19738,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26757,,Trinidad and Tobago,2020-04-11,112.0,8.0
 26758,,Trinidad and Tobago,2020-04-12,113.0,8.0
 26759,,Trinidad and Tobago,2020-04-13,113.0,8.0
+26760,,Trinidad and Tobago,2020-04-14,113.0,8.0
 26791,,Tunisia,2020-01-22,0.0,0.0
 26792,,Tunisia,2020-01-23,0.0,0.0
 26793,,Tunisia,2020-01-24,0.0,0.0
@@ -19587,6 +19822,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26871,,Tunisia,2020-04-11,685.0,28.0
 26872,,Tunisia,2020-04-12,707.0,31.0
 26873,,Tunisia,2020-04-13,726.0,34.0
+26874,,Tunisia,2020-04-14,747.0,34.0
 26905,,Turkey,2020-01-22,0.0,0.0
 26906,,Turkey,2020-01-23,0.0,0.0
 26907,,Turkey,2020-01-24,0.0,0.0
@@ -19670,6 +19906,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 26985,,Turkey,2020-04-11,52167.0,1101.0
 26986,,Turkey,2020-04-12,56956.0,1198.0
 26987,,Turkey,2020-04-13,61049.0,1296.0
+26988,,Turkey,2020-04-14,65111.0,1403.0
 27019,Alabama,US,2020-01-22,0.0,0.0
 27020,Alabama,US,2020-01-23,0.0,0.0
 27021,Alabama,US,2020-01-24,0.0,0.0
@@ -19753,6 +19990,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27099,Alabama,US,2020-04-11,3217.0,92.0
 27100,Alabama,US,2020-04-12,3563.0,93.0
 27101,Alabama,US,2020-04-13,3734.0,99.0
+27102,Alabama,US,2020-04-14,3953.0,114.0
 27133,Alaska,US,2020-01-22,0.0,0.0
 27134,Alaska,US,2020-01-23,0.0,0.0
 27135,Alaska,US,2020-01-24,0.0,0.0
@@ -19836,6 +20074,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27213,Alaska,US,2020-04-11,257.0,8.0
 27214,Alaska,US,2020-04-12,272.0,8.0
 27215,Alaska,US,2020-04-13,277.0,8.0
+27216,Alaska,US,2020-04-14,285.0,9.0
 27247,Arizona,US,2020-01-22,0.0,0.0
 27248,Arizona,US,2020-01-23,0.0,0.0
 27249,Arizona,US,2020-01-24,0.0,0.0
@@ -19919,6 +20158,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27327,Arizona,US,2020-04-11,3393.0,108.0
 27328,Arizona,US,2020-04-12,3542.0,115.0
 27329,Arizona,US,2020-04-13,3705.0,122.0
+27330,Arizona,US,2020-04-14,3809.0,131.0
 27361,Arkansas,US,2020-01-22,0.0,0.0
 27362,Arkansas,US,2020-01-23,0.0,0.0
 27363,Arkansas,US,2020-01-24,0.0,0.0
@@ -20002,6 +20242,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27441,Arkansas,US,2020-04-11,1228.0,25.0
 27442,Arkansas,US,2020-04-12,1280.0,27.0
 27443,Arkansas,US,2020-04-13,1410.0,29.0
+27444,Arkansas,US,2020-04-14,1498.0,32.0
 27475,California,US,2020-01-22,0.0,0.0
 27476,California,US,2020-01-23,0.0,0.0
 27477,California,US,2020-01-24,0.0,0.0
@@ -20085,6 +20326,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27555,California,US,2020-04-11,21706.0,605.0
 27556,California,US,2020-04-12,22795.0,641.0
 27557,California,US,2020-04-13,23931.0,715.0
+27558,California,US,2020-04-14,25356.0,768.0
 27589,Colorado,US,2020-01-22,0.0,0.0
 27590,Colorado,US,2020-01-23,0.0,0.0
 27591,Colorado,US,2020-01-24,0.0,0.0
@@ -20168,6 +20410,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27669,Colorado,US,2020-04-11,6513.0,250.0
 27670,Colorado,US,2020-04-12,7307.0,289.0
 27671,Colorado,US,2020-04-13,7691.0,306.0
+27672,Colorado,US,2020-04-14,7946.0,327.0
 27703,Connecticut,US,2020-01-22,0.0,0.0
 27704,Connecticut,US,2020-01-23,0.0,0.0
 27705,Connecticut,US,2020-01-24,0.0,0.0
@@ -20251,6 +20494,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27783,Connecticut,US,2020-04-11,11510.0,494.0
 27784,Connecticut,US,2020-04-12,12035.0,554.0
 27785,Connecticut,US,2020-04-13,13381.0,602.0
+27786,Connecticut,US,2020-04-14,13989.0,671.0
 27817,Delaware,US,2020-01-22,0.0,0.0
 27818,Delaware,US,2020-01-23,0.0,0.0
 27819,Delaware,US,2020-01-24,0.0,0.0
@@ -20334,6 +20578,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 27897,Delaware,US,2020-04-11,1479.0,33.0
 27898,Delaware,US,2020-04-12,1625.0,35.0
 27899,Delaware,US,2020-04-13,1758.0,41.0
+27900,Delaware,US,2020-04-14,1926.0,43.0
 27931,District of Columbia,US,2020-01-22,0.0,0.0
 27932,District of Columbia,US,2020-01-23,0.0,0.0
 27933,District of Columbia,US,2020-01-24,0.0,0.0
@@ -20417,6 +20662,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28011,District of Columbia,US,2020-04-11,1778.0,47.0
 28012,District of Columbia,US,2020-04-12,1875.0,50.0
 28013,District of Columbia,US,2020-04-13,1955.0,52.0
+28014,District of Columbia,US,2020-04-14,2058.0,67.0
 28045,Florida,US,2020-01-22,0.0,0.0
 28046,Florida,US,2020-01-23,0.0,0.0
 28047,Florida,US,2020-01-24,0.0,0.0
@@ -20499,7 +20745,8 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28124,Florida,US,2020-04-10,17531.0,390.0
 28125,Florida,US,2020-04-11,18494.0,438.0
 28126,Florida,US,2020-04-12,19895.0,461.0
-28127,Florida,US,2020-04-13,123019.0,499.0
+28127,Florida,US,2020-04-13,21019.0,499.0
+28128,Florida,US,2020-04-14,21628.0,571.0
 28159,Georgia,US,2020-01-22,0.0,0.0
 28160,Georgia,US,2020-01-23,0.0,0.0
 28161,Georgia,US,2020-01-24,0.0,0.0
@@ -20583,6 +20830,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28239,Georgia,US,2020-04-11,12159.0,429.0
 28240,Georgia,US,2020-04-12,12452.0,433.0
 28241,Georgia,US,2020-04-13,13315.0,465.0
+28242,Georgia,US,2020-04-14,14578.0,525.0
 28273,Guam,US,2020-01-22,0.0,0.0
 28274,Guam,US,2020-01-23,0.0,0.0
 28275,Guam,US,2020-01-24,0.0,0.0
@@ -20666,6 +20914,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28353,Guam,US,2020-04-11,133.0,5.0
 28354,Guam,US,2020-04-12,133.0,5.0
 28355,Guam,US,2020-04-13,133.0,5.0
+28356,Guam,US,2020-04-14,133.0,5.0
 28387,Hawaii,US,2020-01-22,0.0,0.0
 28388,Hawaii,US,2020-01-23,0.0,0.0
 28389,Hawaii,US,2020-01-24,0.0,0.0
@@ -20749,6 +20998,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28467,Hawaii,US,2020-04-11,465.0,8.0
 28468,Hawaii,US,2020-04-12,499.0,9.0
 28469,Hawaii,US,2020-04-13,504.0,9.0
+28470,Hawaii,US,2020-04-14,511.0,9.0
 28501,Idaho,US,2020-01-22,0.0,0.0
 28502,Idaho,US,2020-01-23,0.0,0.0
 28503,Idaho,US,2020-01-24,0.0,0.0
@@ -20832,6 +21082,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28581,Idaho,US,2020-04-11,1396.0,25.0
 28582,Idaho,US,2020-04-12,1407.0,27.0
 28583,Idaho,US,2020-04-13,1426.0,27.0
+28584,Idaho,US,2020-04-14,1464.0,33.0
 28615,Illinois,US,2020-01-22,0.0,0.0
 28616,Illinois,US,2020-01-23,0.0,0.0
 28617,Illinois,US,2020-01-24,0.0,0.0
@@ -20915,6 +21166,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28695,Illinois,US,2020-04-11,19180.0,677.0
 28696,Illinois,US,2020-04-12,20852.0,720.0
 28697,Illinois,US,2020-04-13,22025.0,798.0
+28698,Illinois,US,2020-04-14,23248.0,868.0
 28729,Indiana,US,2020-01-22,0.0,0.0
 28730,Indiana,US,2020-01-23,0.0,0.0
 28731,Indiana,US,2020-01-24,0.0,0.0
@@ -20998,6 +21250,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28809,Indiana,US,2020-04-11,7435.0,330.0
 28810,Indiana,US,2020-04-12,7928.0,343.0
 28811,Indiana,US,2020-04-13,8359.0,350.0
+28812,Indiana,US,2020-04-14,8527.0,387.0
 28843,Iowa,US,2020-01-22,0.0,0.0
 28844,Iowa,US,2020-01-23,0.0,0.0
 28845,Iowa,US,2020-01-24,0.0,0.0
@@ -21081,6 +21334,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 28923,Iowa,US,2020-04-11,1510.0,34.0
 28924,Iowa,US,2020-04-12,1587.0,41.0
 28925,Iowa,US,2020-04-13,1710.0,41.0
+28926,Iowa,US,2020-04-14,1899.0,49.0
 28957,Kansas,US,2020-01-22,0.0,0.0
 28958,Kansas,US,2020-01-23,0.0,0.0
 28959,Kansas,US,2020-01-24,0.0,0.0
@@ -21164,6 +21418,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29037,Kansas,US,2020-04-11,1275.0,55.0
 29038,Kansas,US,2020-04-12,1344.0,56.0
 29039,Kansas,US,2020-04-13,1390.0,62.0
+29040,Kansas,US,2020-04-14,1441.0,69.0
 29071,Kentucky,US,2020-01-22,0.0,0.0
 29072,Kentucky,US,2020-01-23,0.0,0.0
 29073,Kentucky,US,2020-01-24,0.0,0.0
@@ -21247,6 +21502,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29151,Kentucky,US,2020-04-11,1693.0,90.0
 29152,Kentucky,US,2020-04-12,1963.0,97.0
 29153,Kentucky,US,2020-04-13,2018.0,113.0
+29154,Kentucky,US,2020-04-14,2048.0,106.0
 29185,Louisiana,US,2020-01-22,0.0,0.0
 29186,Louisiana,US,2020-01-23,0.0,0.0
 29187,Louisiana,US,2020-01-24,0.0,0.0
@@ -21330,6 +21586,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29265,Louisiana,US,2020-04-11,20014.0,806.0
 29266,Louisiana,US,2020-04-12,20595.0,840.0
 29267,Louisiana,US,2020-04-13,21016.0,884.0
+29268,Louisiana,US,2020-04-14,21518.0,1013.0
 29299,Maine,US,2020-01-22,0.0,0.0
 29300,Maine,US,2020-01-23,0.0,0.0
 29301,Maine,US,2020-01-24,0.0,0.0
@@ -21413,6 +21670,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29379,Maine,US,2020-04-11,616.0,19.0
 29380,Maine,US,2020-04-12,633.0,19.0
 29381,Maine,US,2020-04-13,698.0,19.0
+29382,Maine,US,2020-04-14,735.0,20.0
 29413,Maryland,US,2020-01-22,0.0,0.0
 29414,Maryland,US,2020-01-23,0.0,0.0
 29415,Maryland,US,2020-01-24,0.0,0.0
@@ -21496,6 +21754,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29493,Maryland,US,2020-04-11,7694.0,206.0
 29494,Maryland,US,2020-04-12,8225.0,236.0
 29495,Maryland,US,2020-04-13,8936.0,262.0
+29496,Maryland,US,2020-04-14,6999.0,227.0
 29527,Massachusetts,US,2020-01-22,0.0,0.0
 29528,Massachusetts,US,2020-01-23,0.0,0.0
 29529,Massachusetts,US,2020-01-24,0.0,0.0
@@ -21579,6 +21838,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29607,Massachusetts,US,2020-04-11,22860.0,686.0
 29608,Massachusetts,US,2020-04-12,25475.0,756.0
 29609,Massachusetts,US,2020-04-13,26867.0,844.0
+29610,Massachusetts,US,2020-04-14,28164.0,844.0
 29641,Michigan,US,2020-01-22,0.0,0.0
 29642,Michigan,US,2020-01-23,0.0,0.0
 29643,Michigan,US,2020-01-24,0.0,0.0
@@ -21662,6 +21922,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29721,Michigan,US,2020-04-11,23605.0,1384.0
 29722,Michigan,US,2020-04-12,24244.0,1479.0
 29723,Michigan,US,2020-04-13,25635.0,1602.0
+29724,Michigan,US,2020-04-14,27001.0,1768.0
 29755,Minnesota,US,2020-01-22,0.0,0.0
 29756,Minnesota,US,2020-01-23,0.0,0.0
 29757,Minnesota,US,2020-01-24,0.0,0.0
@@ -21745,6 +22006,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29835,Minnesota,US,2020-04-11,1427.0,64.0
 29836,Minnesota,US,2020-04-12,1621.0,70.0
 29837,Minnesota,US,2020-04-13,1621.0,70.0
+29838,Minnesota,US,2020-04-14,1695.0,79.0
 29869,Mississippi,US,2020-01-22,0.0,0.0
 29870,Mississippi,US,2020-01-23,0.0,0.0
 29871,Mississippi,US,2020-01-24,0.0,0.0
@@ -21828,6 +22090,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 29949,Mississippi,US,2020-04-11,2642.0,93.0
 29950,Mississippi,US,2020-04-12,2781.0,96.0
 29951,Mississippi,US,2020-04-13,2942.0,98.0
+29952,Mississippi,US,2020-04-14,3087.0,111.0
 29983,Missouri,US,2020-01-22,0.0,0.0
 29984,Missouri,US,2020-01-23,0.0,0.0
 29985,Missouri,US,2020-01-24,0.0,0.0
@@ -21911,6 +22174,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30063,Missouri,US,2020-04-11,4108.0,116.0
 30064,Missouri,US,2020-04-12,4269.0,118.0
 30065,Missouri,US,2020-04-13,4515.0,123.0
+30066,Missouri,US,2020-04-14,4746.0,149.0
 30097,Montana,US,2020-01-22,0.0,0.0
 30098,Montana,US,2020-01-23,0.0,0.0
 30099,Montana,US,2020-01-24,0.0,0.0
@@ -21994,6 +22258,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30177,Montana,US,2020-04-11,377.0,6.0
 30178,Montana,US,2020-04-12,387.0,6.0
 30179,Montana,US,2020-04-13,394.0,7.0
+30180,Montana,US,2020-04-14,399.0,7.0
 30211,Nebraska,US,2020-01-22,0.0,0.0
 30212,Nebraska,US,2020-01-23,0.0,0.0
 30213,Nebraska,US,2020-01-24,0.0,0.0
@@ -22077,6 +22342,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30291,Nebraska,US,2020-04-11,699.0,17.0
 30292,Nebraska,US,2020-04-12,791.0,17.0
 30293,Nebraska,US,2020-04-13,814.0,17.0
+30294,Nebraska,US,2020-04-14,897.0,20.0
 30325,Nevada,US,2020-01-22,0.0,0.0
 30326,Nevada,US,2020-01-23,0.0,0.0
 30327,Nevada,US,2020-01-24,0.0,0.0
@@ -22160,6 +22426,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30405,Nevada,US,2020-04-11,2702.0,102.0
 30406,Nevada,US,2020-04-12,2836.0,112.0
 30407,Nevada,US,2020-04-13,2990.0,114.0
+30408,Nevada,US,2020-04-14,3134.0,126.0
 30439,New Hampshire,US,2020-01-22,0.0,0.0
 30440,New Hampshire,US,2020-01-23,0.0,0.0
 30441,New Hampshire,US,2020-01-24,0.0,0.0
@@ -22243,6 +22510,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30519,New Hampshire,US,2020-04-11,885.0,22.0
 30520,New Hampshire,US,2020-04-12,929.0,23.0
 30521,New Hampshire,US,2020-04-13,985.0,23.0
+30522,New Hampshire,US,2020-04-14,922.0,25.0
 30553,New Jersey,US,2020-01-22,0.0,0.0
 30554,New Jersey,US,2020-01-23,0.0,0.0
 30555,New Jersey,US,2020-01-24,0.0,0.0
@@ -22326,6 +22594,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30633,New Jersey,US,2020-04-11,58151.0,2183.0
 30634,New Jersey,US,2020-04-12,61850.0,2350.0
 30635,New Jersey,US,2020-04-13,64584.0,2443.0
+30636,New Jersey,US,2020-04-14,68824.0,2805.0
 30667,New Mexico,US,2020-01-22,0.0,0.0
 30668,New Mexico,US,2020-01-23,0.0,0.0
 30669,New Mexico,US,2020-01-24,0.0,0.0
@@ -22409,6 +22678,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30747,New Mexico,US,2020-04-11,1091.0,19.0
 30748,New Mexico,US,2020-04-12,1245.0,26.0
 30749,New Mexico,US,2020-04-13,1262.0,26.0
+30750,New Mexico,US,2020-04-14,1345.0,31.0
 30781,New York,US,2020-01-22,0.0,0.0
 30782,New York,US,2020-01-23,0.0,0.0
 30783,New York,US,2020-01-24,0.0,0.0
@@ -22492,6 +22762,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30861,New York,US,2020-04-11,181026.0,8627.0
 30862,New York,US,2020-04-12,189033.0,9385.0
 30863,New York,US,2020-04-13,195749.0,10058.0
+30864,New York,US,2020-04-14,203020.0,10842.0
 30895,North Carolina,US,2020-01-22,0.0,0.0
 30896,North Carolina,US,2020-01-23,0.0,0.0
 30897,North Carolina,US,2020-01-24,0.0,0.0
@@ -22575,6 +22846,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 30975,North Carolina,US,2020-04-11,4354.0,89.0
 30976,North Carolina,US,2020-04-12,4570.0,89.0
 30977,North Carolina,US,2020-04-13,4886.0,94.0
+30978,North Carolina,US,2020-04-14,5113.0,112.0
 31009,North Dakota,US,2020-01-22,0.0,0.0
 31010,North Dakota,US,2020-01-23,0.0,0.0
 31011,North Dakota,US,2020-01-24,0.0,0.0
@@ -22658,6 +22930,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31089,North Dakota,US,2020-04-11,293.0,7.0
 31090,North Dakota,US,2020-04-12,308.0,7.0
 31091,North Dakota,US,2020-04-13,331.0,8.0
+31092,North Dakota,US,2020-04-14,341.0,8.0
 31123,Ohio,US,2020-01-22,0.0,0.0
 31124,Ohio,US,2020-01-23,0.0,0.0
 31125,Ohio,US,2020-01-24,0.0,0.0
@@ -22741,6 +23014,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31203,Ohio,US,2020-04-11,6250.0,247.0
 31204,Ohio,US,2020-04-12,6604.0,253.0
 31205,Ohio,US,2020-04-13,6975.0,274.0
+31206,Ohio,US,2020-04-14,7285.0,324.0
 31237,Oklahoma,US,2020-01-22,0.0,0.0
 31238,Oklahoma,US,2020-01-23,0.0,0.0
 31239,Oklahoma,US,2020-01-24,0.0,0.0
@@ -22824,6 +23098,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31317,Oklahoma,US,2020-04-11,1868.0,94.0
 31318,Oklahoma,US,2020-04-12,1970.0,96.0
 31319,Oklahoma,US,2020-04-13,2069.0,99.0
+31320,Oklahoma,US,2020-04-14,2184.0,108.0
 31351,Oregon,US,2020-01-22,0.0,0.0
 31352,Oregon,US,2020-01-23,0.0,0.0
 31353,Oregon,US,2020-01-24,0.0,0.0
@@ -22907,6 +23182,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31431,Oregon,US,2020-04-11,1371.0,48.0
 31432,Oregon,US,2020-04-12,1527.0,52.0
 31433,Oregon,US,2020-04-13,1584.0,53.0
+31434,Oregon,US,2020-04-14,1633.0,55.0
 31465,Pennsylvania,US,2020-01-22,0.0,0.0
 31466,Pennsylvania,US,2020-01-23,0.0,0.0
 31467,Pennsylvania,US,2020-01-24,0.0,0.0
@@ -22990,6 +23266,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31545,Pennsylvania,US,2020-04-11,21719.0,503.0
 31546,Pennsylvania,US,2020-04-12,22938.0,557.0
 31547,Pennsylvania,US,2020-04-13,24292.0,589.0
+31548,Pennsylvania,US,2020-04-14,25465.0,691.0
 31579,Puerto Rico,US,2020-01-22,0.0,0.0
 31580,Puerto Rico,US,2020-01-23,0.0,0.0
 31581,Puerto Rico,US,2020-01-24,0.0,0.0
@@ -23073,6 +23350,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31659,Puerto Rico,US,2020-04-11,788.0,42.0
 31660,Puerto Rico,US,2020-04-12,897.0,44.0
 31661,Puerto Rico,US,2020-04-13,903.0,45.0
+31662,Puerto Rico,US,2020-04-14,923.0,45.0
 31693,Rhode Island,US,2020-01-22,0.0,0.0
 31694,Rhode Island,US,2020-01-23,0.0,0.0
 31695,Rhode Island,US,2020-01-24,0.0,0.0
@@ -23156,6 +23434,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31773,Rhode Island,US,2020-04-11,2349.0,56.0
 31774,Rhode Island,US,2020-04-12,2665.0,63.0
 31775,Rhode Island,US,2020-04-13,2665.0,63.0
+31776,Rhode Island,US,2020-04-14,3251.0,80.0
 31807,South Carolina,US,2020-01-22,0.0,0.0
 31808,South Carolina,US,2020-01-23,0.0,0.0
 31809,South Carolina,US,2020-01-24,0.0,0.0
@@ -23239,6 +23518,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 31887,South Carolina,US,2020-04-11,3211.0,80.0
 31888,South Carolina,US,2020-04-12,3320.0,82.0
 31889,South Carolina,US,2020-04-13,3391.0,82.0
+31890,South Carolina,US,2020-04-14,3553.0,97.0
 31921,South Dakota,US,2020-01-22,0.0,0.0
 31922,South Dakota,US,2020-01-23,0.0,0.0
 31923,South Dakota,US,2020-01-24,0.0,0.0
@@ -23322,6 +23602,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32001,South Dakota,US,2020-04-11,626.0,6.0
 32002,South Dakota,US,2020-04-12,730.0,6.0
 32003,South Dakota,US,2020-04-13,868.0,6.0
+32004,South Dakota,US,2020-04-14,988.0,6.0
 32035,Tennessee,US,2020-01-22,0.0,0.0
 32036,Tennessee,US,2020-01-23,0.0,0.0
 32037,Tennessee,US,2020-01-24,0.0,0.0
@@ -23405,6 +23686,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32115,Tennessee,US,2020-04-11,5132.0,106.0
 32116,Tennessee,US,2020-04-12,5508.0,106.0
 32117,Tennessee,US,2020-04-13,5610.0,109.0
+32118,Tennessee,US,2020-04-14,5827.0,124.0
 32149,Texas,US,2020-01-22,0.0,0.0
 32150,Texas,US,2020-01-23,0.0,0.0
 32151,Texas,US,2020-01-24,0.0,0.0
@@ -23488,6 +23770,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32229,Texas,US,2020-04-11,13023.0,266.0
 32230,Texas,US,2020-04-12,13677.0,283.0
 32231,Texas,US,2020-04-13,14275.0,305.0
+32232,Texas,US,2020-04-14,15006.0,342.0
 32263,Utah,US,2020-01-22,0.0,0.0
 32264,Utah,US,2020-01-23,0.0,0.0
 32265,Utah,US,2020-01-24,0.0,0.0
@@ -23571,6 +23854,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32343,Utah,US,2020-04-11,2207.0,18.0
 32344,Utah,US,2020-04-12,2303.0,18.0
 32345,Utah,US,2020-04-13,2363.0,13.0
+32346,Utah,US,2020-04-14,2417.0,18.0
 32377,Vermont,US,2020-01-22,0.0,0.0
 32378,Vermont,US,2020-01-23,0.0,0.0
 32379,Vermont,US,2020-01-24,0.0,0.0
@@ -23654,6 +23938,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32457,Vermont,US,2020-04-11,711.0,25.0
 32458,Vermont,US,2020-04-12,727.0,27.0
 32459,Vermont,US,2020-04-13,748.0,28.0
+32460,Vermont,US,2020-04-14,752.0,29.0
 32491,Virgin Islands,US,2020-01-22,0.0,0.0
 32492,Virgin Islands,US,2020-01-23,0.0,0.0
 32493,Virgin Islands,US,2020-01-24,0.0,0.0
@@ -23737,6 +24022,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32571,Virgin Islands,US,2020-04-11,51.0,1.0
 32572,Virgin Islands,US,2020-04-12,51.0,1.0
 32573,Virgin Islands,US,2020-04-13,51.0,1.0
+32574,Virgin Islands,US,2020-04-14,51.0,1.0
 32605,Virginia,US,2020-01-22,0.0,0.0
 32606,Virginia,US,2020-01-23,0.0,0.0
 32607,Virginia,US,2020-01-24,0.0,0.0
@@ -23820,6 +24106,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32685,Virginia,US,2020-04-11,5077.0,130.0
 32686,Virginia,US,2020-04-12,5274.0,141.0
 32687,Virginia,US,2020-04-13,5747.0,149.0
+32688,Virginia,US,2020-04-14,6182.0,154.0
 32719,Washington,US,2020-01-22,0.0,0.0
 32720,Washington,US,2020-01-23,0.0,0.0
 32721,Washington,US,2020-01-24,0.0,0.0
@@ -23903,6 +24190,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32799,Washington,US,2020-04-11,10434.0,495.0
 32800,Washington,US,2020-04-12,10609.0,506.0
 32801,Washington,US,2020-04-13,10635.0,513.0
+32802,Washington,US,2020-04-14,10799.0,530.0
 32833,West Virginia,US,2020-01-22,0.0,0.0
 32834,West Virginia,US,2020-01-23,0.0,0.0
 32835,West Virginia,US,2020-01-24,0.0,0.0
@@ -23986,6 +24274,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 32913,West Virginia,US,2020-04-11,577.0,5.0
 32914,West Virginia,US,2020-04-12,593.0,6.0
 32915,West Virginia,US,2020-04-13,611.0,8.0
+32916,West Virginia,US,2020-04-14,640.0,9.0
 32947,Wisconsin,US,2020-01-22,0.0,0.0
 32948,Wisconsin,US,2020-01-23,0.0,0.0
 32949,Wisconsin,US,2020-01-24,0.0,0.0
@@ -24069,6 +24358,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33027,Wisconsin,US,2020-04-11,3213.0,137.0
 33028,Wisconsin,US,2020-04-12,3341.0,144.0
 33029,Wisconsin,US,2020-04-13,3428.0,154.0
+33030,Wisconsin,US,2020-04-14,3555.0,170.0
 33061,Wyoming,US,2020-01-22,0.0,0.0
 33062,Wyoming,US,2020-01-23,0.0,0.0
 33063,Wyoming,US,2020-01-24,0.0,0.0
@@ -24152,6 +24442,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33141,Wyoming,US,2020-04-11,261.0,0.0
 33142,Wyoming,US,2020-04-12,270.0,0.0
 33143,Wyoming,US,2020-04-13,275.0,1.0
+33144,Wyoming,US,2020-04-14,282.0,1.0
 33175,,Uganda,2020-01-22,0.0,0.0
 33176,,Uganda,2020-01-23,0.0,0.0
 33177,,Uganda,2020-01-24,0.0,0.0
@@ -24235,6 +24526,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33255,,Uganda,2020-04-11,53.0,0.0
 33256,,Uganda,2020-04-12,54.0,0.0
 33257,,Uganda,2020-04-13,54.0,0.0
+33258,,Uganda,2020-04-14,55.0,0.0
 33289,,Ukraine,2020-01-22,0.0,0.0
 33290,,Ukraine,2020-01-23,0.0,0.0
 33291,,Ukraine,2020-01-24,0.0,0.0
@@ -24318,6 +24610,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33369,,Ukraine,2020-04-11,2511.0,73.0
 33370,,Ukraine,2020-04-12,2777.0,83.0
 33371,,Ukraine,2020-04-13,3102.0,93.0
+33372,,Ukraine,2020-04-14,3372.0,98.0
 33403,,United Arab Emirates,2020-01-22,0.0,0.0
 33404,,United Arab Emirates,2020-01-23,0.0,0.0
 33405,,United Arab Emirates,2020-01-24,0.0,0.0
@@ -24401,6 +24694,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33483,,United Arab Emirates,2020-04-11,3736.0,20.0
 33484,,United Arab Emirates,2020-04-12,4123.0,22.0
 33485,,United Arab Emirates,2020-04-13,4521.0,25.0
+33486,,United Arab Emirates,2020-04-14,4933.0,28.0
 33517,Anguilla,United Kingdom,2020-01-22,0.0,0.0
 33518,Anguilla,United Kingdom,2020-01-23,0.0,0.0
 33519,Anguilla,United Kingdom,2020-01-24,0.0,0.0
@@ -24484,6 +24778,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33597,Anguilla,United Kingdom,2020-04-11,3.0,0.0
 33598,Anguilla,United Kingdom,2020-04-12,3.0,0.0
 33599,Anguilla,United Kingdom,2020-04-13,3.0,0.0
+33600,Anguilla,United Kingdom,2020-04-14,3.0,0.0
 33631,Bermuda,United Kingdom,2020-01-22,0.0,0.0
 33632,Bermuda,United Kingdom,2020-01-23,0.0,0.0
 33633,Bermuda,United Kingdom,2020-01-24,0.0,0.0
@@ -24567,6 +24862,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33711,Bermuda,United Kingdom,2020-04-11,48.0,4.0
 33712,Bermuda,United Kingdom,2020-04-12,57.0,4.0
 33713,Bermuda,United Kingdom,2020-04-13,57.0,5.0
+33714,Bermuda,United Kingdom,2020-04-14,57.0,5.0
 33745,British Virgin Islands,United Kingdom,2020-01-22,0.0,0.0
 33746,British Virgin Islands,United Kingdom,2020-01-23,0.0,0.0
 33747,British Virgin Islands,United Kingdom,2020-01-24,0.0,0.0
@@ -24650,6 +24946,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33825,British Virgin Islands,United Kingdom,2020-04-11,3.0,0.0
 33826,British Virgin Islands,United Kingdom,2020-04-12,3.0,0.0
 33827,British Virgin Islands,United Kingdom,2020-04-13,3.0,0.0
+33828,British Virgin Islands,United Kingdom,2020-04-14,3.0,0.0
 33859,Cayman Islands,United Kingdom,2020-01-22,0.0,0.0
 33860,Cayman Islands,United Kingdom,2020-01-23,0.0,0.0
 33861,Cayman Islands,United Kingdom,2020-01-24,0.0,0.0
@@ -24733,6 +25030,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 33939,Cayman Islands,United Kingdom,2020-04-11,45.0,1.0
 33940,Cayman Islands,United Kingdom,2020-04-12,53.0,1.0
 33941,Cayman Islands,United Kingdom,2020-04-13,53.0,1.0
+33942,Cayman Islands,United Kingdom,2020-04-14,54.0,1.0
 33973,Channel Islands,United Kingdom,2020-01-22,0.0,0.0
 33974,Channel Islands,United Kingdom,2020-01-23,0.0,0.0
 33975,Channel Islands,United Kingdom,2020-01-24,0.0,0.0
@@ -24816,6 +25114,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34053,Channel Islands,United Kingdom,2020-04-11,407.0,9.0
 34054,Channel Islands,United Kingdom,2020-04-12,431.0,9.0
 34055,Channel Islands,United Kingdom,2020-04-13,436.0,9.0
+34056,Channel Islands,United Kingdom,2020-04-14,440.0,13.0
 34087,Falkland Islands (Malvinas),United Kingdom,2020-01-22,0.0,0.0
 34088,Falkland Islands (Malvinas),United Kingdom,2020-01-23,0.0,0.0
 34089,Falkland Islands (Malvinas),United Kingdom,2020-01-24,0.0,0.0
@@ -24899,6 +25198,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34167,Falkland Islands (Malvinas),United Kingdom,2020-04-11,5.0,0.0
 34168,Falkland Islands (Malvinas),United Kingdom,2020-04-12,5.0,0.0
 34169,Falkland Islands (Malvinas),United Kingdom,2020-04-13,5.0,0.0
+34170,Falkland Islands (Malvinas),United Kingdom,2020-04-14,11.0,0.0
 34201,Gibraltar,United Kingdom,2020-01-22,0.0,0.0
 34202,Gibraltar,United Kingdom,2020-01-23,0.0,0.0
 34203,Gibraltar,United Kingdom,2020-01-24,0.0,0.0
@@ -24982,6 +25282,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34281,Gibraltar,United Kingdom,2020-04-11,129.0,0.0
 34282,Gibraltar,United Kingdom,2020-04-12,129.0,0.0
 34283,Gibraltar,United Kingdom,2020-04-13,129.0,0.0
+34284,Gibraltar,United Kingdom,2020-04-14,129.0,0.0
 34315,Isle of Man,United Kingdom,2020-01-22,0.0,0.0
 34316,Isle of Man,United Kingdom,2020-01-23,0.0,0.0
 34317,Isle of Man,United Kingdom,2020-01-24,0.0,0.0
@@ -25065,6 +25366,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34395,Isle of Man,United Kingdom,2020-04-11,226.0,2.0
 34396,Isle of Man,United Kingdom,2020-04-12,228.0,2.0
 34397,Isle of Man,United Kingdom,2020-04-13,242.0,2.0
+34398,Isle of Man,United Kingdom,2020-04-14,254.0,2.0
 34429,Montserrat,United Kingdom,2020-01-22,0.0,0.0
 34430,Montserrat,United Kingdom,2020-01-23,0.0,0.0
 34431,Montserrat,United Kingdom,2020-01-24,0.0,0.0
@@ -25148,6 +25450,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34509,Montserrat,United Kingdom,2020-04-11,9.0,0.0
 34510,Montserrat,United Kingdom,2020-04-12,9.0,0.0
 34511,Montserrat,United Kingdom,2020-04-13,11.0,0.0
+34512,Montserrat,United Kingdom,2020-04-14,11.0,0.0
 34543,Turks and Caicos Islands,United Kingdom,2020-01-22,0.0,0.0
 34544,Turks and Caicos Islands,United Kingdom,2020-01-23,0.0,0.0
 34545,Turks and Caicos Islands,United Kingdom,2020-01-24,0.0,0.0
@@ -25231,6 +25534,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34623,Turks and Caicos Islands,United Kingdom,2020-04-11,8.0,1.0
 34624,Turks and Caicos Islands,United Kingdom,2020-04-12,9.0,1.0
 34625,Turks and Caicos Islands,United Kingdom,2020-04-13,10.0,1.0
+34626,Turks and Caicos Islands,United Kingdom,2020-04-14,10.0,1.0
 34657,,United Kingdom,2020-01-22,0.0,0.0
 34658,,United Kingdom,2020-01-23,0.0,0.0
 34659,,United Kingdom,2020-01-24,0.0,0.0
@@ -25314,6 +25618,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34737,,United Kingdom,2020-04-11,78991.0,9875.0
 34738,,United Kingdom,2020-04-12,84279.0,10612.0
 34739,,United Kingdom,2020-04-13,88621.0,11329.0
+34740,,United Kingdom,2020-04-14,93873.0,12107.0
 34771,,Uruguay,2020-01-22,0.0,0.0
 34772,,Uruguay,2020-01-23,0.0,0.0
 34773,,Uruguay,2020-01-24,0.0,0.0
@@ -25397,6 +25702,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34851,,Uruguay,2020-04-11,494.0,7.0
 34852,,Uruguay,2020-04-12,480.0,7.0
 34853,,Uruguay,2020-04-13,480.0,8.0
+34854,,Uruguay,2020-04-14,483.0,8.0
 34885,,Uzbekistan,2020-01-22,0.0,0.0
 34886,,Uzbekistan,2020-01-23,0.0,0.0
 34887,,Uzbekistan,2020-01-24,0.0,0.0
@@ -25480,6 +25786,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 34965,,Uzbekistan,2020-04-11,767.0,4.0
 34966,,Uzbekistan,2020-04-12,865.0,4.0
 34967,,Uzbekistan,2020-04-13,998.0,4.0
+34968,,Uzbekistan,2020-04-14,1165.0,4.0
 34999,,Venezuela,2020-01-22,0.0,0.0
 35000,,Venezuela,2020-01-23,0.0,0.0
 35001,,Venezuela,2020-01-24,0.0,0.0
@@ -25563,6 +25870,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 35079,,Venezuela,2020-04-11,175.0,9.0
 35080,,Venezuela,2020-04-12,181.0,9.0
 35081,,Venezuela,2020-04-13,189.0,9.0
+35082,,Venezuela,2020-04-14,189.0,9.0
 35113,,Vietnam,2020-01-22,0.0,0.0
 35114,,Vietnam,2020-01-23,2.0,0.0
 35115,,Vietnam,2020-01-24,2.0,0.0
@@ -25646,6 +25954,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 35193,,Vietnam,2020-04-11,258.0,0.0
 35194,,Vietnam,2020-04-12,262.0,0.0
 35195,,Vietnam,2020-04-13,265.0,0.0
+35196,,Vietnam,2020-04-14,266.0,0.0
 35227,,West Bank and Gaza,2020-01-22,0.0,0.0
 35228,,West Bank and Gaza,2020-01-23,0.0,0.0
 35229,,West Bank and Gaza,2020-01-24,0.0,0.0
@@ -25729,6 +26038,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 35307,,West Bank and Gaza,2020-04-11,268.0,2.0
 35308,,West Bank and Gaza,2020-04-12,290.0,2.0
 35309,,West Bank and Gaza,2020-04-13,308.0,2.0
+35310,,West Bank and Gaza,2020-04-14,308.0,2.0
 35341,,Western Sahara,2020-01-22,0.0,0.0
 35342,,Western Sahara,2020-01-23,0.0,0.0
 35343,,Western Sahara,2020-01-24,0.0,0.0
@@ -25812,6 +26122,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 35421,,Western Sahara,2020-04-11,4.0,0.0
 35422,,Western Sahara,2020-04-12,6.0,0.0
 35423,,Western Sahara,2020-04-13,6.0,0.0
+35424,,Western Sahara,2020-04-14,6.0,0.0
 35455,,Zambia,2020-01-22,0.0,0.0
 35456,,Zambia,2020-01-23,0.0,0.0
 35457,,Zambia,2020-01-24,0.0,0.0
@@ -25895,6 +26206,7 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 35535,,Zambia,2020-04-11,40.0,2.0
 35536,,Zambia,2020-04-12,43.0,2.0
 35537,,Zambia,2020-04-13,45.0,2.0
+35538,,Zambia,2020-04-14,45.0,2.0
 35569,,Zimbabwe,2020-01-22,0.0,0.0
 35570,,Zimbabwe,2020-01-23,0.0,0.0
 35571,,Zimbabwe,2020-01-24,0.0,0.0
@@ -25978,3 +26290,4 @@ Id,Province_State,Country_Region,Date,ConfirmedCases,Fatalities
 35649,,Zimbabwe,2020-04-11,14.0,3.0
 35650,,Zimbabwe,2020-04-12,14.0,3.0
 35651,,Zimbabwe,2020-04-13,17.0,3.0
+35652,,Zimbabwe,2020-04-14,17.0,3.0

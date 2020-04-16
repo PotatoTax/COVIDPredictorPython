@@ -10,6 +10,7 @@ initial_date = date(2020, 1, 1).toordinal()
 
 resources = Path("resources")
 
+
 class DataGenerator:
     def __init__(self):
         self.countries = {}
@@ -60,6 +61,15 @@ class DataGenerator:
             for row in reader:
                 if row["NAME"] in self.countries['US'].regions:
                     self.countries['US'].regions[row["NAME"]].population = row['POPESTIMATE2019']
+
+        file_path = resources / "world_population_2018.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                if row["Name"] in self.countries:
+                    self.countries[row["Name"]].population = row["Population"]
 
     def get_country(self, country):
         return self.countries[country]

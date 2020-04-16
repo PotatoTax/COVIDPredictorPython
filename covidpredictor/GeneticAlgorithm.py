@@ -52,7 +52,7 @@ class Trainer:
         self.pool.seed_pool()
 
         # evaluates and creates a new generation
-        for i in tqdm(range(generations)):
+        for i in range(generations):
             self.threaded_evaluate()
 
             if i < generations - 1:
@@ -187,6 +187,7 @@ if __name__ == '__main__':
             print(state)
             print(f"Fatality ratio : {covid_data.get_country('US').get_region(state).get_fatality_ratio()}")
             print(trainer.predict('US', state, model, "2020-03-30"), model.score)
+            print()
             scores.append(model.score)
 
     print(f"\nAverage score over {len(scores)} regions : {sum(scores) / len(scores)}")
