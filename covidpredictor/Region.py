@@ -73,35 +73,6 @@ class Region:
 
         return total / 10
 
-    def get_fatality_ratio(self):
-        start_date = -1
-
-        for day in self.cumulative.keys():
-            if self.cumulative[day]['Fatalities'] > 0:
-                start_date = day + 7
-                break
-
-        total = 0
-        length = max(self.cumulative.keys()) - start_date
-
-        if start_date > 0 and length >= 5:
-
-            for i in range(start_date, max(self.cumulative.keys())):
-                try:
-                    total += self.daily[i]['Fatalities'] / self.daily[i - 7]['Cases']
-                except:
-                    length -= 1
-
-            ratio = total/length
-            if ratio > 0.10:
-                return 0.10
-            elif ratio < 0:
-                return 0.02
-            else:
-                return ratio
-        else:
-            return 0.02
-
     def parse_day(self, date_string):
         split = [int(a) for a in date_string.split('-')]
 

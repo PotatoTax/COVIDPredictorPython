@@ -17,12 +17,14 @@ def parse_day(date_string):
 
 
 class Trainer:
-    def __init__(self, pool_size, state=None, covid_data=None, statistic='Cases'):
+    def __init__(self, pool_size, start_date, state=None, covid_data=None, statistic='Cases'):
         self.state = state
 
         self.pool_size = pool_size
 
         self.statistic = statistic
+
+        self.start_date = start_date
 
         self.covid_data = covid_data
         if covid_data is None:
@@ -36,7 +38,7 @@ class Trainer:
 
     def generate_test_case(self):
         # Gathers the case data for a week after the training data ends
-        day_one = parse_day("2020-03-30")
+        day_one = parse_day(self.start_date)
         if self.state is None:
             for state in self.covid_data.get_country('US').regions:
                 if state == "Guam" or state == "Virgin Islands" or state == "Puerto Rico":
@@ -78,16 +80,18 @@ class Trainer:
             self.pool.pool = result
 
     def thread(self, model):
+        int_date = parse_day(self.start_date)
+
         predictions = []
         if self.state is None:
             for state in self.covid_data.get_country('US').regions:
                 if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
                     continue
-                predictions.extend(self.predict('US', state, model, start_date="2020-03-30"))
+                predictions.extend(self.predict_trainer('US', state, model, self.start_date))
         else:
-            predictions = self.predict('US', self.state, model, start_date="2020-03-30")
+            predictions = self.predict_trainer('US', self.state, model, self.start_date)
         model.score = self.rmsle(predictions, self.covid_data.get_country('US').regions[self.state].cumulative[
-                parse_day("2020-03-30")][self.statistic])
+                int_date][self.statistic])
         return model
 
     def rmsle(self, predicted, baseline):
@@ -105,28 +109,29 @@ class Trainer:
 
         return math.sqrt(sum(les) / len(les))
 
-    def evaluate(self, start_date):
+    def evaluate(self):
         # generates a week of predicted values for each model
+        int_date = parse_day(self.start_date)
+
         for model in self.pool.pool:
             model_predictions = []
             if self.state is None:
                 for region in self.covid_data.get_country('US').regions:
                     if region in ["Guam", "Virgin Islands", "Puerto Rico"]:
                         continue
-                    model_predictions.extend(self.predict('US', region, model, start_date))
+                    model_predictions.extend(self.predict_trainer('US', region, model, self.start_date))
             else:
-                model_predictions = self.predict('US', self.state, model, start_date)
-            cumulative_stat = self.covid_data.get_country('US').regions[self.state].cumulative[parse_day("2020-03-30")][self.statistic]
+                model_predictions = self.predict_trainer('US', self.state, model, self.start_date)
+            cumulative_stat = self.covid_data.get_country('US').regions[self.state].cumulative[int_date][self.statistic]
             model.score = self.rmsle(model_predictions, cumulative_stat)
 
-    def predict(self, country_name, region, model, start_date):
+    def predict_trainer(self, country_name, region, model, start_date):
         int_date = parse_day(start_date)
 
         country = self.covid_data.get_country(country_name)
         region = country.get_region(region)
         previous_cases = region.daily[int_date][self.statistic]
         infection_rate = region.get_infection_rate()
-        fatality_ratio = region.get_fatality_ratio()
         population = int(region.population)
 
         lag = model.mobility_lag
@@ -151,11 +156,25 @@ class Trainer:
                 week_ago_cases = 0
                 for i in range(int_date - 8 + day, int_date - 5 + day):
                     week_ago_cases += region.daily[i]['Cases']
-                prediction = int(fatality_ratio * week_ago_cases / 3)
+                prediction = int(model.fatality_ratio * week_ago_cases / 3)
                 week_prediction.append(prediction)
 
         return week_prediction
 
+    def predict_day(self, country_name, region, model, int_date):
+        country = self.covid_data.get_country(country_name)
+        region = country.get_region(region)
+
+        if self.statistic == 'Cases':
+            print('uhhh, no bueno')
+
+        else:
+            week_ago_cases = 0
+            for i in range(int_date - 8, int_date - 5):
+                week_ago_cases += region.daily[i]['Cases']
+            prediction = int(model.fatality_ratio * week_ago_cases / 3)
+
+        return prediction
 
 if __name__ == '__main__':
 
@@ -169,7 +188,7 @@ if __name__ == '__main__':
 
         for model in top_models[:1]:
             print(state)
-            print(trainer.predict('US', state, model, "2020-03-30"), model.score)
+            print(trainer.predict_trainer('US', state, model, "2020-03-30"), model.score)
             scores.append(model.score)
 
     print(sum(scores) / len(scores))'''
@@ -177,18 +196,22 @@ if __name__ == '__main__':
     scores = []
     covid_data = DataGenerator()
     for state in covid_data.get_country('US').regions:
-        if state in ["Guam", "Virgin Islands", "Puerto Rico"]:
-            continue
-        trainer = Trainer(1000, state, covid_data, 'Cases')
+        trainer = Trainer(1000, "2020-03-30", state, covid_data, 'Fatalities')
 
         top_models = trainer.train(1)
 
         for model in top_models[:1]:
             print(state)
-            print(f"Fatality ratio : {covid_data.get_country('US').get_region(state).get_fatality_ratio()}")
-            print(trainer.predict('US', state, model, "2020-03-30"), model.score)
+            print(f"Fatality ratio : {model.fatality_ratio}")
+            print(trainer.predict_trainer('US', state, model, "2020-03-30"), model.score)
             print()
             scores.append(model.score)
+
+            # Write to regional daily dict
+            last_day = max(covid_data.get_country('US').regions[state].daily.keys())
+            for i in range(6):
+                day = last_day + i + 1
+                covid_data.get_country('US').regions[state].daily[day] = {'Cases': None, 'Fatalities': trainer.predict_day('US', state, model, day)}
 
     print(f"\nAverage score over {len(scores)} regions : {sum(scores) / len(scores)}")
 
