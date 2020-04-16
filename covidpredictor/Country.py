@@ -1,6 +1,6 @@
 from datetime import date
 
-from covidpredictor.CaseData.Region import Region
+from Region import Region
 
 
 class Country(Region):
@@ -14,7 +14,7 @@ class Country(Region):
         self.cumulative = {}
         self.daily = {}
 
-    def add_day(self, date_string, values):
+    def add_cases(self, date_string, values):
         day = self.parse_day(date_string)
 
         if day in self.cumulative:
@@ -28,9 +28,15 @@ class Country(Region):
 
         if not values['Region'] == '':
             if values['Region'] in self.regions:
-                self.regions[values['Region']].add_day(day, values)
+                self.regions[values['Region']].add_cases(day, values)
             else:
                 self.regions[values['Region']] = Region(values['Region'])
+
+    def add_movement(self, entry):
+        if not entry["region"] in self.regions:
+            self.regions[entry["region"]] = Region(entry["region"])
+
+        self.regions[entry["region"]].add_movement(entry)
 
     def calculate_daily(self):
         for day in self.cumulative.keys():
@@ -39,6 +45,9 @@ class Country(Region):
                     'Cases': self.cumulative[day]['Cases'] - self.cumulative[day - 1]['Cases'],
                     'Fatalities': self.cumulative[day]['Fatalities'] - self.cumulative[day - 1]['Fatalities']
                 }
+
+    def get_region(self, region):
+        return self.regions[region]
 
     def parse_day(self, date_string):
         split = [int(a) for a in date_string.split('-')]

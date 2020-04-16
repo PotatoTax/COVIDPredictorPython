@@ -1,3 +1,4 @@
+import math
 from datetime import date
 
 
@@ -10,7 +11,9 @@ class Region:
         self.cumulative = {}
         self.daily = {}
 
-    def add_day(self, day, values):
+        self.categories = {}
+
+    def add_cases(self, day, values):
         self.cumulative[day] = {
             'Cases': values['Cases'],
             'Fatalities': values['Fatalities']
@@ -26,6 +29,16 @@ class Region:
                 'Cases': values['Cases'],
                 'Fatalities': values['Fatalities']
             }
+
+    def add_movement(self, entry):
+        if not entry["category"] in self.categories:
+            self.categories[entry["category"]] = {}
+
+        self.categories[entry["category"]][self.parse_day(entry["date"])] = {
+            "change": entry["change"],
+            "changecalc": entry["changecalc"],
+            "value": sig(float(entry["value"]) / 100)
+        }
 
     def get_current_cases(self):
         day = max(self.cumulative.keys())
@@ -82,3 +95,8 @@ class Region:
         split = [int(a) for a in date_string.split('-')]
 
         return date(split[0], split[1], split[2]).toordinal() - self.initial_date
+
+
+def sig(x):
+    return .4 / (1 + math.e ** (-.33 * x)) + .8
+
