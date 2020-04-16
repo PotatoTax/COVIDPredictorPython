@@ -46,7 +46,7 @@ class Country(Region):
                     'Fatalities': self.cumulative[day]['Fatalities'] - self.cumulative[day - 1]['Fatalities']
                 }
 
-    def get_region(self, region):
+    def region(self, region):
         return self.regions[region]
 
     def parse_day(self, date_string):

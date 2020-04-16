@@ -40,21 +40,7 @@ class Region:
             "value": sig(float(entry["value"]) / 100)
         }
 
-    def get_current_cases(self):
-        day = max(self.cumulative.keys())
-
-        return self.cumulative[day]['Cases']
-
-    def get_daily_cases(self, date=None):
-        if date is None:
-            day = max(self.daily.keys())
-
-            return self.daily[day]['Cases']
-        else:
-            int_date = self.parse_day(date)
-            return self.daily[int_date]['Cases']
-
-    def get_infection_rate(self):
+    def infection_rate(self):
         start_date = -1
 
         for day in self.cumulative.keys():
@@ -70,7 +56,7 @@ class Region:
 
         return total / 10
 
-    def get_fatality_ratio(self):
+    def fatality_ratio(self):
         start_date = -1
 
         for day in self.cumulative.keys():
