@@ -20,7 +20,7 @@ class DataGenerator:
         self.population_data()
 
     def movement_data(self):
-        files = glob.glob("data/data/*.json")
+        files = glob.glob("resources/mobilityData/mobilityData/*.json")
 
         for file_path in files:
             with open(file_path) as file:
