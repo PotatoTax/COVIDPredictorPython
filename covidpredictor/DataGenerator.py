@@ -64,6 +64,15 @@ class DataGenerator:
                 if row["NAME"] in self.countries['US'].regions:
                     self.countries['US'].regions[row["NAME"]].population = int(row['POPESTIMATE2019'])
 
+        file_path = resources / "us_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                if row["Province"] in self.countries['US'].regions:
+                    self.countries['US'].regions[row["Province"]].population = int(row['Population'])
+
         # Global National Data
         file_path = resources / "world_population_2018.csv"
 
@@ -96,6 +105,76 @@ class DataGenerator:
 
                 try:
                     self.country("Canada").region(name).population = int(row["Persons"])
+                except KeyError:
+                    print(f"Region \"{name}\" not in dataset")
+
+        # Chinese Provinces
+        file_path = resources / "china_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"].replace("Municipality", "").replace("Autonomous Region", "").strip()
+
+                try:
+                    self.country("China").region(name).population = int(row["Population"])
+                except KeyError:
+                    print(f"Region \"{name}\" not in dataset")
+
+        # Denmark Provinces
+        file_path = resources / "denmark_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                try:
+                    self.country("Denmark").region(name).population = int(row["Population"])
+                except KeyError:
+                    print(f"Region \"{name}\" not in dataset")
+
+        # French Provinces
+        file_path = resources / "france_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                try:
+                    self.country("France").region(name).population = int(row["Population"])
+                except KeyError:
+                    print(f"Region \"{name}\" not in dataset")
+
+        # UK Provinces
+        file_path = resources / "uk_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                try:
+                    self.country("United Kingdom").region(name).population = int(row["Population"])
+                except KeyError:
+                    print(f"Region \"{name}\" not in dataset")
+
+        # Aruba Provinces
+        file_path = resources / "netherlands_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                try:
+                    self.country("Netherlands").region(name).population = int(row["Population"])
                 except KeyError:
                     print(f"Region \"{name}\" not in dataset")
 

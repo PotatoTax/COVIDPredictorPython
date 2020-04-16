@@ -157,21 +157,27 @@ if __name__ == '__main__':
     covid_data = DataGenerator()
 
     for country in covid_data.countries.values():
-        print(country.name)
+        # print(country.name)
         for region in country.regions.values():
-            print("\t" + region.name)
-            if region in ["Guam", "Virgin Islands", "Puerto Rico"]:
-                continue
-            trainer = Trainer(1000, country, region, covid_data, 'Cases')
-
-            top_models = trainer.train(1)
-
-            for model in top_models[:1]:
-                print(region)
-                print(f"Fatality ratio : {region.fatality_ratio()}")
-                print(trainer.predict(model, "2020-03-30"), model.score)
-                print()
-                scores.append(model.score)
+            try:
+                region.population
+            except:
+                print(f"{region.name}")
+    # for country in covid_data.countries.values():
+    #     print(country.name)
+    #     for region in country.regions.values():
+    #         print("\t" + region.name)
+    #         if region in ["Guam", "Virgin Islands", "Puerto Rico"]:
+    #             continue
+    #         trainer = Trainer(1, country, region, covid_data, 'Cases')
+    #
+    #         top_models = trainer.train(1)
+    #
+    #         for model in top_models[:1]:
+    #             # print(f"Fatality ratio : {region.fatality_ratio()}")
+    #             print(trainer.predict(model, "2020-03-30"), model.score)
+    #             print()
+    #             scores.append(model.score)
 
     print(f"\nAverage score over {len(scores)} regions : {sum(scores) / len(scores)}")
 
