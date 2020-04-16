@@ -53,7 +53,10 @@ class Region:
 
         for i in range(start_date + 10, start_date + 20):
             if i in self.cumulative.keys():
-                total += self.cumulative[i]['Cases'] / self.cumulative[i - 1]['Cases']
+                try:
+                    total += self.daily[i]['Cases'] / self.daily[i - 1]['Cases']
+                except:
+                    continue
 
         return total / 10
 
@@ -67,16 +70,24 @@ class Region:
 
         total = 0
         length = max(self.cumulative.keys()) - start_date
-        for i in range(start_date, max(self.cumulative.keys())):
-            try:
-                total += self.daily[i]['Fatalities'] / self.daily[i - 7]['Cases']
-            except:
-                length -= 1
 
-        if length < 5:
-            return 0.05
+        if start_date > 0 and length >= 5:
 
-        return total/length
+            for i in range(start_date, max(self.cumulative.keys())):
+                try:
+                    total += self.daily[i]['Fatalities'] / self.daily[i - 7]['Cases']
+                except:
+                    length -= 1
+
+            ratio = total/length
+            if ratio > 0.10:
+                return 0.10
+            elif ratio < 0:
+                return 0.02
+            else:
+                return ratio
+        else:
+            return 0.02
 
     def parse_day(self, date_string):
         split = [int(a) for a in date_string.split('-')]
