@@ -8,6 +8,7 @@ from Country import Country
 
 initial_date = date(2020, 1, 1).toordinal()
 
+resources = Path("resources")
 
 class DataGenerator:
     def __init__(self):
@@ -32,7 +33,7 @@ class DataGenerator:
                     self.countries[entry["country"]].add_entry(entry)
 
     def case_date(self):
-        file_path = Path("CaseData") / "train.csv"
+        file_path = resources / "train.csv"
 
         with open(file_path) as file:
             reader = csv.DictReader(file, delimiter=",", quotechar='"')
@@ -51,7 +52,7 @@ class DataGenerator:
                     self.countries[row['Country_Region']].add_cases(row['Date'], entry)
 
     def population_data(self):
-        file_path = Path("CaseData") / "us_census.csv"
+        file_path = resources / "us_census.csv"
 
         with open(file_path) as file:
             reader = csv.DictReader(file, delimiter=",", quotechar='"')
