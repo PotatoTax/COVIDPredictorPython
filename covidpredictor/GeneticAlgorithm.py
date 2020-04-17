@@ -1,6 +1,5 @@
 import math
 
-from tqdm import tqdm
 import multiprocessing
 from datetime import date
 
@@ -99,9 +98,11 @@ class Trainer:
         actual_cumulative = baseline
 
         for predict, actual in zip(predicted, self.test_case):
+            if predict < 0: predict = 0
             if actual < 0: actual = 0
             predicted_cumulative += predict
             actual_cumulative += actual
+
             les.append((math.log(predicted_cumulative + 1.0) - math.log(actual_cumulative + 1.0)) ** 2)
 
         return math.sqrt(sum(les) / len(les))
@@ -156,28 +157,21 @@ if __name__ == '__main__':
     scores = []
     covid_data = DataGenerator()
 
-    for country in covid_data.countries.values():
-        # print(country.name)
+    for country in [covid_data.country("US")]:
+        print(country.name)
         for region in country.regions.values():
-            try:
-                region.population
-            except:
-                print(f"{region.name}")
-    # for country in covid_data.countries.values():
-    #     print(country.name)
-    #     for region in country.regions.values():
-    #         print("\t" + region.name)
-    #         if region in ["Guam", "Virgin Islands", "Puerto Rico"]:
-    #             continue
-    #         trainer = Trainer(1, country, region, covid_data, 'Cases')
-    #
-    #         top_models = trainer.train(1)
-    #
-    #         for model in top_models[:1]:
-    #             # print(f"Fatality ratio : {region.fatality_ratio()}")
-    #             print(trainer.predict(model, "2020-03-30"), model.score)
-    #             print()
-    #             scores.append(model.score)
+            print("\t" + region.name)
+            # if region in ["Guam", "Virgin Islands", "Puerto Rico"]:
+            #     continue
+            trainer = Trainer(10000, country, region, covid_data, 'Cases')
+
+            top_models = trainer.train(1)
+
+            for model in top_models[:1]:
+                # print(f"Fatality ratio : {region.fatality_ratio()}")
+                print("\t", trainer.predict(model, "2020-03-30"), model.score)
+                print()
+                scores.append(model.score)
 
     print(f"\nAverage score over {len(scores)} regions : {sum(scores) / len(scores)}")
 
