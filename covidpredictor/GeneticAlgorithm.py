@@ -16,7 +16,7 @@ def parse_day(date_string):
 
 
 class Trainer:
-    def __init__(self, pool_size, country, region=None, covid_data=None, statistic='Cases'):
+    def __init__(self, pool_size, start_training, country, region=None, covid_data=None, statistic='Cases'):
         # The object containing all case, fatality, and movement data
         self.covid_data = covid_data
         if covid_data is None:
@@ -31,6 +31,9 @@ class Trainer:
         # What metric to create a model for, either 'Cases' or 'Fatalities'
         self.statistic = statistic
 
+        # The date when training takes data from through 2 weeks later
+        self.start_training = start_training
+
         # The object which handles all the models in a generation
         self.pool = Pool(pool_size)
 
@@ -41,7 +44,7 @@ class Trainer:
 
     def generate_test_case(self):
         # Gathers the case data for a week after the training data ends
-        day_one = parse_day("2020-03-30")
+        day_one = parse_day(self.start_training)
         if self.region is None:
             self.test_case = [self.country.daily[day_one + i][self.statistic] for i in range(7)]
         else:
@@ -77,16 +80,16 @@ class Trainer:
             self.pool.pool = result
 
     def thread(self, model):
-        prediction = self.predict(model, "2020-03-30")
+        prediction = self.predict(model, self.start_training)
         if self.region is None:
             model.score = self.rmsle(
                 prediction,
-                self.country.cumulative[parse_day("2020-03-30")][self.statistic]
+                self.country.cumulative[parse_day(self.start_training)][self.statistic]
             )
         else:
             model.score = self.rmsle(
                 prediction,
-                self.region.cumulative[parse_day("2020-03-30")][self.statistic]
+                self.region.cumulative[parse_day(self.start_training)][self.statistic]
             )
         return model
 
@@ -111,7 +114,7 @@ class Trainer:
         # generates a week of predicted values for each model
         for model in self.pool.pool:
             model_predictions = self.predict(model, start_date)
-            cumulative_stat = self.region.cumulative[parse_day("2020-03-30")][self.statistic]
+            cumulative_stat = self.region.cumulative[parse_day(self.start_training)][self.statistic]
             model.score = self.rmsle(model_predictions, cumulative_stat)
 
     def predict(self, model, start_date):
@@ -146,7 +149,7 @@ class Trainer:
                 week_ago_cases = 0
                 for i in range(int_date - 8 + day, int_date - 5 + day):
                     week_ago_cases += zone.daily[i]['Cases']
-                prediction = int(zone.fatality_ratio() * week_ago_cases / 3)
+                prediction = int(model.fatality_ratio * week_ago_cases / 3)
                 week_prediction.append(prediction)
 
         return week_prediction
@@ -163,7 +166,7 @@ if __name__ == '__main__':
             print("\t" + region.name)
             # if region in ["Guam", "Virgin Islands", "Puerto Rico"]:
             #     continue
-            trainer = Trainer(10000, country, region, covid_data, 'Cases')
+            trainer = Trainer(10000, "2020-03-30", country, region, covid_data, 'Fatalities')
 
             top_models = trainer.train(1)
 
