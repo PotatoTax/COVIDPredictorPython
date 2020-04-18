@@ -35,10 +35,8 @@ class Country(Region):
 
     def add_movement(self, entry):
         if "region" in entry and not entry["region"] is None:
-            if not entry["region"] in self.regions:
-                self.regions[entry["region"]] = Region(entry["region"])
-
-            self.regions[entry["region"]].add_movement(entry)
+            if entry["region"] in self.regions:
+                self.regions[entry["region"]].add_movement(entry)
         else:
             if not entry["category"] in self.categories:
                 self.categories[entry["category"]] = {}
