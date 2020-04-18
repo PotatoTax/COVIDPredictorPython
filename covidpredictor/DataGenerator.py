@@ -20,7 +20,7 @@ class DataGenerator:
         self.population_data()
 
     def movement_data(self):
-        files = glob.glob("data/data/*.json")
+        files = glob.glob("resources/mobilityData/*.json")
 
         for file_path in files:
             with open(file_path) as file:
@@ -31,7 +31,7 @@ class DataGenerator:
                     if not entry["country"] in self.countries:
                         self.countries[entry["country"]] = Country(entry["country"])
 
-                    self.countries[entry["country"]].add_entry(entry)
+                    self.countries[entry["country"]].add_movement(entry)
 
     def case_date(self):
         file_path = resources / "train.csv"
@@ -53,23 +53,116 @@ class DataGenerator:
                     self.countries[row['Country_Region']].add_cases(row['Date'], entry)
 
     def population_data(self):
-        file_path = resources / "us_census.csv"
+        census_data = Path("resources/population")
+        # US States
+        file_path = census_data / "us_census.csv"
 
         with open(file_path) as file:
             reader = csv.DictReader(file, delimiter=",", quotechar='"')
 
             for row in reader:
                 if row["NAME"] in self.countries['US'].regions:
-                    self.countries['US'].regions[row["NAME"]].population = row['POPESTIMATE2019']
+                    self.countries['US'].regions[row["NAME"]].population = int(row['POPESTIMATE2019'])
 
-        file_path = resources / "world_population_2018.csv"
+        file_path = census_data / "us_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                if row["Province"] in self.countries['US'].regions:
+                    self.countries['US'].regions[row["Province"]].population = int(row['Population'])
+
+        # Global National Data
+        file_path = census_data / "world_population_2018.csv"
 
         with open(file_path) as file:
             reader = csv.DictReader(file, delimiter=",", quotechar='"')
 
             for row in reader:
                 if row["Name"] in self.countries:
-                    self.countries[row["Name"]].population = row["Population"]
+                    self.countries[row["Name"]].population = int(row["Population"])
 
-    def get_country(self, country):
+        # Australian States
+        file_path = census_data / "australia_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row[""].replace(";", "").split("   ")[2].strip()
+
+                self.country("Australia").region(name).population = int(row["Sep-2019"])
+
+        # Canadian Provinces
+        file_path = census_data / "canada_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row[""]
+
+                self.country("Canada").region(name).population = int(row["Persons"])
+
+        # Chinese Provinces
+        file_path = census_data / "china_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"].replace("Municipality", "").replace("Autonomous Region", "").strip()
+
+                self.country("China").region(name).population = int(row["Population"])
+
+        # Denmark Provinces
+        file_path = census_data / "denmark_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                self.country("Denmark").region(name).population = int(row["Population"])
+
+        # French Provinces
+        file_path = census_data / "france_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                self.country("France").region(name).population = int(row["Population"])
+
+        # UK Provinces
+        file_path = census_data / "uk_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                self.country("United Kingdom").region(name).population = int(row["Population"])
+
+        # Netherlands Provinces
+        file_path = census_data / "netherlands_regional_census.csv"
+
+        with open(file_path) as file:
+            reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+            for row in reader:
+                name = row["Province"]
+
+                self.country("Netherlands").region(name).population = int(row["Population"])
+
+    def country(self, country):
         return self.countries[country]
+
+
+if __name__ == '__main__':
+    move = DataGenerator()

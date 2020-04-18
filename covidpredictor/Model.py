@@ -48,6 +48,6 @@ class Model:
 
         prediction = current * infection_rate * mobility_factor * immunity_factor * testing_factor
 
-        if prediction < 0:
-            return 0
+        # if prediction < 0:
+        #     return 0
         return int(prediction)

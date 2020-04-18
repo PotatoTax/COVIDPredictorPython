@@ -40,21 +40,7 @@ class Region:
             "value": sig(float(entry["value"]) / 100)
         }
 
-    def get_current_cases(self):
-        day = max(self.cumulative.keys())
-
-        return self.cumulative[day]['Cases']
-
-    def get_daily_cases(self, date=None):
-        if date is None:
-            day = max(self.daily.keys())
-
-            return self.daily[day]['Cases']
-        else:
-            int_date = self.parse_day(date)
-            return self.daily[int_date]['Cases']
-
-    def get_infection_rate(self):
+    def infection_rate(self):
         start_date = -1
 
         for day in self.cumulative.keys():
@@ -66,12 +52,30 @@ class Region:
 
         for i in range(start_date + 10, start_date + 20):
             if i in self.cumulative.keys():
-                try:
-                    total += self.daily[i]['Cases'] / self.daily[i - 1]['Cases']
-                except:
-                    continue
+                total += self.cumulative[i]['Cases'] / self.cumulative[i - 1]['Cases']
 
         return total / 10
+
+    def fatality_ratio(self):
+        start_date = -1
+
+        for day in self.cumulative.keys():
+            if self.cumulative[day]['Fatalities'] > 0:
+                start_date = day + 7
+                break
+
+        total = 0
+        length = max(self.cumulative.keys()) - start_date
+        for i in range(start_date, max(self.cumulative.keys())):
+            try:
+                total += self.daily[i]['Fatalities'] / self.daily[i - 7]['Cases']
+            except:
+                length -= 1
+
+        if length < 5:
+            return 0.05
+
+        return total/length
 
     def parse_day(self, date_string):
         split = [int(a) for a in date_string.split('-')]
